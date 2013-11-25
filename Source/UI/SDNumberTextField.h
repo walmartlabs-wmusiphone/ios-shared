@@ -30,8 +30,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SDTextField.h"
 
-@interface SDNumberTextField : UITextField
+@interface SDNumberTextField : SDTextField
 
 /*
  The format to be used.  The only special character in format is #.  examples:

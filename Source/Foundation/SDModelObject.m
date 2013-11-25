@@ -18,7 +18,7 @@
 
 - (BOOL)validModel
 {
-    return YES;
+    @throw [NSException exceptionWithName:@"SDModelObjectException" reason:@"Subclasses MUST override -validModel." userInfo:nil];
 }
 
 - (NSDictionary *)mappingDictionaryForData:(id)data
@@ -96,34 +96,49 @@
     NSMutableDictionary *aSubDictionary = [NSMutableDictionary dictionary];
     NSDictionary *mappingDictionary = [self mappingDictionaryForData:nil];
     NSMutableDictionary *cleanMappingDictionary = [NSMutableDictionary dictionary];
-
+    
     // Here we change the @"<RxObject>foo" values to @"foo" to force nsdictionary output
     NSArray *cleanKeys = [mappingDictionary allKeys];
-
+    
     for (NSString *theKey in cleanKeys)
     {
         NSString *thePath = [mappingDictionary objectForKey:theKey];
-        NSString *theMappedPath = [thePath stringByReplacingOccurrencesOfString:@"<(.*)>(.*)" withString:@"$2" options:NSRegularExpressionSearch range:NSMakeRange(0, thePath.length)];
-        if ([theMappedPath isEqualToString:thePath])
+        
+        // The values that were mapped to a selector cannot be "unmapped"
+        if ([thePath rangeOfString:@"@selector("].location == NSNotFound)
         {
-            // We are creating a reverse dictionary
-            [cleanMappingDictionary setObject:theKey forKey:thePath];
-        }
-        else
-        {
-            NSObject *theSubValue = [self representationForKey:theKey];
-            if (theSubValue)
-                [aSubDictionary setObject:theSubValue forKey:theMappedPath];
+            NSString *theMappedPath = [thePath stringByReplacingOccurrencesOfString:@"<(.*)>(.*)" withString:@"$2" options:NSRegularExpressionSearch range:NSMakeRange(0, thePath.length)];
+            if ([theMappedPath isEqualToString:thePath])
+            {
+                // We are creating a reverse dictionary
+                [cleanMappingDictionary setObject:theKey forKey:thePath];
+            }
+            else
+            {
+                NSObject *theSubValue = [self representationForKey:theKey];
+                if (theSubValue)
+                    [aSubDictionary setObject:theSubValue forKey:theMappedPath];
+            }
         }
     }
-
+    
     SDDataMap *dataMapper = [SDDataMap mapForDictionary:cleanMappingDictionary];
     [dataMapper mapObject:self toObject:aDictionary];
-
+    
     if ([aSubDictionary count]>0)
         [aDictionary addEntriesFromDictionary:aSubDictionary];
-
+    
     return aDictionary;
+}
+
+- (NSData *)JSONRepresentation
+{
+    return [[self dictionaryRepresentation] JSONRepresentation];
+}
+
+- (NSString *)JSONStringRepresentation
+{
+    return [[self dictionaryRepresentation] JSONStringRepresentation];
 }
 
 @end

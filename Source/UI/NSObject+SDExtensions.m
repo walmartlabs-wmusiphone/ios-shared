@@ -51,11 +51,33 @@
 		if ([object isKindOfClass:self])
 			return object;
 	}
-    
-#if DEBUG
+
+#ifdef DEBUG
 	NSAssert(NO, @"Could not find object of class %@ in nib %@", [self class], [self nibName]);
 #endif
 	return nil;
+}
+
+- (BOOL)keyPathExists:(NSString *)keyPath
+{
+    id targetObject = self;
+    BOOL exists = NO;
+    
+    NSArray *components = [keyPath componentsSeparatedByString:@"."];
+    for (NSUInteger i = 0; i < components.count; i++)
+    {
+        NSString *key = [components objectAtIndex:i];
+        if ([self respondsToSelector:NSSelectorFromString(key)])
+        {
+            targetObject = [targetObject valueForKey:key];
+            if (i == components.count - 1)
+                exists = YES;
+        }
+        else
+            break;
+    }
+    
+    return exists;
 }
 
 // This is tightly tied to the implementation found in NSArray+SDExtensions.m

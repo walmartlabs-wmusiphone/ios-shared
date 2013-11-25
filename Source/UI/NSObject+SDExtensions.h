@@ -51,6 +51,11 @@ typedef void (^NSObjectPerformBlock)();
 + (id)loadFromNibNamed:(NSString *)nibName withOwner:(id)owner;
 
 /**
+ Check to see if a given keypath exists.
+ */
+- (BOOL)keyPathExists:(NSString *)keyPath;
+
+/**
  Invoke arbitrary selectors on the receiver with arbitrary arguments and with a place to store the result of the invocation.
  @param aSelector The selector to invoke. It must exist on the receiver.
  @param returnAddress A pointer to the location where the result of the invocation can be stored. Optional.

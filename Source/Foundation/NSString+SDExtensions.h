@@ -81,11 +81,12 @@
 - (NSString *)stringWithNumberFormat:(NSString *)format;
 
 /**
- *  Extracts the first price from the string
  *
- *  Supports "15.00" "$15.00" "from $15.00" "from $15.00 to $20.00"
+ * Returns a UIColor objects for the string's hex representation:
  *
- *  @return A string of the first extracted price
+ * For example: [@"#fff" uicolor] returns a UIColor of white.
+ *              [@"#118653" uicolor] returns something green.
+ *
  */
-- (NSString *)extractFirstPrice;
+- (UIColor *)uicolor;
 @end

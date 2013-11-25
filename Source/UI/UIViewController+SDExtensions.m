@@ -34,13 +34,21 @@
 
 + (instancetype)loadFromStoryboard:(NSString *)storyboardName
 {
-    if (!storyboardName)
+    NSString *modifiedName = [storyboardName copy];
+    NSString *originalName = [storyboardName copy];
+
+    if (!modifiedName)
     {
         NSString *className = [self className];
-        storyboardName = [NSString stringWithFormat:@"%@_%@", className, [UIDevice iPad] ? @"iPad" : @"iPhone"];
+        modifiedName = [NSString stringWithFormat:@"%@_%@", className, [UIDevice iPad] ? @"iPad" : @"iPhone"];
     }
 
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle bundleForClass:[self class]]];
+    NSString *resourcePath = [[NSBundle bundleForClass:[self class]] pathForResource:modifiedName ofType:@"storyboardc"];
+    if (!resourcePath)
+        modifiedName = [NSString stringWithFormat:@"%@_%@", originalName, [UIDevice iPad] ? @"iPad" : @"iPhone"];
+
+    // this will throw an exception if it can't find the storyboard.
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:modifiedName bundle:[NSBundle bundleForClass:[self class]]];
     UIViewController *result = [storyboard instantiateInitialViewController];
 
     if ([result isKindOfClass:[self class]])
@@ -52,13 +60,21 @@
 
 + (instancetype)loadFromStoryboard:(NSString *)storyboardName identifier:(NSString *)identifier
 {
-    if (!storyboardName)
+    NSString *modifiedName = [storyboardName copy];
+    NSString *originalName = [storyboardName copy];
+
+    if (!modifiedName)
     {
         NSString *className = [self className];
-        storyboardName = [NSString stringWithFormat:@"%@_%@", className, [UIDevice iPad] ? @"iPad" : @"iPhone"];
+        modifiedName = [NSString stringWithFormat:@"%@_%@", className, [UIDevice iPad] ? @"iPad" : @"iPhone"];
     }
 
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle bundleForClass:[self class]]];
+    NSString *resourcePath = [[NSBundle bundleForClass:[self class]] pathForResource:modifiedName ofType:@"storyboardc"];
+    if (!resourcePath)
+        modifiedName = [NSString stringWithFormat:@"%@_%@", originalName, [UIDevice iPad] ? @"iPad" : @"iPhone"];
+
+    // this will throw an exception if it can't find the storyboard.
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:modifiedName bundle:[NSBundle bundleForClass:[self class]]];
     UIViewController *result = [storyboard instantiateViewControllerWithIdentifier:identifier];
 
     if ([result isKindOfClass:[self class]])

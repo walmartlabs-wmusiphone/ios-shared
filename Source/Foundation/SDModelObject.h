@@ -36,6 +36,20 @@
 - (NSDictionary *)dictionaryRepresentation;
 
 /**
+ *  JSON Representation of this request.
+ *
+ *  @return a NSData containing the internal dataDictionary as JSON
+ */
+- (NSData *)JSONRepresentation;
+
+/**
+ *  JSON Representation of this request, converted to a string.
+ *
+ *  @return a NSString of the internal dataDictionary as a UTF8 - JSON string
+ */
+- (NSString *)JSONStringRepresentation;
+
+/**
  *  Utility creation method that maps a source object's name value pairs to the new object
  *
  *  @param sourceObject The source name / value pairs

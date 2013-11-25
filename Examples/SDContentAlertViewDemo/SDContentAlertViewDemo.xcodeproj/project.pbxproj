@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA0E77F418285A1D00B4398F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0E77F318285A1D00B4398F /* Foundation.framework */; };
+		CA0E77F618285A1D00B4398F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0E77F518285A1D00B4398F /* CoreGraphics.framework */; };
+		CA0E77F818285A1D00B4398F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0E77F718285A1D00B4398F /* UIKit.framework */; };
+		CA0E77FE18285A1D00B4398F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0E77FC18285A1D00B4398F /* InfoPlist.strings */; };
+		CA0E780018285A1D00B4398F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E77FF18285A1D00B4398F /* main.m */; };
+		CA0E780418285A1D00B4398F /* MyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E780318285A1D00B4398F /* MyAppDelegate.m */; };
+		CA0E780718285A1D00B4398F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0E780518285A1D00B4398F /* Main.storyboard */; };
+		CA0E780A18285A1D00B4398F /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E780918285A1D00B4398F /* MyViewController.m */; };
+		CA0E780C18285A1D00B4398F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0E780B18285A1D00B4398F /* Images.xcassets */; };
+		CA0E781318285A1D00B4398F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0E781218285A1D00B4398F /* XCTest.framework */; };
+		CA0E781418285A1D00B4398F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0E77F318285A1D00B4398F /* Foundation.framework */; };
+		CA0E781518285A1D00B4398F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0E77F718285A1D00B4398F /* UIKit.framework */; };
+		CA0E781D18285A1D00B4398F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0E781B18285A1D00B4398F /* InfoPlist.strings */; };
+		CA0E781F18285A1D00B4398F /* SDContentAlertViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E781E18285A1D00B4398F /* SDContentAlertViewDemoTests.m */; };
+		CA0E78AF18285D4D00B4398F /* Global-iOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CA0E782A18285D4D00B4398F /* Global-iOS.xcconfig */; };
+		CA0E78B018285D4D00B4398F /* Project-iOS-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CA0E782B18285D4D00B4398F /* Project-iOS-Debug.xcconfig */; };
+		CA0E78B118285D4D00B4398F /* Project-iOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CA0E782C18285D4D00B4398F /* Project-iOS-Release.xcconfig */; };
+		CA0E78B218285D4D00B4398F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CA0E782D18285D4D00B4398F /* README.md */; };
+		CA0E78B318285D4D00B4398F /* NSArray+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E783018285D4D00B4398F /* NSArray+SDExtensions.m */; };
+		CA0E78B418285D4D00B4398F /* NSData+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E783218285D4D00B4398F /* NSData+SDExtensions.m */; };
+		CA0E78B518285D4D00B4398F /* NSDate+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E783418285D4D00B4398F /* NSDate+SDExtensions.m */; };
+		CA0E78B618285D4D00B4398F /* NSDictionary+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E783618285D4D00B4398F /* NSDictionary+SDExtensions.m */; };
+		CA0E78B718285D4D00B4398F /* NSError+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E783818285D4D00B4398F /* NSError+SDExtensions.m */; };
+		CA0E78B818285D4D00B4398F /* NSMutableAttributedString+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E783A18285D4D00B4398F /* NSMutableAttributedString+SDExtensions.m */; };
+		CA0E78B918285D4D00B4398F /* NSNumber+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E783C18285D4D00B4398F /* NSNumber+SDExtensions.m */; };
+		CA0E78BA18285D4D00B4398F /* NSRunLoop+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E783E18285D4D00B4398F /* NSRunLoop+SDExtensions.m */; };
+		CA0E78BB18285D4D00B4398F /* NSString+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E784018285D4D00B4398F /* NSString+SDExtensions.m */; };
+		CA0E78BC18285D4D00B4398F /* NSUserDefaults+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E784218285D4D00B4398F /* NSUserDefaults+SDExtensions.m */; };
+		CA0E78BD18285D4D00B4398F /* SDBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E784418285D4D00B4398F /* SDBase64.m */; };
+		CA0E78BE18285D4D00B4398F /* SDDataMap.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E784618285D4D00B4398F /* SDDataMap.m */; };
+		CA0E78BF18285D4D00B4398F /* SDModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E784818285D4D00B4398F /* SDModelObject.m */; };
+		CA0E78C018285D4D00B4398F /* SDPoser.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E784A18285D4D00B4398F /* SDPoser.m */; };
+		CA0E78C118285D4D00B4398F /* SDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E784C18285D4D00B4398F /* SDTimer.m */; };
+		CA0E78C218285D4D00B4398F /* UIDevice+machine.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E784E18285D4D00B4398F /* UIDevice+machine.m */; };
+		CA0E78C818285D4D00B4398F /* NSObject+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E786418285D4D00B4398F /* NSObject+SDExtensions.m */; };
+		CA0E78C918285D4D00B4398F /* SDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E786618285D4D00B4398F /* SDAlertView.m */; };
+		CA0E78CA18285D4D00B4398F /* SDContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E786818285D4D00B4398F /* SDContainerViewController.m */; };
+		CA0E78CB18285D4D00B4398F /* SDDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E786A18285D4D00B4398F /* SDDeckController.m */; };
+		CA0E78CC18285D4D00B4398F /* SDDragDropGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E786C18285D4D00B4398F /* SDDragDropGestureRecognizer.m */; };
+		CA0E78CD18285D4D00B4398F /* SDDragDropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E786E18285D4D00B4398F /* SDDragDropManager.m */; };
+		CA0E78CE18285D4D00B4398F /* SDImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E787018285D4D00B4398F /* SDImageButton.m */; };
+		CA0E78D018285D4D00B4398F /* SDNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E787418285D4D00B4398F /* SDNumberTextField.m */; };
+		CA0E78D118285D4D00B4398F /* SDPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E787618285D4D00B4398F /* SDPagingView.m */; };
+		CA0E78D218285D4D00B4398F /* SDPhotoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E787818285D4D00B4398F /* SDPhotoImageView.m */; };
+		CA0E78D318285D4D00B4398F /* SDPickerModalViewController-iOS7.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA0E787918285D4D00B4398F /* SDPickerModalViewController-iOS7.xib */; };
+		CA0E78D418285D4D00B4398F /* SDPickerModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E787B18285D4D00B4398F /* SDPickerModalViewController.m */; };
+		CA0E78D518285D4D00B4398F /* SDPickerModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA0E787C18285D4D00B4398F /* SDPickerModalViewController.xib */; };
+		CA0E78D618285D4D00B4398F /* SDSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E787E18285D4D00B4398F /* SDSearchBar.m */; };
+		CA0E78D718285D4D00B4398F /* SDSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E788018285D4D00B4398F /* SDSearchDisplayController.m */; };
+		CA0E78D818285D4D00B4398F /* SDStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E788218285D4D00B4398F /* SDStackView.m */; };
+		CA0E78D918285D4D00B4398F /* SDWebViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E788418285D4D00B4398F /* SDWebViewCell.m */; };
+		CA0E78DA18285D4D00B4398F /* SDWebViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA0E788518285D4D00B4398F /* SDWebViewCell.xib */; };
+		CA0E78DB18285D4D00B4398F /* UIActivityIndicatorView+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E788718285D4D00B4398F /* UIActivityIndicatorView+SDExtensions.m */; };
+		CA0E78DC18285D4D00B4398F /* UIAlertView+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E788918285D4D00B4398F /* UIAlertView+SDExtensions.m */; };
+		CA0E78DD18285D4D00B4398F /* UIApplication+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E788B18285D4D00B4398F /* UIApplication+SDExtensions.m */; };
+		CA0E78DE18285D4D00B4398F /* UIColor+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E788D18285D4D00B4398F /* UIColor+SDExtensions.m */; };
+		CA0E78DF18285D4D00B4398F /* UIImage+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E788F18285D4D00B4398F /* UIImage+SDExtensions.m */; };
+		CA0E78E018285D4D00B4398F /* UINavigationController+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E789118285D4D00B4398F /* UINavigationController+SDExtensions.m */; };
+		CA0E78E118285D4D00B4398F /* UIScreen+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E789318285D4D00B4398F /* UIScreen+SDExtensions.m */; };
+		CA0E78E218285D4D00B4398F /* UIView+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E789518285D4D00B4398F /* UIView+SDExtensions.m */; };
+		CA0E78E318285D4D00B4398F /* UIViewController+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E789718285D4D00B4398F /* UIViewController+SDExtensions.m */; };
+		CA0E78F118285E5400B4398F /* SDContentAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E78F018285E5400B4398F /* SDContentAlertView.m */; };
+		CA0E78F318285F6200B4398F /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0E78F218285F6200B4398F /* libresolv.dylib */; };
+		CA0E790B18285FBA00B4398F /* NSCachedURLResponse+LeakFix.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E78F618285FBA00B4398F /* NSCachedURLResponse+LeakFix.m */; };
+		CA0E790C18285FBA00B4398F /* NSURL+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E78F818285FBA00B4398F /* NSURL+SDExtensions.m */; };
+		CA0E790D18285FBA00B4398F /* NSURLCache+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E78FA18285FBA00B4398F /* NSURLCache+SDExtensions.m */; };
+		CA0E790E18285FBA00B4398F /* NSURLRequest+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E78FC18285FBA00B4398F /* NSURLRequest+SDExtensions.m */; };
+		CA0E790F18285FBA00B4398F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E78FE18285FBA00B4398F /* Reachability.m */; };
+		CA0E791018285FBA00B4398F /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E790018285FBA00B4398F /* SDImageCache.m */; };
+		CA0E791118285FBA00B4398F /* SDMockService.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E790218285FBA00B4398F /* SDMockService.m */; };
+		CA0E791218285FBA00B4398F /* SDURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E790418285FBA00B4398F /* SDURLConnection.m */; };
+		CA0E791318285FBA00B4398F /* SDWebService+SDProcessingBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E790618285FBA00B4398F /* SDWebService+SDProcessingBlocks.m */; };
+		CA0E791418285FBA00B4398F /* SDWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E790818285FBA00B4398F /* SDWebService.m */; };
+		CA0E791518285FBA00B4398F /* UIImageView+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E790A18285FBA00B4398F /* UIImageView+SDExtensions.m */; };
+		CA0E791718285FFE00B4398F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0E791618285FFE00B4398F /* SystemConfiguration.framework */; };
+		CA708AE81831A0EA0067C575 /* SDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CA708AE71831A0EA0067C575 /* SDTextField.m */; };
+		CA708AE91831A0EA0067C575 /* SDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CA708AE71831A0EA0067C575 /* SDTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA0E781618285A1D00B4398F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA0E77E818285A1D00B4398F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA0E77EF18285A1D00B4398F;
+			remoteInfo = SDContentAlertViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA0E77F018285A1D00B4398F /* SDContentAlertViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDContentAlertViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0E77F318285A1D00B4398F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA0E77F518285A1D00B4398F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA0E77F718285A1D00B4398F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CA0E77FB18285A1D00B4398F /* SDContentAlertViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDContentAlertViewDemo-Info.plist"; sourceTree = "<group>"; };
+		CA0E77FD18285A1D00B4398F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA0E77FF18285A1D00B4398F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA0E780118285A1D00B4398F /* SDContentAlertViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDContentAlertViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		CA0E780218285A1D00B4398F /* MyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppDelegate.h; sourceTree = "<group>"; };
+		CA0E780318285A1D00B4398F /* MyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppDelegate.m; sourceTree = "<group>"; };
+		CA0E780618285A1D00B4398F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA0E780818285A1D00B4398F /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		CA0E780918285A1D00B4398F /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		CA0E780B18285A1D00B4398F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CA0E781118285A1D00B4398F /* SDContentAlertViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDContentAlertViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0E781218285A1D00B4398F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CA0E781A18285A1D00B4398F /* SDContentAlertViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDContentAlertViewDemoTests-Info.plist"; sourceTree = "<group>"; };
+		CA0E781C18285A1D00B4398F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA0E781E18285A1D00B4398F /* SDContentAlertViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDContentAlertViewDemoTests.m; sourceTree = "<group>"; };
+		CA0E782A18285D4D00B4398F /* Global-iOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Global-iOS.xcconfig"; sourceTree = "<group>"; };
+		CA0E782B18285D4D00B4398F /* Project-iOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-iOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		CA0E782C18285D4D00B4398F /* Project-iOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-iOS-Release.xcconfig"; sourceTree = "<group>"; };
+		CA0E782D18285D4D00B4398F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		CA0E782F18285D4D00B4398F /* NSArray+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E783018285D4D00B4398F /* NSArray+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E783118285D4D00B4398F /* NSData+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E783218285D4D00B4398F /* NSData+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E783318285D4D00B4398F /* NSDate+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E783418285D4D00B4398F /* NSDate+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E783518285D4D00B4398F /* NSDictionary+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E783618285D4D00B4398F /* NSDictionary+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E783718285D4D00B4398F /* NSError+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E783818285D4D00B4398F /* NSError+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E783918285D4D00B4398F /* NSMutableAttributedString+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E783A18285D4D00B4398F /* NSMutableAttributedString+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E783B18285D4D00B4398F /* NSNumber+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E783C18285D4D00B4398F /* NSNumber+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E783D18285D4D00B4398F /* NSRunLoop+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRunLoop+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E783E18285D4D00B4398F /* NSRunLoop+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRunLoop+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E783F18285D4D00B4398F /* NSString+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E784018285D4D00B4398F /* NSString+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E784118285D4D00B4398F /* NSUserDefaults+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E784218285D4D00B4398F /* NSUserDefaults+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E784318285D4D00B4398F /* SDBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBase64.h; sourceTree = "<group>"; };
+		CA0E784418285D4D00B4398F /* SDBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBase64.m; sourceTree = "<group>"; };
+		CA0E784518285D4D00B4398F /* SDDataMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDataMap.h; sourceTree = "<group>"; };
+		CA0E784618285D4D00B4398F /* SDDataMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDataMap.m; sourceTree = "<group>"; };
+		CA0E784718285D4D00B4398F /* SDModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDModelObject.h; sourceTree = "<group>"; };
+		CA0E784818285D4D00B4398F /* SDModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDModelObject.m; sourceTree = "<group>"; };
+		CA0E784918285D4D00B4398F /* SDPoser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPoser.h; sourceTree = "<group>"; };
+		CA0E784A18285D4D00B4398F /* SDPoser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPoser.m; sourceTree = "<group>"; };
+		CA0E784B18285D4D00B4398F /* SDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTimer.h; sourceTree = "<group>"; };
+		CA0E784C18285D4D00B4398F /* SDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTimer.m; sourceTree = "<group>"; };
+		CA0E784D18285D4D00B4398F /* UIDevice+machine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+machine.h"; sourceTree = "<group>"; };
+		CA0E784E18285D4D00B4398F /* UIDevice+machine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+machine.m"; sourceTree = "<group>"; };
+		CA0E784F18285D4D00B4398F /* ios-shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-shared.h"; sourceTree = "<group>"; };
+		CA0E785118285D4D00B4398F /* SDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLog.h; sourceTree = "<group>"; };
+		CA0E785318285D4D00B4398F /* ObjectiveCGenerics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveCGenerics.h; sourceTree = "<group>"; };
+		CA0E785418285D4D00B4398F /* SDMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMacros.h; sourceTree = "<group>"; };
+		CA0E786318285D4D00B4398F /* NSObject+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E786418285D4D00B4398F /* NSObject+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E786518285D4D00B4398F /* SDAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAlertView.h; sourceTree = "<group>"; };
+		CA0E786618285D4D00B4398F /* SDAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAlertView.m; sourceTree = "<group>"; };
+		CA0E786718285D4D00B4398F /* SDContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDContainerViewController.h; sourceTree = "<group>"; };
+		CA0E786818285D4D00B4398F /* SDContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDContainerViewController.m; sourceTree = "<group>"; };
+		CA0E786918285D4D00B4398F /* SDDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDeckController.h; sourceTree = "<group>"; };
+		CA0E786A18285D4D00B4398F /* SDDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDeckController.m; sourceTree = "<group>"; };
+		CA0E786B18285D4D00B4398F /* SDDragDropGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDragDropGestureRecognizer.h; sourceTree = "<group>"; };
+		CA0E786C18285D4D00B4398F /* SDDragDropGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDragDropGestureRecognizer.m; sourceTree = "<group>"; };
+		CA0E786D18285D4D00B4398F /* SDDragDropManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDragDropManager.h; sourceTree = "<group>"; };
+		CA0E786E18285D4D00B4398F /* SDDragDropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDragDropManager.m; sourceTree = "<group>"; };
+		CA0E786F18285D4D00B4398F /* SDImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageButton.h; sourceTree = "<group>"; };
+		CA0E787018285D4D00B4398F /* SDImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageButton.m; sourceTree = "<group>"; };
+		CA0E787318285D4D00B4398F /* SDNumberTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDNumberTextField.h; sourceTree = "<group>"; };
+		CA0E787418285D4D00B4398F /* SDNumberTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDNumberTextField.m; sourceTree = "<group>"; };
+		CA0E787518285D4D00B4398F /* SDPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPagingView.h; sourceTree = "<group>"; };
+		CA0E787618285D4D00B4398F /* SDPagingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPagingView.m; sourceTree = "<group>"; };
+		CA0E787718285D4D00B4398F /* SDPhotoImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoImageView.h; sourceTree = "<group>"; };
+		CA0E787818285D4D00B4398F /* SDPhotoImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoImageView.m; sourceTree = "<group>"; };
+		CA0E787918285D4D00B4398F /* SDPickerModalViewController-iOS7.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SDPickerModalViewController-iOS7.xib"; sourceTree = "<group>"; };
+		CA0E787A18285D4D00B4398F /* SDPickerModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPickerModalViewController.h; sourceTree = "<group>"; };
+		CA0E787B18285D4D00B4398F /* SDPickerModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPickerModalViewController.m; sourceTree = "<group>"; };
+		CA0E787C18285D4D00B4398F /* SDPickerModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDPickerModalViewController.xib; sourceTree = "<group>"; };
+		CA0E787D18285D4D00B4398F /* SDSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSearchBar.h; sourceTree = "<group>"; };
+		CA0E787E18285D4D00B4398F /* SDSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSearchBar.m; sourceTree = "<group>"; };
+		CA0E787F18285D4D00B4398F /* SDSearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSearchDisplayController.h; sourceTree = "<group>"; };
+		CA0E788018285D4D00B4398F /* SDSearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSearchDisplayController.m; sourceTree = "<group>"; };
+		CA0E788118285D4D00B4398F /* SDStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStackView.h; sourceTree = "<group>"; };
+		CA0E788218285D4D00B4398F /* SDStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDStackView.m; sourceTree = "<group>"; };
+		CA0E788318285D4D00B4398F /* SDWebViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebViewCell.h; sourceTree = "<group>"; };
+		CA0E788418285D4D00B4398F /* SDWebViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebViewCell.m; sourceTree = "<group>"; };
+		CA0E788518285D4D00B4398F /* SDWebViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDWebViewCell.xib; sourceTree = "<group>"; };
+		CA0E788618285D4D00B4398F /* UIActivityIndicatorView+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E788718285D4D00B4398F /* UIActivityIndicatorView+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E788818285D4D00B4398F /* UIAlertView+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E788918285D4D00B4398F /* UIAlertView+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E788A18285D4D00B4398F /* UIApplication+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E788B18285D4D00B4398F /* UIApplication+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E788C18285D4D00B4398F /* UIColor+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E788D18285D4D00B4398F /* UIColor+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E788E18285D4D00B4398F /* UIImage+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E788F18285D4D00B4398F /* UIImage+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E789018285D4D00B4398F /* UINavigationController+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E789118285D4D00B4398F /* UINavigationController+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E789218285D4D00B4398F /* UIScreen+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E789318285D4D00B4398F /* UIScreen+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E789418285D4D00B4398F /* UIView+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E789518285D4D00B4398F /* UIView+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E789618285D4D00B4398F /* UIViewController+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E789718285D4D00B4398F /* UIViewController+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E78EF18285E5400B4398F /* SDContentAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDContentAlertView.h; sourceTree = "<group>"; };
+		CA0E78F018285E5400B4398F /* SDContentAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDContentAlertView.m; sourceTree = "<group>"; };
+		CA0E78F218285F6200B4398F /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		CA0E78F518285FBA00B4398F /* NSCachedURLResponse+LeakFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCachedURLResponse+LeakFix.h"; sourceTree = "<group>"; };
+		CA0E78F618285FBA00B4398F /* NSCachedURLResponse+LeakFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCachedURLResponse+LeakFix.m"; sourceTree = "<group>"; };
+		CA0E78F718285FBA00B4398F /* NSURL+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E78F818285FBA00B4398F /* NSURL+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E78F918285FBA00B4398F /* NSURLCache+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLCache+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E78FA18285FBA00B4398F /* NSURLCache+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLCache+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E78FB18285FBA00B4398F /* NSURLRequest+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E78FC18285FBA00B4398F /* NSURLRequest+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E78FD18285FBA00B4398F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CA0E78FE18285FBA00B4398F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CA0E78FF18285FBA00B4398F /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		CA0E790018285FBA00B4398F /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		CA0E790118285FBA00B4398F /* SDMockService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMockService.h; sourceTree = "<group>"; };
+		CA0E790218285FBA00B4398F /* SDMockService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMockService.m; sourceTree = "<group>"; };
+		CA0E790318285FBA00B4398F /* SDURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDURLConnection.h; sourceTree = "<group>"; };
+		CA0E790418285FBA00B4398F /* SDURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDURLConnection.m; sourceTree = "<group>"; };
+		CA0E790518285FBA00B4398F /* SDWebService+SDProcessingBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebService+SDProcessingBlocks.h"; sourceTree = "<group>"; };
+		CA0E790618285FBA00B4398F /* SDWebService+SDProcessingBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebService+SDProcessingBlocks.m"; sourceTree = "<group>"; };
+		CA0E790718285FBA00B4398F /* SDWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebService.h; sourceTree = "<group>"; };
+		CA0E790818285FBA00B4398F /* SDWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebService.m; sourceTree = "<group>"; };
+		CA0E790918285FBA00B4398F /* UIImageView+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDExtensions.h"; sourceTree = "<group>"; };
+		CA0E790A18285FBA00B4398F /* UIImageView+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDExtensions.m"; sourceTree = "<group>"; };
+		CA0E791618285FFE00B4398F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CA708AE61831A0EA0067C575 /* SDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTextField.h; sourceTree = "<group>"; };
+		CA708AE71831A0EA0067C575 /* SDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA0E77ED18285A1D00B4398F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0E791718285FFE00B4398F /* SystemConfiguration.framework in Frameworks */,
+				CA0E78F318285F6200B4398F /* libresolv.dylib in Frameworks */,
+				CA0E77F618285A1D00B4398F /* CoreGraphics.framework in Frameworks */,
+				CA0E77F818285A1D00B4398F /* UIKit.framework in Frameworks */,
+				CA0E77F418285A1D00B4398F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0E780E18285A1D00B4398F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0E781318285A1D00B4398F /* XCTest.framework in Frameworks */,
+				CA0E781518285A1D00B4398F /* UIKit.framework in Frameworks */,
+				CA0E781418285A1D00B4398F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA0E77E718285A1D00B4398F = {
+			isa = PBXGroup;
+			children = (
+				CA0E782818285D4D00B4398F /* Source */,
+				CA0E77F918285A1D00B4398F /* SDContentAlertViewDemo */,
+				CA0E781818285A1D00B4398F /* SDContentAlertViewDemoTests */,
+				CA0E77F218285A1D00B4398F /* Frameworks */,
+				CA0E77F118285A1D00B4398F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA0E77F118285A1D00B4398F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E77F018285A1D00B4398F /* SDContentAlertViewDemo.app */,
+				CA0E781118285A1D00B4398F /* SDContentAlertViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA0E77F218285A1D00B4398F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E791618285FFE00B4398F /* SystemConfiguration.framework */,
+				CA0E78F218285F6200B4398F /* libresolv.dylib */,
+				CA0E77F318285A1D00B4398F /* Foundation.framework */,
+				CA0E77F518285A1D00B4398F /* CoreGraphics.framework */,
+				CA0E77F718285A1D00B4398F /* UIKit.framework */,
+				CA0E781218285A1D00B4398F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA0E77F918285A1D00B4398F /* SDContentAlertViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E780218285A1D00B4398F /* MyAppDelegate.h */,
+				CA0E780318285A1D00B4398F /* MyAppDelegate.m */,
+				CA0E780518285A1D00B4398F /* Main.storyboard */,
+				CA0E780818285A1D00B4398F /* MyViewController.h */,
+				CA0E780918285A1D00B4398F /* MyViewController.m */,
+				CA0E780B18285A1D00B4398F /* Images.xcassets */,
+				CA0E77FA18285A1D00B4398F /* Supporting Files */,
+			);
+			path = SDContentAlertViewDemo;
+			sourceTree = "<group>";
+		};
+		CA0E77FA18285A1D00B4398F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E77FB18285A1D00B4398F /* SDContentAlertViewDemo-Info.plist */,
+				CA0E77FC18285A1D00B4398F /* InfoPlist.strings */,
+				CA0E77FF18285A1D00B4398F /* main.m */,
+				CA0E780118285A1D00B4398F /* SDContentAlertViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA0E781818285A1D00B4398F /* SDContentAlertViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E781E18285A1D00B4398F /* SDContentAlertViewDemoTests.m */,
+				CA0E781918285A1D00B4398F /* Supporting Files */,
+			);
+			path = SDContentAlertViewDemoTests;
+			sourceTree = "<group>";
+		};
+		CA0E781918285A1D00B4398F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E781A18285A1D00B4398F /* SDContentAlertViewDemoTests-Info.plist */,
+				CA0E781B18285A1D00B4398F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA0E782818285D4D00B4398F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E78F418285FBA00B4398F /* WebServices */,
+				CA0E782918285D4D00B4398F /* Configurations */,
+				CA0E782E18285D4D00B4398F /* Foundation */,
+				CA0E784F18285D4D00B4398F /* ios-shared.h */,
+				CA0E785018285D4D00B4398F /* Logging */,
+				CA0E785218285D4D00B4398F /* Macros */,
+				CA0E786218285D4D00B4398F /* UI */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		CA0E782918285D4D00B4398F /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E782A18285D4D00B4398F /* Global-iOS.xcconfig */,
+				CA0E782B18285D4D00B4398F /* Project-iOS-Debug.xcconfig */,
+				CA0E782C18285D4D00B4398F /* Project-iOS-Release.xcconfig */,
+				CA0E782D18285D4D00B4398F /* README.md */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		CA0E782E18285D4D00B4398F /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E782F18285D4D00B4398F /* NSArray+SDExtensions.h */,
+				CA0E783018285D4D00B4398F /* NSArray+SDExtensions.m */,
+				CA0E783118285D4D00B4398F /* NSData+SDExtensions.h */,
+				CA0E783218285D4D00B4398F /* NSData+SDExtensions.m */,
+				CA0E783318285D4D00B4398F /* NSDate+SDExtensions.h */,
+				CA0E783418285D4D00B4398F /* NSDate+SDExtensions.m */,
+				CA0E783518285D4D00B4398F /* NSDictionary+SDExtensions.h */,
+				CA0E783618285D4D00B4398F /* NSDictionary+SDExtensions.m */,
+				CA0E783718285D4D00B4398F /* NSError+SDExtensions.h */,
+				CA0E783818285D4D00B4398F /* NSError+SDExtensions.m */,
+				CA0E783918285D4D00B4398F /* NSMutableAttributedString+SDExtensions.h */,
+				CA0E783A18285D4D00B4398F /* NSMutableAttributedString+SDExtensions.m */,
+				CA0E783B18285D4D00B4398F /* NSNumber+SDExtensions.h */,
+				CA0E783C18285D4D00B4398F /* NSNumber+SDExtensions.m */,
+				CA0E783D18285D4D00B4398F /* NSRunLoop+SDExtensions.h */,
+				CA0E783E18285D4D00B4398F /* NSRunLoop+SDExtensions.m */,
+				CA0E783F18285D4D00B4398F /* NSString+SDExtensions.h */,
+				CA0E784018285D4D00B4398F /* NSString+SDExtensions.m */,
+				CA0E784118285D4D00B4398F /* NSUserDefaults+SDExtensions.h */,
+				CA0E784218285D4D00B4398F /* NSUserDefaults+SDExtensions.m */,
+				CA0E784318285D4D00B4398F /* SDBase64.h */,
+				CA0E784418285D4D00B4398F /* SDBase64.m */,
+				CA0E784518285D4D00B4398F /* SDDataMap.h */,
+				CA0E784618285D4D00B4398F /* SDDataMap.m */,
+				CA0E784718285D4D00B4398F /* SDModelObject.h */,
+				CA0E784818285D4D00B4398F /* SDModelObject.m */,
+				CA0E784918285D4D00B4398F /* SDPoser.h */,
+				CA0E784A18285D4D00B4398F /* SDPoser.m */,
+				CA0E784B18285D4D00B4398F /* SDTimer.h */,
+				CA0E784C18285D4D00B4398F /* SDTimer.m */,
+				CA0E784D18285D4D00B4398F /* UIDevice+machine.h */,
+				CA0E784E18285D4D00B4398F /* UIDevice+machine.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		CA0E785018285D4D00B4398F /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E785118285D4D00B4398F /* SDLog.h */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		CA0E785218285D4D00B4398F /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E785318285D4D00B4398F /* ObjectiveCGenerics.h */,
+				CA0E785418285D4D00B4398F /* SDMacros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		CA0E786218285D4D00B4398F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E786318285D4D00B4398F /* NSObject+SDExtensions.h */,
+				CA0E786418285D4D00B4398F /* NSObject+SDExtensions.m */,
+				CA708AE61831A0EA0067C575 /* SDTextField.h */,
+				CA708AE71831A0EA0067C575 /* SDTextField.m */,
+				CA0E786518285D4D00B4398F /* SDAlertView.h */,
+				CA0E786618285D4D00B4398F /* SDAlertView.m */,
+				CA0E786718285D4D00B4398F /* SDContainerViewController.h */,
+				CA0E786818285D4D00B4398F /* SDContainerViewController.m */,
+				CA0E786918285D4D00B4398F /* SDDeckController.h */,
+				CA0E786A18285D4D00B4398F /* SDDeckController.m */,
+				CA0E786B18285D4D00B4398F /* SDDragDropGestureRecognizer.h */,
+				CA0E786C18285D4D00B4398F /* SDDragDropGestureRecognizer.m */,
+				CA0E786D18285D4D00B4398F /* SDDragDropManager.h */,
+				CA0E786E18285D4D00B4398F /* SDDragDropManager.m */,
+				CA0E786F18285D4D00B4398F /* SDImageButton.h */,
+				CA0E787018285D4D00B4398F /* SDImageButton.m */,
+				CA0E787318285D4D00B4398F /* SDNumberTextField.h */,
+				CA0E787418285D4D00B4398F /* SDNumberTextField.m */,
+				CA0E787518285D4D00B4398F /* SDPagingView.h */,
+				CA0E787618285D4D00B4398F /* SDPagingView.m */,
+				CA0E787718285D4D00B4398F /* SDPhotoImageView.h */,
+				CA0E787818285D4D00B4398F /* SDPhotoImageView.m */,
+				CA0E787918285D4D00B4398F /* SDPickerModalViewController-iOS7.xib */,
+				CA0E787A18285D4D00B4398F /* SDPickerModalViewController.h */,
+				CA0E787B18285D4D00B4398F /* SDPickerModalViewController.m */,
+				CA0E787C18285D4D00B4398F /* SDPickerModalViewController.xib */,
+				CA0E787D18285D4D00B4398F /* SDSearchBar.h */,
+				CA0E787E18285D4D00B4398F /* SDSearchBar.m */,
+				CA0E787F18285D4D00B4398F /* SDSearchDisplayController.h */,
+				CA0E788018285D4D00B4398F /* SDSearchDisplayController.m */,
+				CA0E788118285D4D00B4398F /* SDStackView.h */,
+				CA0E788218285D4D00B4398F /* SDStackView.m */,
+				CA0E788318285D4D00B4398F /* SDWebViewCell.h */,
+				CA0E788418285D4D00B4398F /* SDWebViewCell.m */,
+				CA0E788518285D4D00B4398F /* SDWebViewCell.xib */,
+				CA0E788618285D4D00B4398F /* UIActivityIndicatorView+SDExtensions.h */,
+				CA0E788718285D4D00B4398F /* UIActivityIndicatorView+SDExtensions.m */,
+				CA0E788818285D4D00B4398F /* UIAlertView+SDExtensions.h */,
+				CA0E788918285D4D00B4398F /* UIAlertView+SDExtensions.m */,
+				CA0E788A18285D4D00B4398F /* UIApplication+SDExtensions.h */,
+				CA0E788B18285D4D00B4398F /* UIApplication+SDExtensions.m */,
+				CA0E788C18285D4D00B4398F /* UIColor+SDExtensions.h */,
+				CA0E788D18285D4D00B4398F /* UIColor+SDExtensions.m */,
+				CA0E788E18285D4D00B4398F /* UIImage+SDExtensions.h */,
+				CA0E788F18285D4D00B4398F /* UIImage+SDExtensions.m */,
+				CA0E789018285D4D00B4398F /* UINavigationController+SDExtensions.h */,
+				CA0E789118285D4D00B4398F /* UINavigationController+SDExtensions.m */,
+				CA0E789218285D4D00B4398F /* UIScreen+SDExtensions.h */,
+				CA0E789318285D4D00B4398F /* UIScreen+SDExtensions.m */,
+				CA0E789418285D4D00B4398F /* UIView+SDExtensions.h */,
+				CA0E789518285D4D00B4398F /* UIView+SDExtensions.m */,
+				CA0E789618285D4D00B4398F /* UIViewController+SDExtensions.h */,
+				CA0E789718285D4D00B4398F /* UIViewController+SDExtensions.m */,
+				CA0E78EF18285E5400B4398F /* SDContentAlertView.h */,
+				CA0E78F018285E5400B4398F /* SDContentAlertView.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CA0E78F418285FBA00B4398F /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E78F518285FBA00B4398F /* NSCachedURLResponse+LeakFix.h */,
+				CA0E78F618285FBA00B4398F /* NSCachedURLResponse+LeakFix.m */,
+				CA0E78F718285FBA00B4398F /* NSURL+SDExtensions.h */,
+				CA0E78F818285FBA00B4398F /* NSURL+SDExtensions.m */,
+				CA0E78F918285FBA00B4398F /* NSURLCache+SDExtensions.h */,
+				CA0E78FA18285FBA00B4398F /* NSURLCache+SDExtensions.m */,
+				CA0E78FB18285FBA00B4398F /* NSURLRequest+SDExtensions.h */,
+				CA0E78FC18285FBA00B4398F /* NSURLRequest+SDExtensions.m */,
+				CA0E78FD18285FBA00B4398F /* Reachability.h */,
+				CA0E78FE18285FBA00B4398F /* Reachability.m */,
+				CA0E78FF18285FBA00B4398F /* SDImageCache.h */,
+				CA0E790018285FBA00B4398F /* SDImageCache.m */,
+				CA0E790118285FBA00B4398F /* SDMockService.h */,
+				CA0E790218285FBA00B4398F /* SDMockService.m */,
+				CA0E790318285FBA00B4398F /* SDURLConnection.h */,
+				CA0E790418285FBA00B4398F /* SDURLConnection.m */,
+				CA0E790518285FBA00B4398F /* SDWebService+SDProcessingBlocks.h */,
+				CA0E790618285FBA00B4398F /* SDWebService+SDProcessingBlocks.m */,
+				CA0E790718285FBA00B4398F /* SDWebService.h */,
+				CA0E790818285FBA00B4398F /* SDWebService.m */,
+				CA0E790918285FBA00B4398F /* UIImageView+SDExtensions.h */,
+				CA0E790A18285FBA00B4398F /* UIImageView+SDExtensions.m */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA0E77EF18285A1D00B4398F /* SDContentAlertViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA0E782218285A1D00B4398F /* Build configuration list for PBXNativeTarget "SDContentAlertViewDemo" */;
+			buildPhases = (
+				CA0E77EC18285A1D00B4398F /* Sources */,
+				CA0E77ED18285A1D00B4398F /* Frameworks */,
+				CA0E77EE18285A1D00B4398F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDContentAlertViewDemo;
+			productName = SDContentAlertViewDemo;
+			productReference = CA0E77F018285A1D00B4398F /* SDContentAlertViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA0E781018285A1D00B4398F /* SDContentAlertViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA0E782518285A1D00B4398F /* Build configuration list for PBXNativeTarget "SDContentAlertViewDemoTests" */;
+			buildPhases = (
+				CA0E780D18285A1D00B4398F /* Sources */,
+				CA0E780E18285A1D00B4398F /* Frameworks */,
+				CA0E780F18285A1D00B4398F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA0E781718285A1D00B4398F /* PBXTargetDependency */,
+			);
+			name = SDContentAlertViewDemoTests;
+			productName = SDContentAlertViewDemoTests;
+			productReference = CA0E781118285A1D00B4398F /* SDContentAlertViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA0E77E818285A1D00B4398F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = My;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = redf.net;
+				TargetAttributes = {
+					CA0E781018285A1D00B4398F = {
+						TestTargetID = CA0E77EF18285A1D00B4398F;
+					};
+				};
+			};
+			buildConfigurationList = CA0E77EB18285A1D00B4398F /* Build configuration list for PBXProject "SDContentAlertViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA0E77E718285A1D00B4398F;
+			productRefGroup = CA0E77F118285A1D00B4398F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA0E77EF18285A1D00B4398F /* SDContentAlertViewDemo */,
+				CA0E781018285A1D00B4398F /* SDContentAlertViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA0E77EE18285A1D00B4398F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0E78DA18285D4D00B4398F /* SDWebViewCell.xib in Resources */,
+				CA0E78B118285D4D00B4398F /* Project-iOS-Release.xcconfig in Resources */,
+				CA0E780C18285A1D00B4398F /* Images.xcassets in Resources */,
+				CA0E77FE18285A1D00B4398F /* InfoPlist.strings in Resources */,
+				CA0E78B218285D4D00B4398F /* README.md in Resources */,
+				CA0E780718285A1D00B4398F /* Main.storyboard in Resources */,
+				CA0E78D518285D4D00B4398F /* SDPickerModalViewController.xib in Resources */,
+				CA0E78D318285D4D00B4398F /* SDPickerModalViewController-iOS7.xib in Resources */,
+				CA0E78AF18285D4D00B4398F /* Global-iOS.xcconfig in Resources */,
+				CA0E78B018285D4D00B4398F /* Project-iOS-Debug.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0E780F18285A1D00B4398F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0E781D18285A1D00B4398F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA0E77EC18285A1D00B4398F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA708AE81831A0EA0067C575 /* SDTextField.m in Sources */,
+				CA0E780A18285A1D00B4398F /* MyViewController.m in Sources */,
+				CA0E791318285FBA00B4398F /* SDWebService+SDProcessingBlocks.m in Sources */,
+				CA0E78DB18285D4D00B4398F /* UIActivityIndicatorView+SDExtensions.m in Sources */,
+				CA0E780418285A1D00B4398F /* MyAppDelegate.m in Sources */,
+				CA0E78D918285D4D00B4398F /* SDWebViewCell.m in Sources */,
+				CA0E791118285FBA00B4398F /* SDMockService.m in Sources */,
+				CA0E790F18285FBA00B4398F /* Reachability.m in Sources */,
+				CA0E78E018285D4D00B4398F /* UINavigationController+SDExtensions.m in Sources */,
+				CA0E78DD18285D4D00B4398F /* UIApplication+SDExtensions.m in Sources */,
+				CA0E78C218285D4D00B4398F /* UIDevice+machine.m in Sources */,
+				CA0E790C18285FBA00B4398F /* NSURL+SDExtensions.m in Sources */,
+				CA0E78CD18285D4D00B4398F /* SDDragDropManager.m in Sources */,
+				CA0E78B918285D4D00B4398F /* NSNumber+SDExtensions.m in Sources */,
+				CA0E780018285A1D00B4398F /* main.m in Sources */,
+				CA0E78E318285D4D00B4398F /* UIViewController+SDExtensions.m in Sources */,
+				CA0E78DF18285D4D00B4398F /* UIImage+SDExtensions.m in Sources */,
+				CA0E78E218285D4D00B4398F /* UIView+SDExtensions.m in Sources */,
+				CA0E78F118285E5400B4398F /* SDContentAlertView.m in Sources */,
+				CA0E78B818285D4D00B4398F /* NSMutableAttributedString+SDExtensions.m in Sources */,
+				CA0E791518285FBA00B4398F /* UIImageView+SDExtensions.m in Sources */,
+				CA0E78E118285D4D00B4398F /* UIScreen+SDExtensions.m in Sources */,
+				CA0E78B318285D4D00B4398F /* NSArray+SDExtensions.m in Sources */,
+				CA0E78C118285D4D00B4398F /* SDTimer.m in Sources */,
+				CA0E790B18285FBA00B4398F /* NSCachedURLResponse+LeakFix.m in Sources */,
+				CA0E78C818285D4D00B4398F /* NSObject+SDExtensions.m in Sources */,
+				CA0E78B418285D4D00B4398F /* NSData+SDExtensions.m in Sources */,
+				CA0E78D718285D4D00B4398F /* SDSearchDisplayController.m in Sources */,
+				CA0E78BD18285D4D00B4398F /* SDBase64.m in Sources */,
+				CA0E78CC18285D4D00B4398F /* SDDragDropGestureRecognizer.m in Sources */,
+				CA0E78DC18285D4D00B4398F /* UIAlertView+SDExtensions.m in Sources */,
+				CA0E790E18285FBA00B4398F /* NSURLRequest+SDExtensions.m in Sources */,
+				CA0E78D618285D4D00B4398F /* SDSearchBar.m in Sources */,
+				CA0E78B518285D4D00B4398F /* NSDate+SDExtensions.m in Sources */,
+				CA0E791418285FBA00B4398F /* SDWebService.m in Sources */,
+				CA0E78BF18285D4D00B4398F /* SDModelObject.m in Sources */,
+				CA0E78D018285D4D00B4398F /* SDNumberTextField.m in Sources */,
+				CA0E790D18285FBA00B4398F /* NSURLCache+SDExtensions.m in Sources */,
+				CA0E78C018285D4D00B4398F /* SDPoser.m in Sources */,
+				CA0E791218285FBA00B4398F /* SDURLConnection.m in Sources */,
+				CA0E78CB18285D4D00B4398F /* SDDeckController.m in Sources */,
+				CA0E78BB18285D4D00B4398F /* NSString+SDExtensions.m in Sources */,
+				CA0E78C918285D4D00B4398F /* SDAlertView.m in Sources */,
+				CA0E78D418285D4D00B4398F /* SDPickerModalViewController.m in Sources */,
+				CA0E78D118285D4D00B4398F /* SDPagingView.m in Sources */,
+				CA0E78BE18285D4D00B4398F /* SDDataMap.m in Sources */,
+				CA0E78D218285D4D00B4398F /* SDPhotoImageView.m in Sources */,
+				CA0E78B718285D4D00B4398F /* NSError+SDExtensions.m in Sources */,
+				CA0E78B618285D4D00B4398F /* NSDictionary+SDExtensions.m in Sources */,
+				CA0E78BC18285D4D00B4398F /* NSUserDefaults+SDExtensions.m in Sources */,
+				CA0E78DE18285D4D00B4398F /* UIColor+SDExtensions.m in Sources */,
+				CA0E78D818285D4D00B4398F /* SDStackView.m in Sources */,
+				CA0E791018285FBA00B4398F /* SDImageCache.m in Sources */,
+				CA0E78CE18285D4D00B4398F /* SDImageButton.m in Sources */,
+				CA0E78CA18285D4D00B4398F /* SDContainerViewController.m in Sources */,
+				CA0E78BA18285D4D00B4398F /* NSRunLoop+SDExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0E780D18285A1D00B4398F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA708AE91831A0EA0067C575 /* SDTextField.m in Sources */,
+				CA0E781F18285A1D00B4398F /* SDContentAlertViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA0E781718285A1D00B4398F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA0E77EF18285A1D00B4398F /* SDContentAlertViewDemo */;
+			targetProxy = CA0E781618285A1D00B4398F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA0E77FC18285A1D00B4398F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA0E77FD18285A1D00B4398F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA0E780518285A1D00B4398F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA0E780618285A1D00B4398F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA0E781B18285A1D00B4398F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA0E781C18285A1D00B4398F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA0E782018285A1D00B4398F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA0E782B18285D4D00B4398F /* Project-iOS-Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA0E782118285A1D00B4398F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA0E782C18285D4D00B4398F /* Project-iOS-Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA0E782318285A1D00B4398F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDContentAlertViewDemo/SDContentAlertViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "SDContentAlertViewDemo/SDContentAlertViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA0E782418285A1D00B4398F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDContentAlertViewDemo/SDContentAlertViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "SDContentAlertViewDemo/SDContentAlertViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CA0E782618285A1D00B4398F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SDContentAlertViewDemo.app/SDContentAlertViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDContentAlertViewDemo/SDContentAlertViewDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SDContentAlertViewDemoTests/SDContentAlertViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CA0E782718285A1D00B4398F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SDContentAlertViewDemo.app/SDContentAlertViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDContentAlertViewDemo/SDContentAlertViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "SDContentAlertViewDemoTests/SDContentAlertViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA0E77EB18285A1D00B4398F /* Build configuration list for PBXProject "SDContentAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA0E782018285A1D00B4398F /* Debug */,
+				CA0E782118285A1D00B4398F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA0E782218285A1D00B4398F /* Build configuration list for PBXNativeTarget "SDContentAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA0E782318285A1D00B4398F /* Debug */,
+				CA0E782418285A1D00B4398F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA0E782518285A1D00B4398F /* Build configuration list for PBXNativeTarget "SDContentAlertViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA0E782618285A1D00B4398F /* Debug */,
+				CA0E782718285A1D00B4398F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA0E77E818285A1D00B4398F /* Project object */;
+}

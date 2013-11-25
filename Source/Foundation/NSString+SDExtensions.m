@@ -99,15 +99,7 @@ static NSString *kFirstPriceRegEx =  @"([^$]*?)\\$?(\\d{1,3}(?:,?\\d{3})*(\\.\\d
                                        withTemplate:@" "];
 
     // replace two or more spaces with one
-    error = NULL;
-    regex = [NSRegularExpression regularExpressionWithPattern:@"\\s{2,}"
-                                                      options:NSRegularExpressionCaseInsensitive
-                                                        error:&error];
-    fixed = [regex stringByReplacingMatchesInString:fixed 
-                                            options:0 
-                                              range:NSMakeRange(0, [fixed length]) 
-                                       withTemplate:@" "];
-
+    fixed = [self removeExcessWhitespace];
     return fixed;
 }
 
@@ -120,14 +112,11 @@ static NSString *kFirstPriceRegEx =  @"([^$]*?)\\$?(\\d{1,3}(?:,?\\d{3})*(\\.\\d
 
 - (NSString *)removeExcessWhitespace 
 {
+    // The NSRegularExpression class is currently only available in the Foundation framework of iOS 4
     NSError *error = NULL;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\s{2,}"
-                                                                           options:0
-                                                                             error:&error];
-    return [regex stringByReplacingMatchesInString:self 
-                                            options:0 
-                                              range:NSMakeRange(0, [self length]) 
-                                       withTemplate:@" "];
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\s+" options:0 error:&error];
+    NSString *result = [regex stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, [self length]) withTemplate:@" "];
+    return result;
 }
 
 - (NSString *)removeLeadingWhitespace 
@@ -290,26 +279,60 @@ static NSString *kFirstPriceRegEx =  @"([^$]*?)\\$?(\\d{1,3}(?:,?\\d{3})*(\\.\\d
     return [result substringWithRange:NSMakeRange(0, result.length - 1)];
 }
 
-- (NSString *)extractFirstPrice
+/**
+ *
+ * Returns a UIColor objects for the string's hex representation:
+ *
+ * For example: [@"#fff" uicolor] returns a UIColor of white.
+ *              [@"#118653" uicolor] returns something green.
+ *              [@"#1186537F" uicolor] returns something green with a 50% alpha value
+ *
+ */
+- (UIColor *)uicolor
 {
-    NSError *error;
-    NSRegularExpression *firstPriceExpression = [NSRegularExpression regularExpressionWithPattern:kFirstPriceRegEx options:0 error:&error];
+    UIColor *color = [UIColor whiteColor];
+    NSString *hexString = [self copy];
     
-    NSString *extractedPriceString;
+    /* strip out undesired pound character */
+    hexString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
     
-    NSRange range = NSMakeRange(0, [self length]);
-    if ([firstPriceExpression numberOfMatchesInString:self options:0 range:range])
+    /* pad the string to 6 characters when coder was lazy and specified something like: #fff */
+    if (hexString.length == 3)
     {
-        NSArray *matches = [firstPriceExpression matchesInString:self options:0 range:range];
-        
-        NSRange r = [[matches objectAtIndex:0] rangeAtIndex:2];
-        extractedPriceString = [self substringWithRange:r];
-        
-        // My RegexFu is weak; Eliminate any commas here
-        extractedPriceString = [extractedPriceString stringByReplacingOccurrencesOfString:@"," withString:@""];
+        NSString __block *paddedHexString = @"";
+        [hexString enumerateSubstringsInRange:NSMakeRange(0, hexString.length)
+                                      options:NSStringEnumerationByComposedCharacterSequences
+                                   usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
+                                       paddedHexString = [paddedHexString stringByAppendingString:substring];
+                                       paddedHexString = [paddedHexString stringByAppendingString:substring];
+                                   }];
+        hexString = paddedHexString;
     }
-    return extractedPriceString;
- }
+    
+    /* if we have a 6 character string, try and make a color out of it */
+    if (hexString.length == 6)
+    {
+        unsigned int hexValue;
+        [[NSScanner scannerWithString:hexString] scanHexInt:&hexValue];
+        color = [UIColor colorWithRed:((hexValue >> 16) & 0xFF) / 255.0f
+                                green:((hexValue >>  8) & 0xFF) / 255.0f
+                                 blue:((hexValue >>  0) & 0xFF) / 255.0f
+                                alpha:1.0f];
+    }
+    
+    /* if we have a 8 character string, try and make a color out of it with a suppplied alpha */
+    if (hexString.length == 8)
+    {
+        unsigned int hexValue;
+        [[NSScanner scannerWithString:hexString] scanHexInt:&hexValue];
+        color = [UIColor colorWithRed:((hexValue >> 24) & 0xFF) / 255.0f
+                                green:((hexValue >> 16) & 0xFF) / 255.0f
+                                 blue:((hexValue >>  8) & 0xFF) / 255.0f
+                                alpha:((hexValue >>  0) & 0xFF) / 255.0f];
+    }
+
+    return color;
+}
 
 @end
 

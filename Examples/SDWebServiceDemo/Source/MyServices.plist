@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baseScheme</key>
+	<string>https</string>
+	<key>baseHost</key>
+	<string>mobile.walmart.com</string>
+	<key>basePath</key>
+	<string>/m/j?</string>
+	<key>requests</key>
+	<dict>
+		<key>fourDollarPrescriptions</key>
+		<dict>
+			<key>cache</key>
+			<true/>
+			<key>method</key>
+			<string>GET</string>
+			<key>routeFormat</key>
+			<string>service={service}&amp;method={method}&amp;e={errorFormat}</string>
+			<key>routeReplacement</key>
+			<dict>
+				<key>errorFormat</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
