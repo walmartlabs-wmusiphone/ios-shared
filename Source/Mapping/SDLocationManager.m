@@ -81,7 +81,6 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
 @end
 
 
-
 @implementation SDLocationManager
 
 // ========================================================================== //
@@ -234,6 +233,17 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
     }
 #endif
 
+}
+
+- (BOOL)isPreviousLocationWithin:(NSInteger)seconds {
+    NSInteger diff = [self.previousLocationUpdatedAt timeIntervalSinceNow] * -1;
+    
+    //return ([self.previousLocationUpdatedAt timeIntervalSinceNow] < seconds);
+    return (diff < seconds);
+}
+
+- (CLLocation *)getPreviousLocation {
+    return self.previousLocation;
 }
 
 
