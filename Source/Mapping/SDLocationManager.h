@@ -42,8 +42,6 @@ extern NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey; /** All
 - (void)stopUpdatingLocationWithDelegate:(id<SDLocationManagerDelegate>)delegate;
 - (void)stopUpdatingLocationForAllDelegates;
 
-- (BOOL)isPreviousLocationWithin:(NSInteger)seconds;
-- (CLLocation *)getPreviousLocation;
 //- (BOOL) startMonitoringForSignificantLocationChangesWithDelegate:(id<SDLocationManagerDelegate>)delegate;
 //- (void) stopMonitoringSignificantLocationChangesWithDelegate:(id<SDLocationManagerDelegate>)delegate;
 //- (void) stopMonitoringSignificantLocationChangesForAllDelegates;
