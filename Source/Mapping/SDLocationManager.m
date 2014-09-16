@@ -80,7 +80,6 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
 @end
 
 
-
 @implementation SDLocationManager
 
 // ========================================================================== //
