@@ -74,11 +74,11 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
 @property (nonatomic) BOOL gotFirstLocationUpdate;
 
 @property (nonatomic, strong) CLLocation *previousLocation;
+@property (nonatomic, strong) NSDate *previousLocationUpdatedAt;
 
 @property (nonatomic, readonly) CLAuthorizationStatus authorizationStatus;
 
 @end
-
 
 
 @implementation SDLocationManager
@@ -233,6 +233,16 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
     }
 #endif
 
+}
+
+- (BOOL)isPreviousLocationWithin:(NSInteger)seconds {
+    NSInteger diff = [self.previousLocationUpdatedAt timeIntervalSinceNow] * -1;
+    
+    return (diff < seconds);
+}
+
+- (CLLocation *)getPreviousLocation {
+    return self.previousLocation;
 }
 
 
@@ -448,6 +458,7 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
             [self.delegates makeObjectsPerformSelector:@selector(locationManager:didUpdateToInaccurateLocation:fromLocation:) argumentAddresses:(void *)&self, &newLocation, &oldLocation];
         });
         _previousLocation = newLocation;
+        _previousLocationUpdatedAt = [NSDate date];
         return; // this one is cached, lets wait for a good one.
 	}
 	
