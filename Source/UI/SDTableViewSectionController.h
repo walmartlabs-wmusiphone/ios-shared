@@ -321,5 +321,12 @@
  *  @param animation  UITableViewRowAnimation for a section's row(s)
  */
 - (void)reloadSectionWithIdentifier:(NSString *)identifier withRowAnimation:(UITableViewRowAnimation)animation;
+
+/**
+ *
+ * Attemps to refresh the heights of the cells of the table view
+ *
+ */
+- (void)refreshCellHeights;
 @end
 

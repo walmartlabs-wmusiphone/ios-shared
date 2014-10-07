@@ -722,6 +722,14 @@
     }
 }
 
+// This current relies on a side effect of endUpdates refreshing the table view
+- (void)refreshCellHeights
+{
+    @strongify(self.tableView, tableView);
+    [tableView beginUpdates];
+    [tableView endUpdates];
+}
+
 - (void)p_sendSectionDidLoad:(NSArray *)sectionControllers
 {
     for (id sectionController in sectionControllers)

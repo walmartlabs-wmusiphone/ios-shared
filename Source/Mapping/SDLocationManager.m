@@ -520,8 +520,10 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
     LocLog(@"[ERROR] - %@%@",NSStringFromSelector(_cmd),error);
 	// we're masking out didFail unless they've said NO to the "allow" dialog.
 	if ([error.domain isEqualToString:kCLErrorDomain] && error.code == kCLErrorDenied) {
+        // Make a copy of the delegates just in case some other code deregisters them before this thread has a chance to execute
+        NSArray *blockDelegates = [self.delegates copy];
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.delegates makeObjectsPerformSelector:_cmd argumentAddresses:(void *)&self, &error];
+            [blockDelegates makeObjectsPerformSelector:_cmd argumentAddresses:(void *)&self, &error];
         });
     }
 }

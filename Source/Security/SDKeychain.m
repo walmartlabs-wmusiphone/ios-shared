@@ -298,28 +298,48 @@ static NSString *SDKeychainErrorDomain = @"SDKeychainErrorDomain";
 
 + (BOOL)deleteItemForUsername:(NSString *)username andServiceName:(NSString *)serviceName error:(NSError * *)error
 {
+    // Verify we have all of the required attributes to attempt a deletion
 	if (!username || !serviceName)
 	{
 		if (error != nil)
+        {
 			*error = [NSError errorWithDomain:SDKeychainErrorDomain code:-2000 userInfo:nil];
+        }
+        
 		return NO;
 	}
 
-	if (error != nil)
-		*error = nil;
+    // Attempt a regular username association deletion. This covers the deletion
+    // of old passwords being stored in the keychain as well.
+    NSArray *keys = [[NSArray alloc] initWithObjects:
+                     (__bridge NSString *)kSecClass,
+                     kSecAttrService,
+                     kSecAttrLabel,
+                     kSecAttrAccount,
+                     kSecReturnAttributes,
+                     nil];
 
-	NSArray *keys = [[NSArray alloc] initWithObjects:(__bridge NSString *)kSecClass, kSecAttrAccount, kSecAttrService, kSecReturnAttributes, nil];
-	NSArray *objects = [[NSArray alloc] initWithObjects:(__bridge NSString *)kSecClassGenericPassword, username, serviceName, kCFBooleanTrue, nil];
+    NSArray *objects = [[NSArray alloc] initWithObjects:
+                        (__bridge NSString *)kSecClassGenericPassword,
+                        serviceName,
+                        serviceName,
+                        username,
+                        kCFBooleanTrue,
+                        nil];
 
 	NSDictionary *query = [[NSDictionary alloc] initWithObjects:objects forKeys:keys];
 
 	OSStatus status = SecItemDelete((__bridge CFDictionaryRef)query);
 
-	if (error != nil && status != noErr)
-	{
-		*error = [NSError errorWithDomain:SDKeychainErrorDomain code:status userInfo:nil];
-		return NO;
-	}
+    if (status != noErr)
+    {
+        // Something went wrong with deleting the new item. Return the Keychain error code.
+        if (error != nil)
+        {
+            *error = [NSError errorWithDomain:SDKeychainErrorDomain code:status userInfo:nil];
+        }
+        return NO;
+    }
 
 	return YES;
 }
