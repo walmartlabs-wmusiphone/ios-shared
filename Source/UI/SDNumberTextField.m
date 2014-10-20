@@ -77,37 +77,38 @@
     }
 }
 
-- (void)deleteBackward
+- (void)backspaceKeypressFired
 {
-    if (self.text.length == 0)
-        return;
+    [super backspaceKeypressFired];
     
-    NSInteger decimalPosition = NSIntegerMax;
-    for (NSInteger i = (NSInteger)self.text.length - 1; i > 0; i--)
-    {
-        NSString *c = [self.text substringWithRange:NSMakeRange((NSUInteger)i - 1, 1)];
-        
-        NSCharacterSet *alphaNums = [NSCharacterSet decimalDigitCharacterSet];
-        NSCharacterSet *inStringSet = [NSCharacterSet characterSetWithCharactersInString:c];
-        BOOL valid = [alphaNums isSupersetOfSet:inStringSet];
-        
-        if (valid)
+    if (self.text.length > 0) {
+        NSInteger decimalPosition = NSIntegerMax;
+        for (NSInteger i = (NSInteger)self.text.length - 1; i > 0; i--)
         {
-            decimalPosition = i;
-            break;
+            NSString *c = [self.text substringWithRange:NSMakeRange((NSUInteger)i - 1, 1)];
+            
+            NSCharacterSet *alphaNums = [NSCharacterSet decimalDigitCharacterSet];
+            NSCharacterSet *inStringSet = [NSCharacterSet characterSetWithCharactersInString:c];
+            BOOL valid = [alphaNums isSupersetOfSet:inStringSet];
+            
+            if (valid)
+            {
+                decimalPosition = i;
+                break;
+            }
         }
+        
+        if (decimalPosition == NSIntegerMax)
+            self.text = @"";
+        else
+            self.text = [self.text substringWithRange:NSMakeRange(0, (NSUInteger)decimalPosition)];
+        
+        self.currentFormattedText = self.text;
+        [self sendActionsForControlEvents:UIControlEventEditingChanged];
+        
+        if (self.validateWhileTyping && self.validationBlock)
+            [self internalValidate];
     }
-    
-    if (decimalPosition == NSIntegerMax)
-        self.text = @"";
-    else
-        self.text = [self.text substringWithRange:NSMakeRange(0, (NSUInteger)decimalPosition)];
-    
-    self.currentFormattedText = self.text;
-    [self sendActionsForControlEvents:UIControlEventEditingChanged];
-    
-    if (self.validateWhileTyping && self.validationBlock)
-        [self internalValidate];
 }
 
 - (NSString *)unformattedText

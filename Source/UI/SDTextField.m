@@ -66,6 +66,8 @@
 
 - (void)configureView
 {
+    self.delegate = self;
+
     self.validationBlock = ^(SDTextField *textField) {
         if (textField.text.length > 0)
             return YES;
@@ -97,9 +99,8 @@
     }
 }
 
-- (void)deleteBackward
+- (void)backspaceKeypressFired
 {
-    [super deleteBackward];
     if (self.validateWhileTyping && self.validationBlock)
         [self internalValidate];
 }
@@ -531,5 +532,20 @@
     return pointInside;
 }
 
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)text
+{
+    BOOL shouldChange = YES;
+    
+    NSString *resultString = [textField.text stringByReplacingCharactersInRange:range withString:text];
+    if ([text isEqualToString:@""] && [[self.text substringToIndex:self.text.length - 1] isEqualToString:resultString]) {
+        // Backspace was tapped
+        [self backspaceKeypressFired];
+        shouldChange = NO;
+    }
+    
+    return shouldChange;
+}
 
 @end
