@@ -12,6 +12,10 @@
 - (void)setup;
 @end
 
+@interface SDSearchDisplayController()
+@property (nonatomic, assign) BOOL addingSearchTableView;
+@end
+
 @implementation SDSearchDisplayController
 
 @synthesize userDefaultsKey;
@@ -156,6 +160,7 @@ static NSString *kSDSearchUserDefaultsKey = @"kSDSearchUserDefaultsKey";
     
     if (visible && !recentSearchTableView)
     {
+        self.addingSearchTableView = YES;
         [self updateSearchHistory];
         if (!searchHistory)
             searchHistory = [[NSMutableArray alloc] init];
@@ -178,16 +183,19 @@ static NSString *kSDSearchUserDefaultsKey = @"kSDSearchUserDefaultsKey";
         {
             [UIView animateWithDuration:0.2 animations:^{
                 recentSearchTableView.alpha = 1.0;
-            }];   
+            } completion:^(BOOL finished) {
+                self.addingSearchTableView = NO;
+            }];
         }
         else
         {
             recentSearchTableView.alpha = 1.0;
+            self.addingSearchTableView = NO;
         }
         recentSearchTableView.backgroundColor = [UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1];
     }
     else {
-		if (!visible && recentSearchTableView)
+		if (!visible && recentSearchTableView && !self.addingSearchTableView)
 		{
 			if (animated)
 			{
