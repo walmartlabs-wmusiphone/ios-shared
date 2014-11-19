@@ -604,20 +604,6 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
         cache = [NSNumber numberWithBool:NO];
 #endif
 
-    NSNumber *showNoConnectionAlertObj = [requestDetails objectForKey:@"showNoConnectionAlert"];
-    BOOL showNoConnectionAlert = showNoConnectionAlertObj != nil ? [showNoConnectionAlertObj boolValue] : YES;
-    if (![self isReachable:showNoConnectionAlert])
-    {
-        // we ain't got no connection Lt. Dan
-        NSError *error = [NSError errorWithDomain:SDWebServiceError code:SDWebServiceErrorNoConnection userInfo:nil];
-        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            if (uiUpdateBlock)
-                uiUpdateBlock(nil, error);
-        }];
-
-        return [SDRequestResult objectForResult:SDWebServiceResultFailed identifier:nil request:request];
-    }
-
     // setup caching, default is to let the server decide.
     [request setCachePolicy:NSURLRequestUseProtocolCachePolicy];
     
