@@ -344,7 +344,7 @@ static void SDTMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkR
     NSDate *methodFinish = [NSDate date];
     NSTimeInterval executionTime = [methodFinish timeIntervalSinceDate:start];
     
-    NSLog(@"Reachability check execution time: %f", executionTime);
+    SDLog(@"Reachability check execution time: %f", executionTime);
     return isReachable;
 }
 
