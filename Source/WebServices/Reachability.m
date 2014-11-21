@@ -332,11 +332,20 @@ static void SDTMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkR
 -(BOOL)isReachable
 {
     SCNetworkReachabilityFlags flags;  
+    NSDate *start = [NSDate date];
+    BOOL isReachable = YES;
+    NSAssert(self.reachabilityRef, @"Assertion failure - self.reachabilityRef");
+    if(!SCNetworkReachabilityGetFlags(self.reachabilityRef, &flags)) {
+        isReachable = NO;
+    }
+    if (isReachable) {
+        isReachable = [self isReachableWithFlags:flags];
+    }
+    NSDate *methodFinish = [NSDate date];
+    NSTimeInterval executionTime = [methodFinish timeIntervalSinceDate:start];
     
-    if(!SCNetworkReachabilityGetFlags(self.reachabilityRef, &flags))
-        return NO;
-    
-    return [self isReachableWithFlags:flags];
+    SDLog(@"Reachability check execution time: %f", executionTime);
+    return isReachable;
 }
 
 -(BOOL)isReachableViaWWAN 
