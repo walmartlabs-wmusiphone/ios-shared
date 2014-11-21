@@ -47,6 +47,9 @@
  */
 - (void)forceInactive;
 
+/// This is related to forceInactive. Scrolling through the typeAhead list ends editing on the searchBar, but shouldn't ever call forceInactive.
+@property (nonatomic, assign) BOOL isResultsTableViewScrolling;
+
 @end
 
 // This is pretty janky, but apple does it, so why not...
