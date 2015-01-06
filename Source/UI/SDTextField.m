@@ -536,16 +536,13 @@
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)text
 {
-    BOOL shouldChange = YES;
-    
     NSString *resultString = [textField.text stringByReplacingCharactersInRange:range withString:text];
     if ([text isEqualToString:@""] && [[self.text substringToIndex:self.text.length - 1] isEqualToString:resultString]) {
         // Backspace was tapped
         [self backspaceKeypressFired];
-        shouldChange = NO;
     }
     
-    return shouldChange;
+    return YES;
 }
 
 @end
