@@ -7,6 +7,7 @@
 //
 
 #import "SDTableViewSectionControllerAutoUpdateRow.h"
+#import "SDTableViewSectionControllerAutoAlwaysUpdateRow.h"
 
 @interface SDTableViewSectionControllerAutoUpdateRow()
 @property (nonatomic, assign) NSInteger attributeHash;
@@ -18,6 +19,12 @@
 + (instancetype)genericRowOne
 {
     SDTableViewSectionControllerAutoUpdateRow *row = [[self alloc] initWithHash:1 attributeHash:0];
+    return row;
+}
+
++ (instancetype)genericAlwaysUpdateWithHash:(NSUInteger)hash
+{
+    SDTableViewSectionControllerAutoAlwaysUpdateRow *row = [[SDTableViewSectionControllerAutoAlwaysUpdateRow alloc] initWithHash:hash attributeHash:0];
     return row;
 }
 

@@ -27,7 +27,7 @@
 
 /// Shortcut for simple sections with only one non-changing row
 + (instancetype)genericRowOne;
-
++ (instancetype)genericAlwaysUpdateWithHash:(NSUInteger)hash;
 - (instancetype)initWithHash:(NSUInteger)hash attributeHash:(NSInteger)attributeHash;
 - (instancetype)initWithHash:(NSUInteger)hash;
 
