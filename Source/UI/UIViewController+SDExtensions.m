@@ -212,7 +212,7 @@ static char const *const kSDViewControllerHasGlobalNavigation = "kSDViewControll
 
 - (void)useGenericBackButton
 {
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle: @"Back" style: UIBarButtonItemStyleBordered target: nil action: nil];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle: @"Back" style: UIBarButtonItemStylePlain target: nil action: nil];
     [self.navigationItem setBackBarButtonItem:backButton];
 }
 

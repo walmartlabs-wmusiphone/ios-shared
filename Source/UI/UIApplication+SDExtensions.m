@@ -46,4 +46,26 @@
     return nil;
 }
 
+// Check for Push using isRegisteredForRemoteNotifications if available, otherwise use enabledRemoteNotificationTypes
+// Supports backward compatability to iOS 7
++ (BOOL)isPushEnabled
+{
+    BOOL pushEnabled;
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_8_0 // Deployment target < iOS 8.0
+    BOOL pushEnabled;
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
+    {
+        pushEnabled = [[UIApplication sharedApplication] isRegisteredForRemoteNotifications];
+    }
+    else
+    {
+        pushEnabled = !([[UIApplication sharedApplication] enabledRemoteNotificationTypes] == UIRemoteNotificationTypeNone);
+    }
+#else // Deployment target > iOS 8.0
+    pushEnabled = [[UIApplication sharedApplication] isRegisteredForRemoteNotifications];
+#endif
+
+    return pushEnabled;
+}
+
 @end

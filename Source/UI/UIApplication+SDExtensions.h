@@ -32,4 +32,9 @@
 
 + (UIWindow *)applicationWindow;
 
+/**
+ Whether or not remote push notifications are enabled
+ */
++ (BOOL)isPushEnabled;
+
 @end

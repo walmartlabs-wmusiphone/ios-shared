@@ -7,7 +7,8 @@
 //  Copyright (c) 2014 SetDirection. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 #import "UITableView+SDAutoUpdate.h"
 #import "SDTableViewSectionControllerAutoUpdateRow.h"
 

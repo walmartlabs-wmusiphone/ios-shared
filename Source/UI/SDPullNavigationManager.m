@@ -270,7 +270,7 @@
         if ( [UIDevice iPad] || (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) )
         {
             [item setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@""
-                                                                        style:UIBarButtonItemStyleBordered
+                                                                        style:UIBarButtonItemStylePlain
                                                                        target:self
                                                                        action:@selector(sdBackAction:)]];
         }
