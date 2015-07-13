@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "SDSpanParser.h"
+#import "SDLog.h"
 
 @interface SDSpanParserTests : XCTestCase
 

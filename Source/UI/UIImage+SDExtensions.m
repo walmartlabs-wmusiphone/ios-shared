@@ -17,6 +17,7 @@
 #include <tgmath.h>
 
 #import "SDLog.h"
+#import "NSString+SDExtensions.h"
 
 @implementation UIImage (SDExtensions)
 
@@ -365,6 +366,34 @@
     UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return result;
+}
+
+- (NSString *)saveImageToDisk
+{
+    NSString *guid = [NSString stringWithNewUUID];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSData *data = UIImageJPEGRepresentation(self, 1.0);
+        if (data)
+        {
+            NSString *fullPath = [NSTemporaryDirectory() stringByAppendingPathComponent:guid];
+            [[NSFileManager defaultManager] createFileAtPath:fullPath contents:data attributes:nil];
+        }
+    });
+    
+    return guid;
+}
+
++ (UIImage *)loadImageFromGUID:(NSString *)guid
+{
+    UIImage *imageReturned = nil;
+    if (guid)
+    {
+        NSString *imagePath = [NSTemporaryDirectory() stringByAppendingString:guid];
+        imageReturned = [[UIImage alloc] initWithContentsOfFile:imagePath];
+    }
+    
+    return imageReturned;
 }
 
 @end

@@ -7,6 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0063CDEE1B2D702E00865909 /* SDExpandingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDDF1B2D702E00865909 /* SDExpandingTableViewController.m */; };
+		0063CDEF1B2D702E00865909 /* SDTableViewCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDE11B2D702E00865909 /* SDTableViewCommand.m */; };
+		0063CDF01B2D702E00865909 /* SDTableViewSectionControllerAutoAlwaysUpdateRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDE31B2D702E00865909 /* SDTableViewSectionControllerAutoAlwaysUpdateRow.m */; };
+		0063CDF11B2D702E00865909 /* SDTableViewSectionControllerAutoUpdateRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDE51B2D702E00865909 /* SDTableViewSectionControllerAutoUpdateRow.m */; };
+		0063CDF21B2D702E00865909 /* SDTouchCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDE71B2D702E00865909 /* SDTouchCaptureView.m */; };
+		0063CDF31B2D702E00865909 /* UITableView+SDAutoUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDE91B2D702E00865909 /* UITableView+SDAutoUpdate.m */; };
+		0063CDF41B2D702E00865909 /* UITableViewCell+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDEA1B2D702E00865909 /* UITableViewCell+SDExtensions.m */; };
+		0063CDF51B2D702E00865909 /* SDCollapsableContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDED1B2D702E00865909 /* SDCollapsableContainerView.m */; };
+		0063CDF61B2D704200865909 /* SDExpandingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDDF1B2D702E00865909 /* SDExpandingTableViewController.m */; };
+		0063CDF71B2D704200865909 /* SDTableViewCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDE11B2D702E00865909 /* SDTableViewCommand.m */; };
+		0063CDF81B2D704200865909 /* SDTableViewSectionControllerAutoAlwaysUpdateRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDE31B2D702E00865909 /* SDTableViewSectionControllerAutoAlwaysUpdateRow.m */; };
+		0063CDF91B2D704200865909 /* SDTableViewSectionControllerAutoUpdateRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDE51B2D702E00865909 /* SDTableViewSectionControllerAutoUpdateRow.m */; };
+		0063CDFA1B2D704200865909 /* SDTouchCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDE71B2D702E00865909 /* SDTouchCaptureView.m */; };
+		0063CDFB1B2D704200865909 /* UITableView+SDAutoUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDE91B2D702E00865909 /* UITableView+SDAutoUpdate.m */; };
+		0063CDFC1B2D704200865909 /* UITableViewCell+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDEA1B2D702E00865909 /* UITableViewCell+SDExtensions.m */; };
+		0063CDFD1B2D704200865909 /* SDCollapsableContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CDED1B2D702E00865909 /* SDCollapsableContainerView.m */; };
+		00C010CC1B2D69CB0029C58F /* SDPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C010C41B2D69CB0029C58F /* SDPromise.m */; };
+		00C010CD1B2D69CB0029C58F /* SDURLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C010C71B2D69CB0029C58F /* SDURLRouter.m */; };
+		00C010CE1B2D69CB0029C58F /* SDURLRouterEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C010C91B2D69CB0029C58F /* SDURLRouterEntry.m */; };
+		00C010CF1B2D69CB0029C58F /* SDWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C010CB1B2D69CB0029C58F /* SDWeakArray.m */; };
+		00C010D11B2D6A900029C58F /* SDPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C010C41B2D69CB0029C58F /* SDPromise.m */; };
+		00C010D21B2D6A900029C58F /* SDURLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C010C71B2D69CB0029C58F /* SDURLRouter.m */; };
+		00C010D31B2D6A900029C58F /* SDURLRouterEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C010C91B2D69CB0029C58F /* SDURLRouterEntry.m */; };
+		00C010D41B2D6A900029C58F /* SDWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C010CB1B2D69CB0029C58F /* SDWeakArray.m */; };
+		00C010D51B2D6A900029C58F /* SDCompletionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E21C3B3318CFAFD400BD380D /* SDCompletionGroup.m */; };
+		00C010D61B2D6A900029C58F /* UIResponder+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E28C6CAA189DAE7D00052C7F /* UIResponder+SDExtensions.m */; };
+		00C010D71B2D6A9B0029C58F /* SDAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 201BC1251A79C2BF0095957D /* SDAssert.m */; };
+		00C010D81B2D6AA40029C58F /* SDTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC1ED081954B4EB0023F706 /* SDTouchID.m */; };
+		00C010D91B2D6AAC0029C58F /* SDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DD087918BAEDF4005A645C /* SDCard.m */; };
+		00C010DA1B2D6AAC0029C58F /* SDCardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DD087B18BAEDF4005A645C /* SDCardNumber.m */; };
+		00C010DB1B2D6AAC0029C58F /* SDCCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DD087E18BAEDF4005A645C /* SDCCTextField.m */; };
+		00C010DC1B2D6AAC0029C58F /* SDCreditCardField.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DD088018BAEDF4005A645C /* SDCreditCardField.m */; };
+		00C010DD1B2D6AB00029C58F /* SDPaintCodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E205780C18872F2600A1BA81 /* SDPaintCodeButton.m */; };
+		00C010DE1B2D6AB00029C58F /* SDQuantityEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = E205780E18872F2600A1BA81 /* SDQuantityEditView.m */; };
+		00C010DF1B2D6AB00029C58F /* SDQuantityEditViewBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = E205781018872F2600A1BA81 /* SDQuantityEditViewBehavior.m */; };
+		00C010E01B2D6AB00029C58F /* SDQuantityView.m in Sources */ = {isa = PBXBuildFile; fileRef = E205781218872F2600A1BA81 /* SDQuantityView.m */; };
+		00C010E11B2D6AB00029C58F /* UIView+PaintCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E205781418872F2600A1BA81 /* UIView+PaintCode.m */; };
+		00C010E21B2D6ABE0029C58F /* NSShadow+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDC79118A59D4F00E7E416 /* NSShadow+SDExtensions.m */; };
+		00C010E31B2D6ABE0029C58F /* SDApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 2008D379188DAA9700255BC4 /* SDApplication.m */; };
+		00C010E41B2D6ABE0029C58F /* SDAutolayoutStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = E28923B3189970CB009C78CA /* SDAutolayoutStackView.m */; };
+		00C010E51B2D6ABE0029C58F /* SDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DF06891891A1A900BA7021 /* SDButton.m */; };
+		00C010E61B2D6ABE0029C58F /* SDCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DF068B1891A1A900BA7021 /* SDCheckbox.m */; };
+		00C010E71B2D6ABE0029C58F /* SDContentAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E791A1829B7A700B4398F /* SDContentAlertView.m */; };
+		00C010E81B2D6ABE0029C58F /* SDFormFieldContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DF068D1891A1A900BA7021 /* SDFormFieldContainer.m */; };
+		00C010E91B2D6ABE0029C58F /* SDHitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DF068F1891A1A900BA7021 /* SDHitButton.m */; };
+		00C010EA1B2D6ABE0029C58F /* SDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E772A18284DD500B4398F /* SDLabel.m */; };
+		00C010EB1B2D6ABE0029C58F /* SDMultilineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2136B4A18A4573A00000D1B /* SDMultilineLabel.m */; };
+		00C010EC1B2D6ABE0029C58F /* SDNavigationBarSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = E287F5CF1900746900989162 /* SDNavigationBarSearchField.m */; };
+		00C010ED1B2D6ABE0029C58F /* SDPaddedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E287F5D11900746900989162 /* SDPaddedLabel.m */; };
+		00C010EE1B2D6ABE0029C58F /* SDPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E205780818872F2600A1BA81 /* SDPickerView.m */; };
+		00C010EF1B2D6ABE0029C58F /* SDPullNavigationAutomation.m in Sources */ = {isa = PBXBuildFile; fileRef = E21C0F44187B3F39001CA469 /* SDPullNavigationAutomation.m */; };
+		00C010F01B2D6ABE0029C58F /* SDPullNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8A2111853E660000DD265 /* SDPullNavigationBar.m */; };
+		00C010F11B2D6ABE0029C58F /* SDPullNavigationBarAdornmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E287F5D31900746900989162 /* SDPullNavigationBarAdornmentView.m */; };
+		00C010F21B2D6ABE0029C58F /* SDPullNavigationBarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8A2131853E660000DD265 /* SDPullNavigationBarBackground.m */; };
+		00C010F31B2D6ABE0029C58F /* SDPullNavigationBarControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8A2151853E660000DD265 /* SDPullNavigationBarControlsView.m */; };
+		00C010F41B2D6ABE0029C58F /* SDPullNavigationBarTabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8A2171853E660000DD265 /* SDPullNavigationBarTabButton.m */; };
+		00C010F51B2D6ABE0029C58F /* SDPullNavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8A21B1853E660000DD265 /* SDPullNavigationManager.m */; };
+		00C010F61B2D6ABE0029C58F /* SDSearchSuggestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E287F5D71900746900989162 /* SDSearchSuggestionsViewController.m */; };
+		00C010F71B2D6ABE0029C58F /* SDTableViewSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E205781818872F2600A1BA81 /* SDTableViewSectionController.m */; };
+		00C010F81B2D6ABE0029C58F /* SDTextFieldPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B31BA0189342BF0006970E /* SDTextFieldPicker.m */; };
 		08EFCA2218FDCB70006547E0 /* NSDate+SDExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFCA2118FDCB70006547E0 /* NSDate+SDExtensionsTests.m */; };
 		08EFCA2818FEFAC6006547E0 /* NSDictionary+SDExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFCA2718FEFAC6006547E0 /* NSDictionary+SDExtensionsTests.m */; };
 		2008D37A188DAA9700255BC4 /* SDApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 2008D379188DAA9700255BC4 /* SDApplication.m */; };
@@ -236,6 +296,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0063CDDE1B2D702E00865909 /* SDExpandingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDExpandingTableViewController.h; sourceTree = "<group>"; };
+		0063CDDF1B2D702E00865909 /* SDExpandingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDExpandingTableViewController.m; sourceTree = "<group>"; };
+		0063CDE01B2D702E00865909 /* SDTableViewCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTableViewCommand.h; sourceTree = "<group>"; };
+		0063CDE11B2D702E00865909 /* SDTableViewCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTableViewCommand.m; sourceTree = "<group>"; };
+		0063CDE21B2D702E00865909 /* SDTableViewSectionControllerAutoAlwaysUpdateRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTableViewSectionControllerAutoAlwaysUpdateRow.h; sourceTree = "<group>"; };
+		0063CDE31B2D702E00865909 /* SDTableViewSectionControllerAutoAlwaysUpdateRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTableViewSectionControllerAutoAlwaysUpdateRow.m; sourceTree = "<group>"; };
+		0063CDE41B2D702E00865909 /* SDTableViewSectionControllerAutoUpdateRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTableViewSectionControllerAutoUpdateRow.h; sourceTree = "<group>"; };
+		0063CDE51B2D702E00865909 /* SDTableViewSectionControllerAutoUpdateRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTableViewSectionControllerAutoUpdateRow.m; sourceTree = "<group>"; };
+		0063CDE61B2D702E00865909 /* SDTouchCaptureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTouchCaptureView.h; sourceTree = "<group>"; };
+		0063CDE71B2D702E00865909 /* SDTouchCaptureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTouchCaptureView.m; sourceTree = "<group>"; };
+		0063CDE81B2D702E00865909 /* UITableView+SDAutoUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoUpdate.h"; sourceTree = "<group>"; };
+		0063CDE91B2D702E00865909 /* UITableView+SDAutoUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoUpdate.m"; sourceTree = "<group>"; };
+		0063CDEA1B2D702E00865909 /* UITableViewCell+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+SDExtensions.m"; sourceTree = "<group>"; };
+		0063CDEB1B2D702E00865909 /* UITableViewCell+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+SDExtensions.h"; sourceTree = "<group>"; };
+		0063CDEC1B2D702E00865909 /* SDCollapsableContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollapsableContainerView.h; sourceTree = "<group>"; };
+		0063CDED1B2D702E00865909 /* SDCollapsableContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollapsableContainerView.m; sourceTree = "<group>"; };
+		00C010C21B2D69CB0029C58F /* NSLayoutConstraint+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+SDExtensions.h"; sourceTree = "<group>"; };
+		00C010C31B2D69CB0029C58F /* SDPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPromise.h; sourceTree = "<group>"; };
+		00C010C41B2D69CB0029C58F /* SDPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPromise.m; sourceTree = "<group>"; };
+		00C010C51B2D69CB0029C58F /* SDURLRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDURLRouteHandler.h; sourceTree = "<group>"; };
+		00C010C61B2D69CB0029C58F /* SDURLRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDURLRouter.h; sourceTree = "<group>"; };
+		00C010C71B2D69CB0029C58F /* SDURLRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDURLRouter.m; sourceTree = "<group>"; };
+		00C010C81B2D69CB0029C58F /* SDURLRouterEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDURLRouterEntry.h; sourceTree = "<group>"; };
+		00C010C91B2D69CB0029C58F /* SDURLRouterEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDURLRouterEntry.m; sourceTree = "<group>"; };
+		00C010CA1B2D69CB0029C58F /* SDWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWeakArray.h; sourceTree = "<group>"; };
+		00C010CB1B2D69CB0029C58F /* SDWeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWeakArray.m; sourceTree = "<group>"; };
+		00C010D01B2D69E40029C58F /* SDAccessible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAccessible.h; sourceTree = "<group>"; };
 		08EFCA2118FDCB70006547E0 /* NSDate+SDExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SDExtensionsTests.m"; sourceTree = "<group>"; };
 		08EFCA2718FEFAC6006547E0 /* NSDictionary+SDExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SDExtensionsTests.m"; sourceTree = "<group>"; };
 		2008D378188DAA9700255BC4 /* SDApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDApplication.h; sourceTree = "<group>"; };
@@ -604,6 +691,16 @@
 		CA0E76E618284DD500B4398F /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				00C010C21B2D69CB0029C58F /* NSLayoutConstraint+SDExtensions.h */,
+				00C010C31B2D69CB0029C58F /* SDPromise.h */,
+				00C010C41B2D69CB0029C58F /* SDPromise.m */,
+				00C010C51B2D69CB0029C58F /* SDURLRouteHandler.h */,
+				00C010C61B2D69CB0029C58F /* SDURLRouter.h */,
+				00C010C71B2D69CB0029C58F /* SDURLRouter.m */,
+				00C010C81B2D69CB0029C58F /* SDURLRouterEntry.h */,
+				00C010C91B2D69CB0029C58F /* SDURLRouterEntry.m */,
+				00C010CA1B2D69CB0029C58F /* SDWeakArray.h */,
+				00C010CB1B2D69CB0029C58F /* SDWeakArray.m */,
 				CA0E76E718284DD500B4398F /* NSArray+SDExtensions.h */,
 				CA0E76E818284DD500B4398F /* NSArray+SDExtensions.m */,
 				CA0E76E918284DD500B4398F /* NSData+SDExtensions.h */,
@@ -656,6 +753,7 @@
 		CA0E770A18284DD500B4398F /* Macros */ = {
 			isa = PBXGroup;
 			children = (
+				00C010D01B2D69E40029C58F /* SDAccessible.h */,
 				201BC1271A79C2CD0095957D /* SDAssert.h */,
 				201BC1251A79C2BF0095957D /* SDAssert.m */,
 				CA0E770B18284DD500B4398F /* ObjectiveCGenerics.h */,
@@ -700,8 +798,6 @@
 		CA0E771A18284DD500B4398F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				E2DD087718BAEDDA005A645C /* SDCreditCardField */,
-				E205780918872F2600A1BA81 /* SDQuantityEditView */,
 				CA0E771B18284DD500B4398F /* NSObject+SDExtensions.h */,
 				CA0E771C18284DD500B4398F /* NSObject+SDExtensions.m */,
 				E2EDC79018A59D4F00E7E416 /* NSShadow+SDExtensions.h */,
@@ -716,16 +812,21 @@
 				E2DF06891891A1A900BA7021 /* SDButton.m */,
 				E2DF068A1891A1A900BA7021 /* SDCheckbox.h */,
 				E2DF068B1891A1A900BA7021 /* SDCheckbox.m */,
+				0063CDEC1B2D702E00865909 /* SDCollapsableContainerView.h */,
+				0063CDED1B2D702E00865909 /* SDCollapsableContainerView.m */,
 				CA0E771F18284DD500B4398F /* SDContainerViewController.h */,
 				CA0E772018284DD500B4398F /* SDContainerViewController.m */,
 				CA0E79191829B7A700B4398F /* SDContentAlertView.h */,
 				CA0E791A1829B7A700B4398F /* SDContentAlertView.m */,
+				E2DD087718BAEDDA005A645C /* SDCreditCardField */,
 				CA0E772118284DD500B4398F /* SDDeckController.h */,
 				CA0E772218284DD500B4398F /* SDDeckController.m */,
 				CA0E772318284DD500B4398F /* SDDragDropGestureRecognizer.h */,
 				CA0E772418284DD500B4398F /* SDDragDropGestureRecognizer.m */,
 				CA0E772518284DD500B4398F /* SDDragDropManager.h */,
 				CA0E772618284DD500B4398F /* SDDragDropManager.m */,
+				0063CDDE1B2D702E00865909 /* SDExpandingTableViewController.h */,
+				0063CDDF1B2D702E00865909 /* SDExpandingTableViewController.m */,
 				E2DF068C1891A1A900BA7021 /* SDFormFieldContainer.h */,
 				E2DF068D1891A1A900BA7021 /* SDFormFieldContainer.m */,
 				E2DF068E1891A1A900BA7021 /* SDHitButton.h */,
@@ -767,6 +868,7 @@
 				E2C8A2171853E660000DD265 /* SDPullNavigationBarTabButton.m */,
 				E2C8A21A1853E660000DD265 /* SDPullNavigationManager.h */,
 				E2C8A21B1853E660000DD265 /* SDPullNavigationManager.m */,
+				E205780918872F2600A1BA81 /* SDQuantityEditView */,
 				CA0E773518284DD600B4398F /* SDSearchBar.h */,
 				CA0E773618284DD600B4398F /* SDSearchBar.m */,
 				CA0E773718284DD600B4398F /* SDSearchDisplayController.h */,
@@ -782,12 +884,20 @@
 				CA0E773A18284DD600B4398F /* SDStackView.m */,
 				CAA3E93C182D516E00602210 /* SDSwitch.h */,
 				CAA3E93D182D516E00602210 /* SDSwitch.m */,
+				0063CDE01B2D702E00865909 /* SDTableViewCommand.h */,
+				0063CDE11B2D702E00865909 /* SDTableViewCommand.m */,
 				E205781718872F2600A1BA81 /* SDTableViewSectionController.h */,
 				E205781818872F2600A1BA81 /* SDTableViewSectionController.m */,
+				0063CDE21B2D702E00865909 /* SDTableViewSectionControllerAutoAlwaysUpdateRow.h */,
+				0063CDE31B2D702E00865909 /* SDTableViewSectionControllerAutoAlwaysUpdateRow.m */,
+				0063CDE41B2D702E00865909 /* SDTableViewSectionControllerAutoUpdateRow.h */,
+				0063CDE51B2D702E00865909 /* SDTableViewSectionControllerAutoUpdateRow.m */,
 				CAA3E933182C15F500602210 /* SDTextField.h */,
 				CAA3E934182C15F500602210 /* SDTextField.m */,
 				E2B31B9F189342BF0006970E /* SDTextFieldPicker.h */,
 				E2B31BA0189342BF0006970E /* SDTextFieldPicker.m */,
+				0063CDE61B2D702E00865909 /* SDTouchCaptureView.h */,
+				0063CDE71B2D702E00865909 /* SDTouchCaptureView.m */,
 				CA0E773B18284DD600B4398F /* SDWebViewCell.h */,
 				CA0E773C18284DD600B4398F /* SDWebViewCell.m */,
 				CA0E773D18284DD600B4398F /* SDWebViewCell.xib */,
@@ -806,6 +916,10 @@
 				CA0E774918284DD600B4398F /* UINavigationController+SDExtensions.m */,
 				CA0E774A18284DD600B4398F /* UIScreen+SDExtensions.h */,
 				CA0E774B18284DD600B4398F /* UIScreen+SDExtensions.m */,
+				0063CDE81B2D702E00865909 /* UITableView+SDAutoUpdate.h */,
+				0063CDE91B2D702E00865909 /* UITableView+SDAutoUpdate.m */,
+				0063CDEB1B2D702E00865909 /* UITableViewCell+SDExtensions.h */,
+				0063CDEA1B2D702E00865909 /* UITableViewCell+SDExtensions.m */,
 				CA0E774C18284DD600B4398F /* UIView+SDExtensions.h */,
 				CA0E774D18284DD600B4398F /* UIView+SDExtensions.m */,
 				CA0E774E18284DD600B4398F /* UIViewController+SDExtensions.h */,
@@ -991,7 +1105,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SD;
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = SetDirection;
 				TargetAttributes = {
 					CA01F1AE17D7A6EF00E7C553 = {
@@ -1053,85 +1167,133 @@
 				CA0E77A218284DD600B4398F /* SDImageButton.m in Sources */,
 				CA0E777418284DD600B4398F /* NSError+SDExtensions.m in Sources */,
 				CA0E777618284DD600B4398F /* NSMutableAttributedString+SDExtensions.m in Sources */,
+				00C010F41B2D6ABE0029C58F /* SDPullNavigationBarTabButton.m in Sources */,
 				F8BD64DA1A3F50320090D65E /* SDWebServiceValidateDeprecatedMockProviderTests.m in Sources */,
 				CA0E777818284DD600B4398F /* NSNumber+SDExtensions.m in Sources */,
 				CA0E77B918284DD600B4398F /* UIActivityIndicatorView+SDExtensions.m in Sources */,
 				CA0E777C18284DD600B4398F /* NSString+SDExtensions.m in Sources */,
 				CA0E776C18284DD600B4398F /* NSArray+SDExtensions.m in Sources */,
 				CAAB5A3418564CEE006737D4 /* RxAddressModel.m in Sources */,
+				00C010ED1B2D6ABE0029C58F /* SDPaddedLabel.m in Sources */,
+				0063CDF91B2D704200865909 /* SDTableViewSectionControllerAutoUpdateRow.m in Sources */,
 				F8BD64E21A3F60080090D65E /* SDWebServiceMockResponseRequestMapping.m in Sources */,
 				CA0E77D918284DD600B4398F /* SDURLConnection.m in Sources */,
 				CA0E778218284DD600B4398F /* SDDataMap.m in Sources */,
 				CA0E778618284DD600B4398F /* SDPoser.m in Sources */,
+				00C010D51B2D6A900029C58F /* SDCompletionGroup.m in Sources */,
+				00C010EF1B2D6ABE0029C58F /* SDPullNavigationAutomation.m in Sources */,
 				CA0E77DF18284DD600B4398F /* UIImageView+SDExtensions.m in Sources */,
+				0063CDF81B2D704200865909 /* SDTableViewSectionControllerAutoAlwaysUpdateRow.m in Sources */,
+				00C010E21B2D6ABE0029C58F /* NSShadow+SDExtensions.m in Sources */,
+				00C010EB1B2D6ABE0029C58F /* SDMultilineLabel.m in Sources */,
 				CA0E77B418284DD600B4398F /* SDStackView.m in Sources */,
 				CA0E778018284DD600B4398F /* SDBase64.m in Sources */,
 				CA0E77BD18284DD600B4398F /* UIApplication+SDExtensions.m in Sources */,
+				0063CDFA1B2D704200865909 /* SDTouchCaptureView.m in Sources */,
 				E22B37361843F61E00C7CBEE /* NSString+SDExtensionsTests.m in Sources */,
 				CA01F1C617D7A72D00E7C553 /* UIImageViewTests.m in Sources */,
 				CA0E77D318284DD600B4398F /* Reachability.m in Sources */,
+				00C010D41B2D6A900029C58F /* SDWeakArray.m in Sources */,
 				CA0E779C18284DD600B4398F /* SDDeckController.m in Sources */,
 				CA0E779418284DD600B4398F /* SDABTesting.m in Sources */,
+				0063CDFB1B2D704200865909 /* UITableView+SDAutoUpdate.m in Sources */,
 				CA0E77C318284DD600B4398F /* UINavigationController+SDExtensions.m in Sources */,
 				CA0E777E18284DD600B4398F /* NSUserDefaults+SDExtensions.m in Sources */,
 				CA0E777A18284DD600B4398F /* NSRunLoop+SDExtensions.m in Sources */,
 				E22B373D1844037600C7CBEE /* UIColor+SDExtensionsTests.m in Sources */,
+				00C010DC1B2D6AAC0029C58F /* SDCreditCardField.m in Sources */,
 				CA0E77B618284DD600B4398F /* SDWebViewCell.m in Sources */,
+				00C010E71B2D6ABE0029C58F /* SDContentAlertView.m in Sources */,
+				00C010D91B2D6AAC0029C58F /* SDCard.m in Sources */,
+				00C010DD1B2D6AB00029C58F /* SDPaintCodeButton.m in Sources */,
 				CA0E77BF18284DD600B4398F /* UIColor+SDExtensions.m in Sources */,
 				F812F9581A11454F00312E52 /* SDWebServiceMockQueueTests.m in Sources */,
+				00C010F21B2D6ABE0029C58F /* SDPullNavigationBarBackground.m in Sources */,
 				CAAB5A3618564CEE006737D4 /* RxOrderModel.m in Sources */,
 				E205784E1889DDDD00A1BA81 /* NSArray+SDExtensionsTests.m in Sources */,
 				CA0E77AD18284DD600B4398F /* SDPickerModalViewController.m in Sources */,
+				0063CDFD1B2D704200865909 /* SDCollapsableContainerView.m in Sources */,
 				CA0E777018284DD600B4398F /* NSDate+SDExtensions.m in Sources */,
+				00C010D61B2D6A900029C58F /* UIResponder+SDExtensions.m in Sources */,
 				CA0E779818284DD600B4398F /* SDAlertView.m in Sources */,
+				00C010EC1B2D6ABE0029C58F /* SDNavigationBarSearchField.m in Sources */,
+				00C010DF1B2D6AB00029C58F /* SDQuantityEditViewBehavior.m in Sources */,
 				CA0E779018284DD600B4398F /* SDLocationManager.m in Sources */,
+				00C010F11B2D6ABE0029C58F /* SDPullNavigationBarAdornmentView.m in Sources */,
+				00C010E01B2D6AB00029C58F /* SDQuantityView.m in Sources */,
 				CA0E779618284DD600B4398F /* NSObject+SDExtensions.m in Sources */,
 				CA0E77A018284DD600B4398F /* SDDragDropManager.m in Sources */,
 				48EB6B2B19DCBCED0054662E /* SDSpanParserTests.m in Sources */,
+				00C010E41B2D6ABE0029C58F /* SDAutolayoutStackView.m in Sources */,
 				CAA3E936182C183E00602210 /* SDTextField.m in Sources */,
 				CA0E779E18284DD600B4398F /* SDDragDropGestureRecognizer.m in Sources */,
 				F8BD64D81A3F4DDF0090D65E /* SDWebServiceMockResponseQueueProvider.m in Sources */,
+				00C010F61B2D6ABE0029C58F /* SDSearchSuggestionsViewController.m in Sources */,
+				0063CDF71B2D704200865909 /* SDTableViewCommand.m in Sources */,
+				00C010D11B2D6A900029C58F /* SDPromise.m in Sources */,
 				CA0E778818284DD600B4398F /* SDTimer.m in Sources */,
 				CA0E778418284DD600B4398F /* SDModelObject.m in Sources */,
 				08EFCA2818FEFAC6006547E0 /* NSDictionary+SDExtensionsTests.m in Sources */,
+				00C010EE1B2D6ABE0029C58F /* SDPickerView.m in Sources */,
 				CA0E778C18284DD600B4398F /* CLLocation+SDExtensions.m in Sources */,
 				F8BD64E41A3F63190090D65E /* SDWebServiceMockResponseRequestMappingTests.m in Sources */,
+				00C010E11B2D6AB00029C58F /* UIView+PaintCode.m in Sources */,
+				00C010DB1B2D6AAC0029C58F /* SDCCTextField.m in Sources */,
 				F8BD64DE1A3F5EAF0090D65E /* SDWebServiceMockResponseMapProvider.m in Sources */,
 				08EFCA2218FDCB70006547E0 /* NSDate+SDExtensionsTests.m in Sources */,
+				00C010DA1B2D6AAC0029C58F /* SDCardNumber.m in Sources */,
 				CAA3E93F182D516E00602210 /* SDSwitch.m in Sources */,
 				CAAB5A3818564CEE006737D4 /* RxRefillsModel.m in Sources */,
 				CA0E77BB18284DD600B4398F /* UIAlertView+SDExtensions.m in Sources */,
 				CA0E77DB18284DD600B4398F /* SDWebService+SDProcessingBlocks.m in Sources */,
 				CA0E77B018284DD600B4398F /* SDSearchBar.m in Sources */,
 				CA0E779A18284DD600B4398F /* SDContainerViewController.m in Sources */,
+				00C010F51B2D6ABE0029C58F /* SDPullNavigationManager.m in Sources */,
 				CAAB5A3518564CEE006737D4 /* RxModelObject.m in Sources */,
+				00C010F01B2D6ABE0029C58F /* SDPullNavigationBar.m in Sources */,
 				CA0E77C118284DD600B4398F /* UIImage+SDExtensions.m in Sources */,
 				CAAB5A2618564B0E006737D4 /* SDDataMapTests.m in Sources */,
 				CAAB5A3718564CEE006737D4 /* RxPatientModel.m in Sources */,
+				00C010E91B2D6ABE0029C58F /* SDHitButton.m in Sources */,
+				00C010E81B2D6ABE0029C58F /* SDFormFieldContainer.m in Sources */,
+				00C010F81B2D6ABE0029C58F /* SDTextFieldPicker.m in Sources */,
 				E2136B5E18A466F700000D1B /* SDLog.m in Sources */,
 				CA0E77C518284DD600B4398F /* UIScreen+SDExtensions.m in Sources */,
 				CA01F1C417D7A72D00E7C553 /* SDABTestingTests.m in Sources */,
+				00C010E61B2D6ABE0029C58F /* SDCheckbox.m in Sources */,
 				CA888875196F08930022DA14 /* NSObject+SDExtensionsTests.m in Sources */,
 				CA0E77D118284DD600B4398F /* NSURLRequest+SDExtensions.m in Sources */,
+				00C010E31B2D6ABE0029C58F /* SDApplication.m in Sources */,
 				CA0E77A618284DD600B4398F /* SDNumberTextField.m in Sources */,
 				CA0E778E18284DD600B4398F /* MKMapView+SDExtensions.m in Sources */,
+				00C010DE1B2D6AB00029C58F /* SDQuantityEditView.m in Sources */,
 				CA0E77B218284DD600B4398F /* SDSearchDisplayController.m in Sources */,
 				F8BD64E61A3F81540090D65E /* SDWebServiceMockResponseMapProviderTests.m in Sources */,
 				CA0E77CF18284DD600B4398F /* NSURLCache+SDExtensions.m in Sources */,
+				0063CDF61B2D704200865909 /* SDExpandingTableViewController.m in Sources */,
 				CA0E77C718284DD600B4398F /* UIView+SDExtensions.m in Sources */,
 				CA0E77DD18284DD600B4398F /* SDWebService.m in Sources */,
+				00C010F71B2D6ABE0029C58F /* SDTableViewSectionController.m in Sources */,
 				CA0E77CD18284DD600B4398F /* NSURL+SDExtensions.m in Sources */,
 				CA0E77A818284DD600B4398F /* SDPagingView.m in Sources */,
 				CA0E77C918284DD600B4398F /* UIViewController+SDExtensions.m in Sources */,
 				CA0E779218284DD600B4398F /* SDKeychain.m in Sources */,
+				00C010D71B2D6A9B0029C58F /* SDAssert.m in Sources */,
 				CA0E776E18284DD600B4398F /* NSData+SDExtensions.m in Sources */,
+				0063CDFC1B2D704200865909 /* UITableViewCell+SDExtensions.m in Sources */,
 				CA01F1C517D7A72D00E7C553 /* UIDeviceTests.m in Sources */,
+				00C010F31B2D6ABE0029C58F /* SDPullNavigationBarControlsView.m in Sources */,
+				00C010E51B2D6ABE0029C58F /* SDButton.m in Sources */,
+				00C010D31B2D6A900029C58F /* SDURLRouterEntry.m in Sources */,
 				CA01F1BA17D7A6F000E7C553 /* ios_shared_Tests.m in Sources */,
 				CA0E77AA18284DD600B4398F /* SDPhotoImageView.m in Sources */,
 				CA0E777218284DD600B4398F /* NSDictionary+SDExtensions.m in Sources */,
 				CABD745018AAB4180083A097 /* SDBase64Tests.m in Sources */,
 				CA0E778A18284DD600B4398F /* UIDevice+machine.m in Sources */,
+				00C010D81B2D6AA40029C58F /* SDTouchID.m in Sources */,
+				00C010EA1B2D6ABE0029C58F /* SDLabel.m in Sources */,
 				CA0E77D518284DD600B4398F /* SDImageCache.m in Sources */,
+				00C010D21B2D6A900029C58F /* SDURLRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1157,6 +1319,7 @@
 				E205781B18872F2600A1BA81 /* SDQuantityEditView.m in Sources */,
 				E2136B4B18A4573A00000D1B /* SDMultilineLabel.m in Sources */,
 				CA0E791B1829B7A700B4398F /* SDContentAlertView.m in Sources */,
+				00C010CF1B2D69CB0029C58F /* SDWeakArray.m in Sources */,
 				CA0E77B318284DD600B4398F /* SDStackView.m in Sources */,
 				CAA3E93E182D516E00602210 /* SDSwitch.m in Sources */,
 				CA0E77DA18284DD600B4398F /* SDWebService+SDProcessingBlocks.m in Sources */,
@@ -1171,24 +1334,32 @@
 				CA0E779918284DD600B4398F /* SDContainerViewController.m in Sources */,
 				CA0E77D218284DD600B4398F /* Reachability.m in Sources */,
 				E2C8A21E1853E660000DD265 /* SDPullNavigationBarControlsView.m in Sources */,
+				0063CDEE1B2D702E00865909 /* SDExpandingTableViewController.m in Sources */,
 				CA0E77C618284DD600B4398F /* UIView+SDExtensions.m in Sources */,
 				E287F5DB1900746900989162 /* SDPullNavigationBarAdornmentView.m in Sources */,
 				CA0E77B518284DD600B4398F /* SDWebViewCell.m in Sources */,
 				CA0E778518284DD600B4398F /* SDPoser.m in Sources */,
 				CA0E778F18284DD600B4398F /* SDLocationManager.m in Sources */,
 				CA0E777318284DD600B4398F /* NSError+SDExtensions.m in Sources */,
+				0063CDF31B2D702E00865909 /* UITableView+SDAutoUpdate.m in Sources */,
 				E2EDC79218A59D4F00E7E416 /* NSShadow+SDExtensions.m in Sources */,
+				00C010CD1B2D69CB0029C58F /* SDURLRouter.m in Sources */,
 				CAA3E935182C15F500602210 /* SDTextField.m in Sources */,
 				F8BD64DD1A3F5EAF0090D65E /* SDWebServiceMockResponseMapProvider.m in Sources */,
 				CA0E77C018284DD600B4398F /* UIImage+SDExtensions.m in Sources */,
 				CA0E77D418284DD600B4398F /* SDImageCache.m in Sources */,
+				0063CDF41B2D702E00865909 /* UITableViewCell+SDExtensions.m in Sources */,
 				CA0E77AC18284DD600B4398F /* SDPickerModalViewController.m in Sources */,
 				CA0E77A918284DD600B4398F /* SDPhotoImageView.m in Sources */,
+				0063CDF51B2D702E00865909 /* SDCollapsableContainerView.m in Sources */,
+				0063CDEF1B2D702E00865909 /* SDTableViewCommand.m in Sources */,
 				E287F5DC1900746900989162 /* SDSearchSuggestionsViewController.m in Sources */,
 				E2DD088418BAEDF4005A645C /* SDCCTextField.m in Sources */,
+				00C010CC1B2D69CB0029C58F /* SDPromise.m in Sources */,
 				CA0E778B18284DD600B4398F /* CLLocation+SDExtensions.m in Sources */,
 				E205781C18872F2600A1BA81 /* SDQuantityEditViewBehavior.m in Sources */,
 				E2DF06921891A1A900BA7021 /* SDFormFieldContainer.m in Sources */,
+				0063CDF11B2D702E00865909 /* SDTableViewSectionControllerAutoUpdateRow.m in Sources */,
 				E2C8A2211853E660000DD265 /* SDPullNavigationManager.m in Sources */,
 				CA0E77C218284DD600B4398F /* UINavigationController+SDExtensions.m in Sources */,
 				E205781D18872F2600A1BA81 /* SDQuantityView.m in Sources */,
@@ -1203,6 +1374,7 @@
 				E21C0F45187B3F39001CA469 /* SDPullNavigationAutomation.m in Sources */,
 				E2B31BA3189342BF0006970E /* SDTextFieldPicker.m in Sources */,
 				E287F5DA1900746900989162 /* SDPaddedLabel.m in Sources */,
+				0063CDF01B2D702E00865909 /* SDTableViewSectionControllerAutoAlwaysUpdateRow.m in Sources */,
 				CA0E777D18284DD600B4398F /* NSUserDefaults+SDExtensions.m in Sources */,
 				CA0E777F18284DD600B4398F /* SDBase64.m in Sources */,
 				CA0E779118284DD600B4398F /* SDKeychain.m in Sources */,
@@ -1221,9 +1393,11 @@
 				E2136B3318A4387200000D1B /* SDLog.m in Sources */,
 				201BC1261A79C2BF0095957D /* SDAssert.m in Sources */,
 				CA0E77D018284DD600B4398F /* NSURLRequest+SDExtensions.m in Sources */,
+				00C010CE1B2D69CB0029C58F /* SDURLRouterEntry.m in Sources */,
 				E2C8A21C1853E660000DD265 /* SDPullNavigationBar.m in Sources */,
 				CA0E77AF18284DD600B4398F /* SDSearchBar.m in Sources */,
 				2008D37A188DAA9700255BC4 /* SDApplication.m in Sources */,
+				0063CDF21B2D702E00865909 /* SDTouchCaptureView.m in Sources */,
 				CA0E77A318284DD600B4398F /* SDLabel.m in Sources */,
 				CA0E77C418284DD600B4398F /* UIScreen+SDExtensions.m in Sources */,
 				CA0E779718284DD600B4398F /* SDAlertView.m in Sources */,
@@ -1304,35 +1478,19 @@
 			baseConfigurationReference = CA0E76E318284DD500B4398F /* Project-iOS-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
 				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1345,28 +1503,13 @@
 			baseConfigurationReference = CA0E76E418284DD500B4398F /* Project-iOS-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

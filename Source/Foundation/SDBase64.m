@@ -13,6 +13,8 @@
 
 @implementation NSData(SDBase64)
 
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0 // Deployment target < iOS 7.0
+
 typedef int	(*t_b64_ntop)(u_char const *, size_t, char *, size_t);
 typedef int	(*t_b64_pton)(char const *, u_char *, size_t);
 
@@ -45,6 +47,7 @@ t_b64_pton p_b64_pton = nil;
     }
 }
 
+// iOS 6 and earlier implementation
 - (NSData *)encodeToBase64Data
 {
     [self loadLibResolv];
@@ -66,6 +69,7 @@ t_b64_pton p_b64_pton = nil;
     return result;
 }
 
+// iOS 6 and earlier implementation
 - (NSData *)decodeBase64ToData
 {
     [self loadLibResolv];
@@ -91,6 +95,8 @@ t_b64_pton p_b64_pton = nil;
     return result;
 }
 
+// iOS 6 and earlier implementation
+// iOS 7 and later support this in one step
 - (NSString *)encodeToBase64String
 {
     NSString *result = nil;
@@ -101,6 +107,34 @@ t_b64_pton p_b64_pton = nil;
     return result;
 }
 
+#else // #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0 // Deployment target < iOS 7.0
+
+// Now that iOS 7 supports base 64 encoding, keep our interface (for unit tests) and call the
+// new code through our interfaces
+- (NSData *)encodeToBase64Data
+{
+    return [self base64EncodedDataWithOptions: 0];
+}
+
+// Now that iOS 7 supports base 64 encoding, keep our interface (for unit tests) and call the
+// new code through our interfaces
+- (NSData *)decodeBase64ToData
+{
+    return [[NSData alloc] initWithBase64EncodedData:self options:0];
+}
+
+// Now that iOS 7 supports base 64 encoding, keep our interface (for unit tests) and call the
+// new code through our interfaces
+- (NSString *)encodeToBase64String
+{
+    return [self base64EncodedStringWithOptions:0];
+}
+
+
+#endif // #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0 // Deployment target < iOS 7.0
+
+// This method works on all versions of iOS as it does not talk directly
+// with libresolv
 - (NSString *)decodeBase64ToString
 {
     NSString *result = nil;

@@ -70,4 +70,17 @@ typedef NS_OPTIONS(NSUInteger, SDImageCompositionOptions)
  */
 - (UIImage *)maskedImageWithColor:(UIColor *)color;
 
+/**
+ Saves the UIImage to disk and returns a GUID to refer to it later on.
+ @return NSString* - The GUID string the image is saved under
+ */
+- (NSString *)saveImageToDisk;
+
+/**
+ Retrieves an image with a GUID. May return nil if the image is not found.
+ @param NSString *guid - The GUID the image is saved under and can be retrieved from.
+ @return UIImage* - The image found under the given GUID. nil is returned if not found.
+ */
++ (UIImage *)loadImageFromGUID:(NSString *)guid;
+
 @end
