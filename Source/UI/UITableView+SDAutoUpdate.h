@@ -16,7 +16,7 @@
  *
  *  @return returns a unique (to the tableView) identifier of a section (usually just the section's title)
  */
-- (NSString *)identifier;
+@property (nonatomic, copy, readonly) NSString *identifier;
 @end
 
 /**
