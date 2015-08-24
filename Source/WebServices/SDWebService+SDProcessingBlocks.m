@@ -127,12 +127,12 @@
         if ([responseObject isKindOfClass:[NSDictionary class]])
         {
             // some service responses have an encapsulating data object.
-            NSDictionary *dataDictionary = [responseObject objectForKey:@"data"];
+            NSDictionary *dataDictionary = [responseObject dictionaryForKey:@"data"];
             // if it has one, lets set that as our response object instead.
             while (dataDictionary)
             {
                 responseObject = dataDictionary;
-                dataDictionary = [responseObject objectForKey:@"data"];
+                dataDictionary = [responseObject dictionaryForKey:@"data"];
             }
         }
 
