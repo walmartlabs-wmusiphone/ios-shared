@@ -23,7 +23,11 @@
     // manipulated contentView width or have an accessory view. If this isn't accounted
     // for than multi-line labels could be incorrectly calculated since the entire
     // width of the cell would be used during the calculation. CB-2666 / CB-2631 cgarvin
-    self.bounds = CGRectMake(0.0f, 0.0f, self.contentView.size.width, CGRectGetHeight(tableview.bounds));
+
+    // Figure out the difference between the contentView and the cell, and then subtract
+    // that from the tableview bounds (might be wider than cell on wide phones)
+    
+    self.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableview.bounds) - (CGRectGetWidth(self.bounds) - CGRectGetWidth(self.contentView.bounds)), CGRectGetHeight(tableview.bounds));
 
     [self setNeedsLayout];
     [self layoutIfNeeded];
