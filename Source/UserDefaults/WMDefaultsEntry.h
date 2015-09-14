@@ -36,9 +36,6 @@
  **/
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 
-/// Checks if a location has a valid coordinate value saved
-- (BOOL)hasValidCoordinate;
-
 @end
 
 /// A generic user defaults storage class for a string object

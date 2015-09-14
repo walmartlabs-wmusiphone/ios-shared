@@ -44,10 +44,6 @@
     return coordinate;
 }
 
-- (BOOL)hasValidCoordinate {
-    return CLLocationCoordinate2DIsValid([self coordinate]);
-}
-
 @end
 
 @implementation WMDefaultsStringEntry
