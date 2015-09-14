@@ -23,25 +23,23 @@ Currently this is just in the form of formatted messages to the printed to the d
     /// Records the total accumulated time for the topic
     private(set) var totalTime: NSTimeInterval = 0.0
     private(set) var topic: String
+    private(set) var eventTimeLimits: [String : Double] = [:]
 
     /// This can be used to disable/enable performance monitoring for this object. Default is enabled.
     public var enabled: Bool = true
 
-    init(topic: String) {
-        self.topic = topic
-    }
-
-    init(topic: String, enabled: Bool) {
+    init(topic: String, enabled: Bool = true) {
         self.topic = topic
         self.enabled = enabled
     }
 
     /// Start the timing for the given event
-    public func start(eventName: String) {
+    public func start(eventName: String, timeLimit: NSTimeInterval) {
         if !enabled {
             return
         }
         startTimes[eventName] = NSDate()
+        eventTimeLimits[eventName] = Double(timeLimit)
     }
 
     /// Stop the timing for the given event. Will log the time of the event to the debug console.
@@ -51,8 +49,12 @@ Currently this is just in the form of formatted messages to the printed to the d
         }
         if let fromDate = startTimes[eventName] {
             let eventDuration = NSDate().timeIntervalSinceDate(fromDate)
+            if let eventTimeLimit = eventTimeLimits[eventName] {
+                if Double(eventDuration) > eventTimeLimit {
+                    println("PerformanceMonitor:(\(topic)): Warning: \(eventName) duration: \(eventDuration)s exceeds limit of \(eventTimeLimit)s.")
+                }
+            }
             totalTime += eventDuration
-            println("PerformanceMonitor:(\(topic)): \(eventName) duration: \(eventDuration)s. totalTime \(totalTime)")
             startTimes[eventName] = nil
         }
     }
@@ -66,8 +68,11 @@ Currently this is just in the form of formatted messages to the printed to the d
         for event in events {
             stop(event)
         }
-        println("PerformanceMonitor:(\(topic)): reset(\(totalTime))")
         totalTime = 0.0
+    }
+
+    public func log(eventName: String) {
+        println("PerformanceMonitor:(\(topic)): totalTime \(totalTime)")
     }
 }
 
