@@ -27,6 +27,7 @@ GENERICSABLE_IMPLEMENTATION(NSString)
     fixed = [fixed stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@" "];
     fixed = [fixed stringByReplacingOccurrencesOfString:@"&mdash;" withString:@"—"];
     fixed = [fixed stringByReplacingOccurrencesOfString:@"&reg;" withString:@"®"];
+    fixed = [fixed stringByReplacingOccurrencesOfString:@"&bull;" withString:@"•"];
 
     // kill the HTML entities
     NSError *error = NULL;
@@ -85,6 +86,9 @@ GENERICSABLE_IMPLEMENTATION(NSString)
     fixed = [fixed stringByReplacingOccurrencesOfString:@"&lt;" withString:@"<"];
     fixed = [fixed stringByReplacingOccurrencesOfString:@"&gt;" withString:@">"];
     fixed = [fixed stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@" "];
+    fixed = [fixed stringByReplacingOccurrencesOfString:@"&mdash;" withString:@"—"];
+    fixed = [fixed stringByReplacingOccurrencesOfString:@"&reg;" withString:@"®"];
+    fixed = [fixed stringByReplacingOccurrencesOfString:@"&bull;" withString:@"•"];
 
     // replace any HTML tag with a space
     NSError *error = NULL;
