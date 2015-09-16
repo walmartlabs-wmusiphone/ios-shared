@@ -36,7 +36,7 @@
     if ([UIDevice systemMajorVersion] >= 8.0)
     {
         CGSize tempSize = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize
-                              withHorizontalFittingPriority:UILayoutPriorityRequired
+                              withHorizontalFittingPriority:UILayoutPriorityDefaultHigh
                                     verticalFittingPriority:UILayoutPriorityDefaultHigh];
         cellHeight = (tempSize.height + separatorHeight);
     }
