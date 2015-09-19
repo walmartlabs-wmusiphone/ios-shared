@@ -546,7 +546,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
             else if ([post isKindOfClass:[NSString class]])
                 // It's a kind of NSString
                 postData = [post dataUsingEncoding:NSUTF8StringEncoding];
-            else if ([post isKindOfClass:[NSDictionary class]]) {
+            else if ([post isKindOfClass:[NSDictionary class]] || [post isKindOfClass:[NSArray class]]) {
                 // It's a kind of NSDictionary
                 NSError *jsonSerializationError = nil;
                 NSData *jsonData = [NSJSONSerialization dataWithJSONObject:post
