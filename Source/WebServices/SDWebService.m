@@ -87,6 +87,9 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 
 #ifdef DEBUG
     _disableCaching = [[NSUserDefaults standardUserDefaults] boolForKey:@"kWMDisableCaching"];
+    if (_disableCaching) {
+        NSURLCache.sharedURLCache = nil;
+    }
 #endif
 
 	return self;
