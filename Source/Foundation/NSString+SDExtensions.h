@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ObjectiveCGenerics.h"
 
-GENERICSABLE(NSString)
+@protocol NSString;
 
 @interface NSString(SDExtensions)
 
