@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ObjectiveCGenerics.h"
 
-GENERICSABLE(NSString)
+@protocol NSString <NSObject>
+@end
 
 @interface NSString(SDExtensions)
 
