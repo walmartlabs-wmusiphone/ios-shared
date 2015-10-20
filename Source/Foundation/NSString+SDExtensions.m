@@ -9,8 +9,6 @@
 #import "NSString+SDExtensions.h"
 #import "NSData+SDExtensions.h"
 
-GENERICSABLE_IMPLEMENTATION(NSString)
-
 @implementation NSString(SDExtensions)
 
 - (NSString *)replaceHTMLWithUnformattedText {
