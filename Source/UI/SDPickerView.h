@@ -29,6 +29,8 @@ typedef void(^SDPickerViewItemSelectionCompletionBlock)(BOOL canceled, NSInteger
 -(void)configureAsItemPicker:(NSArray<NSString>*)items completion:(SDPickerViewItemSelectionCompletionBlock)completion;
 -(void)configureAsItemPicker:(NSArray<NSString>*)items initialItem:(NSInteger)selectedItem completion:(SDPickerViewItemSelectionCompletionBlock)completion;
 
+-(IBAction)cancelAction:(id)sender;
+
 @property (nonatomic, weak) id<SDPickerViewDelegate> delegate;
 
 @end
