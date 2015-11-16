@@ -180,16 +180,16 @@ static void SDTMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkR
 
 -(void)dealloc
 {
-    [self stopNotifier];
+    //[self stopNotifier];
 
-    if(self.reachabilityRef)
-    {
-        CFRelease(self.reachabilityRef);
-        self.reachabilityRef = nil;
-    }
-
-	self.reachableBlock		= nil;
-	self.unreachableBlock	= nil;
+//    if(self.reachabilityRef)
+//    {
+//        CFRelease(self.reachabilityRef);
+//        self.reachabilityRef = nil;
+//    }
+//
+//	self.reachableBlock		= nil;
+//	self.unreachableBlock	= nil;
     
 #if !(__has_feature(objc_arc))
     [super dealloc];
@@ -207,73 +207,73 @@ static void SDTMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkR
 
 -(BOOL)startNotifier
 {
-    SCNetworkReachabilityContext    context = { 0, NULL, NULL, NULL, NULL };
-    
-    // this should do a retain on ourself, so as long as we're in notifier mode we shouldn't disappear out from under ourselves
-    // woah
-    self.reachabilityObject = self;
-    
-    
-
-    // first we need to create a serial queue
-    // we allocate this once for the lifetime of the notifier
-    self.reachabilitySerialQueue = dispatch_queue_create("com.tonymillion.reachability", NULL);
-    if(!self.reachabilitySerialQueue)
-    {
-        return NO;
-    }
-    
-#if __has_feature(objc_arc)
-    context.info = (__bridge void *)self;
-#else
-    context.info = (void *)self;
-#endif
-    
-    if (!SCNetworkReachabilitySetCallback(self.reachabilityRef, SDTMReachabilityCallback, &context))
-    {
-#ifdef DEBUG
-        SDLog(@"SCNetworkReachabilitySetCallback() failed: %s", SCErrorString(SCError()));
-#endif
-        
-        //clear out the dispatch queue
-        if(self.reachabilitySerialQueue)
-        {
-#if NEEDS_DISPATCH_RETAIN_RELEASE
-            dispatch_release(self.reachabilitySerialQueue);
-#endif
-            self.reachabilitySerialQueue = nil;
-        }
-        
-        self.reachabilityObject = nil;
-
-        return NO;
-    }
-    
-    // set it as our reachability queue which will retain the queue
-    if(!SCNetworkReachabilitySetDispatchQueue(self.reachabilityRef, self.reachabilitySerialQueue))
-    {
-#ifdef DEBUG
-        SDLog(@"SCNetworkReachabilitySetDispatchQueue() failed: %s", SCErrorString(SCError()));
-#endif
-
-        //UH OH - FAILURE!
-        
-        // first stop any callbacks!
-        SCNetworkReachabilitySetCallback(self.reachabilityRef, NULL, NULL);
-        
-        // then clear out the dispatch queue
-        if(self.reachabilitySerialQueue)
-        {
-#if NEEDS_DISPATCH_RETAIN_RELEASE
-            dispatch_release(self.reachabilitySerialQueue);
-#endif
-            self.reachabilitySerialQueue = nil;
-        }
-        
-        self.reachabilityObject = nil;
-        
-        return NO;
-    }
+//    SCNetworkReachabilityContext    context = { 0, NULL, NULL, NULL, NULL };
+//    
+//    // this should do a retain on ourself, so as long as we're in notifier mode we shouldn't disappear out from under ourselves
+//    // woah
+//    self.reachabilityObject = self;
+//    
+//    
+//
+//    // first we need to create a serial queue
+//    // we allocate this once for the lifetime of the notifier
+//    self.reachabilitySerialQueue = dispatch_queue_create("com.tonymillion.reachability", NULL);
+//    if(!self.reachabilitySerialQueue)
+//    {
+//        return NO;
+//    }
+//    
+//#if __has_feature(objc_arc)
+//    context.info = (__bridge void *)self;
+//#else
+//    context.info = (void *)self;
+//#endif
+//    
+//    if (!SCNetworkReachabilitySetCallback(self.reachabilityRef, SDTMReachabilityCallback, &context))
+//    {
+//#ifdef DEBUG
+//        SDLog(@"SCNetworkReachabilitySetCallback() failed: %s", SCErrorString(SCError()));
+//#endif
+//        
+//        //clear out the dispatch queue
+//        if(self.reachabilitySerialQueue)
+//        {
+//#if NEEDS_DISPATCH_RETAIN_RELEASE
+//            dispatch_release(self.reachabilitySerialQueue);
+//#endif
+//            self.reachabilitySerialQueue = nil;
+//        }
+//        
+//        self.reachabilityObject = nil;
+//
+//        return NO;
+//    }
+//    
+//    // set it as our reachability queue which will retain the queue
+//    if(!SCNetworkReachabilitySetDispatchQueue(self.reachabilityRef, self.reachabilitySerialQueue))
+//    {
+//#ifdef DEBUG
+//        SDLog(@"SCNetworkReachabilitySetDispatchQueue() failed: %s", SCErrorString(SCError()));
+//#endif
+//
+//        //UH OH - FAILURE!
+//        
+//        // first stop any callbacks!
+//        SCNetworkReachabilitySetCallback(self.reachabilityRef, NULL, NULL);
+//        
+//        // then clear out the dispatch queue
+//        if(self.reachabilitySerialQueue)
+//        {
+//#if NEEDS_DISPATCH_RETAIN_RELEASE
+//            dispatch_release(self.reachabilitySerialQueue);
+//#endif
+//            self.reachabilitySerialQueue = nil;
+//        }
+//        
+//        self.reachabilityObject = nil;
+//        
+//        return NO;
+//    }
     
     return YES;
 }
@@ -336,58 +336,63 @@ static void SDTMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkR
 
 -(BOOL)isReachable
 {
-    SCNetworkReachabilityFlags flags;  
-    
-    if(!SCNetworkReachabilityGetFlags(self.reachabilityRef, &flags))
-        return NO;
-    
-    return [self isReachableWithFlags:flags];
+    return YES;
+
+//    SCNetworkReachabilityFlags flags;  
+//    
+//    if(!SCNetworkReachabilityGetFlags(self.reachabilityRef, &flags))
+//        return NO;
+//    
+//    return [self isReachableWithFlags:flags];
 }
 
 -(BOOL)isReachableViaWWAN 
 {
-#if	TARGET_OS_IPHONE
+    return YES;
 
-    SCNetworkReachabilityFlags flags = 0;
-    
-    if(SCNetworkReachabilityGetFlags(reachabilityRef, &flags)) 
-    {
-        // check we're REACHABLE
-        if(flags & kSCNetworkReachabilityFlagsReachable)
-        {
-            // now, check we're on WWAN
-            if(flags & kSCNetworkReachabilityFlagsIsWWAN)
-            {
-                return YES;
-            }
-        }
-    }
-#endif
-    
-    return NO;
+//#if	TARGET_OS_IPHONE
+//
+//    SCNetworkReachabilityFlags flags = 0;
+//    
+//    if(SCNetworkReachabilityGetFlags(reachabilityRef, &flags)) 
+//    {
+//        // check we're REACHABLE
+//        if(flags & kSCNetworkReachabilityFlagsReachable)
+//        {
+//            // now, check we're on WWAN
+//            if(flags & kSCNetworkReachabilityFlagsIsWWAN)
+//            {
+//                return YES;
+//            }
+//        }
+//    }
+//#endif
+//    
+//    return NO;
 }
 
 -(BOOL)isReachableViaWiFi 
 {
-    SCNetworkReachabilityFlags flags = 0;
-    
-    if(SCNetworkReachabilityGetFlags(reachabilityRef, &flags)) 
-    {
-        // check we're reachable
-        if((flags & kSCNetworkReachabilityFlagsReachable))
-        {
-#if	TARGET_OS_IPHONE
-            // check we're NOT on WWAN
-            if((flags & kSCNetworkReachabilityFlagsIsWWAN))
-            {
-                return NO;
-            }
-#endif
-            return YES;
-        }
-    }
-    
-    return NO;
+    return YES;
+//    SCNetworkReachabilityFlags flags = 0;
+//    
+//    if(SCNetworkReachabilityGetFlags(reachabilityRef, &flags)) 
+//    {
+//        // check we're reachable
+//        if((flags & kSCNetworkReachabilityFlagsReachable))
+//        {
+//#if	TARGET_OS_IPHONE
+//            // check we're NOT on WWAN
+//            if((flags & kSCNetworkReachabilityFlagsIsWWAN))
+//            {
+//                return NO;
+//            }
+//#endif
+//            return YES;
+//        }
+//    }
+//    
+//    return NO;
 }
 
 
