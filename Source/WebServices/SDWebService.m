@@ -609,7 +609,10 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
         }
         
         // merge the headers
-        NSDictionary *newHeaders = [headers mutableCopy];
+        NSMutableDictionary *newHeaders = [NSMutableDictionary dictionaryWithCapacity:(headers.count + requestDetailsHeaders.count)];
+        if (headers != nil) {
+            [newHeaders addEntriesFromDictionary:headers];
+        }
         for (NSString *key in requestDetailsHeaders.allKeys)
         {
             NSString *processedHeaderValue = [requestDetailsHeaders stringForKey:key];
