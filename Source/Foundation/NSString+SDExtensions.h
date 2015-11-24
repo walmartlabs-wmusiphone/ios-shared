@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ObjectiveCGenerics.h"
 
-@protocol NSString;
+@protocol NSString <NSObject>
 
 @interface NSString(SDExtensions)
 
