@@ -157,7 +157,7 @@ static void TMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRea
         self.reachabilityRef = ref;
 
         CFRetain(self.reachabilityRef);
-        
+
         // We need to create a serial queue.
         // We allocate this once for the lifetime of the notifier.
 
