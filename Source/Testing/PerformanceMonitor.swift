@@ -15,7 +15,7 @@ Performance is computed as the difference between the start and stop method call
 So you can track time spent at a granular level (e.g. by individual operations/methods) and also for a topic (e.g. a complete view controller setup)
 Currently this is just in the form of formatted messages to the printed to the debug console.
 */
-@objc public class PerformanceMonitor {
+@objc public class PerformanceMonitor: NSObject {
 
     /// Stores the times the various events got started
     private var startTimes: [String : NSDate] = [:]
@@ -51,7 +51,7 @@ Currently this is just in the form of formatted messages to the printed to the d
             let eventDuration = NSDate().timeIntervalSinceDate(fromDate)
             if let eventTimeLimit = eventTimeLimits[eventName] {
                 if Double(eventDuration) > eventTimeLimit {
-                    println("PerformanceMonitor:(\(topic)): Warning: \(eventName) duration: \(eventDuration)s exceeds limit of \(eventTimeLimit)s.")
+                    print("PerformanceMonitor:(\(topic)): Warning: \(eventName) duration: \(eventDuration)s exceeds limit of \(eventTimeLimit)s.")
                 }
             }
             totalTime += eventDuration
@@ -72,13 +72,13 @@ Currently this is just in the form of formatted messages to the printed to the d
     }
 
     public func log(eventName: String) {
-        println("PerformanceMonitor:(\(topic)): totalTime \(totalTime)")
+        print("PerformanceMonitor:(\(topic)): totalTime \(totalTime)")
     }
 }
 
 /// Owns a "pool" of PerformanceMonitor objects grouped by topic.
 /// Clients should use monitorForTopic to get PerformanceMonitor objects from the pool
-@objc public class PerformanceMonitorPool {
+@objc public class PerformanceMonitorPool: NSObject {
 
     public static let sharedPool = PerformanceMonitorPool(enabled: true)
 

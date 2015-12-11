@@ -214,8 +214,10 @@ static NSString *kSDSearchUserDefaultsKey = @"kSDSearchUserDefaultsKey";
 		{
 			if (animated)
 			{
-                if ([self.searchBar.delegate respondsToSelector:@selector(searchBarCancelButtonClicked:)]) {
-                    [self.searchBar.delegate searchBarCancelButtonClicked:self.searchBar];
+                __strong id delegate = self.searchBar.delegate;
+            
+                if ([delegate respondsToSelector:@selector(searchBarCancelButtonClicked:)]) {
+                    [delegate searchBarCancelButtonClicked:self.searchBar];
                 }
                 
 				[UIView animateWithDuration:0.2 
@@ -261,7 +263,7 @@ static NSString *kSDSearchUserDefaultsKey = @"kSDSearchUserDefaultsKey";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    id oldDelegate = self.searchBar.delegate;
+    __strong id oldDelegate = self.searchBar.delegate;
     self.searchBar.delegate = nil;
     
     if (tableView == recentSearchTableView)
@@ -305,8 +307,8 @@ static NSString *kSDSearchUserDefaultsKey = @"kSDSearchUserDefaultsKey";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.searchBar.delegate = oldDelegate;
 	
-    if (self.searchBar.delegate && [self.searchBar.delegate respondsToSelector:@selector(searchBarSearchButtonClicked:)])
-        [self.searchBar.delegate searchBarSearchButtonClicked:self.searchBar];
+    if ([oldDelegate respondsToSelector:@selector(searchBarSearchButtonClicked:)])
+        [oldDelegate searchBarSearchButtonClicked:self.searchBar];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
