@@ -363,6 +363,9 @@
 {
     NSString* capitalizedString = [self capitalizedString];
 
+    // TODO: This doesn't work when the "Ne" is at the end e.g. "3025 Lancaster Dr Ne".
+    // TODO: "5250 Commercial st Se" st is not capitalized.
+
     // Handle the simple polar directions.
     capitalizedString = [capitalizedString stringByReplacingOccurrencesOfString:@" Ne " withString:@" NE "];
     capitalizedString = [capitalizedString stringByReplacingOccurrencesOfString:@" Nw " withString:@" NW "];
