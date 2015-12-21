@@ -363,18 +363,24 @@
 {
     NSString* capitalizedString = [self capitalizedString];
 
-    // TODO: This doesn't work when the "Ne" is at the end e.g. "3025 Lancaster Dr Ne".
-    // TODO: "5250 Commercial st Se" st is not capitalized.
-
     // Handle the simple polar directions.
     capitalizedString = [capitalizedString stringByReplacingOccurrencesOfString:@" Ne " withString:@" NE "];
     capitalizedString = [capitalizedString stringByReplacingOccurrencesOfString:@" Nw " withString:@" NW "];
     capitalizedString = [capitalizedString stringByReplacingOccurrencesOfString:@" Se " withString:@" SE "];
     capitalizedString = [capitalizedString stringByReplacingOccurrencesOfString:@" Sw " withString:@" SW "];
 
-    // Now go and first the appreviations after the street numbers.
+    // When the "Ne" is at the end e.g. "3025 Lancaster Dr Ne".
+    capitalizedString = [capitalizedString stringByReplacingOccurrencesOfString:@" Ne" withString:@" NE"];
+    capitalizedString = [capitalizedString stringByReplacingOccurrencesOfString:@" Nw" withString:@" NW"];
+    capitalizedString = [capitalizedString stringByReplacingOccurrencesOfString:@" Se" withString:@" SE"];
+    capitalizedString = [capitalizedString stringByReplacingOccurrencesOfString:@" Sw" withString:@" SW"];
+
+    // When the "st" is in the middle e.g. "5250 Commercial st Se".
+    capitalizedString = [capitalizedString stringByReplacingOccurrencesOfString:@" st " withString:@" St "];
+
+    // Now go and first the abbreviations after the street numbers 1st, 2nd, 3rd, 4th etc.
     NSError* error = nil;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"([0-9]|[ ])(St|Nd|Rd|Th)([ ])" options:0 error:&error];
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"([0-9][ ]?)(St|Nd|Rd|Th)([ ])" options:0 error:&error];
     if(error == nil && regex)
     {
         NSMutableString* mutableString = [capitalizedString mutableCopy];
