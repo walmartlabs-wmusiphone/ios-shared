@@ -74,3 +74,15 @@
 }
 
 @end
+
+@implementation WMDefaultsArrayEntry
+
+- (NSArray *)arrayValue {
+    return [[NSUserDefaults standardUserDefaults] arrayForKey:self.keyName];
+}
+
+- (void)setArrayValue:(NSArray *)arrayValue {
+    [[NSUserDefaults standardUserDefaults] setObject:arrayValue forKey:self.keyName];
+}
+
+@end
