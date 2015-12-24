@@ -67,26 +67,26 @@ static NSString *SDKeychainErrorDomain = @"SDKeychainErrorDomain";
     {
 		//Need to delete the Key 
         NSDictionary *spec = [NSDictionary dictionaryWithObjectsAndKeys:(__bridge id)kSecClassGenericPassword, kSecClass, key, kSecAttrAccount, serviceName, kSecAttrService, nil];
-        return !SecItemDelete((__bridge CFDictionaryRef)spec);
-    } 
+        OSStatus status = SecItemDelete((__bridge CFDictionaryRef)spec);
+        return status == noErr;
+    }
     else
     {
         NSData *stringData = [string dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *spec = [NSDictionary dictionaryWithObjectsAndKeys:(__bridge id)kSecClassGenericPassword, kSecClass, key, kSecAttrAccount, serviceName, kSecAttrService, nil];
         
-        if(!string)
-            return !SecItemDelete((__bridge CFDictionaryRef)spec);
-        else
         if ([SDKeychain stringForKey:key serviceName:serviceName])
         {
             NSDictionary *update = [NSDictionary dictionaryWithObject:stringData forKey:(__bridge id)kSecValueData];
-            return !SecItemUpdate((__bridge CFDictionaryRef)spec, (__bridge CFDictionaryRef)update);
+            OSStatus status = SecItemUpdate((__bridge CFDictionaryRef)spec, (__bridge CFDictionaryRef)update);
+            return status == noErr;
         }
         else
         {
             NSMutableDictionary *data = [NSMutableDictionary dictionaryWithDictionary:spec];
             [data setObject:stringData forKey:(__bridge id)kSecValueData];
-            return !SecItemAdd((__bridge CFDictionaryRef)data, NULL);
+            OSStatus status = SecItemAdd((__bridge CFDictionaryRef)data, NULL);
+            return status == noErr;
         }
     }
 }
