@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "UIImageView+SDExtensions.h"
+#import "NSRunLoop+SDExtensions.h"
 #import "SDImageCache.h"
 
 @interface UIImageViewTests : XCTestCase

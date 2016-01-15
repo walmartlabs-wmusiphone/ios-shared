@@ -7,6 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NSString+SDExtensions.h"
+#import "NSObject+SDExtensions.h"
+#import "NSData+SDExtensions.h"
 #import "SDModelObject.h"
 #import "RxRefillsModel.h"
 

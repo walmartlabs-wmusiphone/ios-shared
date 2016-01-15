@@ -14,6 +14,7 @@
 #import "NSURLRequest+SDExtensions.h"
 #import "SDWebServiceMockResponseQueueProvider.h"
 #import "SDLog.h"
+#import "Reachability.h"
 
 NSString *const SDWebServiceError = @"SDWebServiceError";
 

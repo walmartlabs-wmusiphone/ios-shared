@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import "SDURLConnection.h"
-#import "Reachability.h"
 #import "SDWebServiceMockResponseProvider.h"
 
 typedef id (^SDWebServiceDataCompletionBlock)(NSURLResponse *response, NSInteger responseCode, NSData *responseData, NSError *error);

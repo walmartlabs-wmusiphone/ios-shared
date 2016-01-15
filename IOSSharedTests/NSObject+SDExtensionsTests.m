@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "NSObject+SDExtensions.h"
 
 @interface NSObject_SDExtensionsTests : XCTestCase
 

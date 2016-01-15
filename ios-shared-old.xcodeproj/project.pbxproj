@@ -81,8 +81,6 @@
 		48EB6B2B19DCBCED0054662E /* SDSpanParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EB6B2A19DCBCED0054662E /* SDSpanParserTests.m */; };
 		48EB6B2E19DCBFFC0054662E /* SpanTest_basic.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48EB6B2D19DCBFFC0054662E /* SpanTest_basic.txt */; };
 		CA01F1B117D7A6F000E7C553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA80792C17C94199009574BB /* Foundation.framework */; };
-		CA01F1B817D7A6F000E7C553 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA01F1B617D7A6F000E7C553 /* InfoPlist.strings */; };
-		CA01F1BA17D7A6F000E7C553 /* ios_shared_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA01F1B917D7A6F000E7C553 /* ios_shared_Tests.m */; };
 		CA01F1C417D7A72D00E7C553 /* SDABTestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA01F1C117D7A72D00E7C553 /* SDABTestingTests.m */; };
 		CA01F1C517D7A72D00E7C553 /* UIDeviceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA01F1C217D7A72D00E7C553 /* UIDeviceTests.m */; };
 		CA01F1C617D7A72D00E7C553 /* UIImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA01F1C317D7A72D00E7C553 /* UIImageViewTests.m */; };
@@ -323,6 +321,8 @@
 		00C010CA1B2D69CB0029C58F /* SDWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWeakArray.h; sourceTree = "<group>"; };
 		00C010CB1B2D69CB0029C58F /* SDWeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWeakArray.m; sourceTree = "<group>"; };
 		00C010D01B2D69E40029C58F /* SDAccessible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAccessible.h; sourceTree = "<group>"; };
+		07659AF11C486E6900F79535 /* ios-shared Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ios-shared Tests-Info.plist"; sourceTree = "<group>"; };
+		07659AF21C486E7900F79535 /* ios-shared Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-shared Tests-Prefix.pch"; sourceTree = "<group>"; };
 		08EFCA2118FDCB70006547E0 /* NSDate+SDExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SDExtensionsTests.m"; sourceTree = "<group>"; };
 		08EFCA2718FEFAC6006547E0 /* NSDictionary+SDExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SDExtensionsTests.m"; sourceTree = "<group>"; };
 		2008D378188DAA9700255BC4 /* SDApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDApplication.h; sourceTree = "<group>"; };
@@ -338,10 +338,6 @@
 		48EB6B2A19DCBCED0054662E /* SDSpanParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSpanParserTests.m; sourceTree = "<group>"; };
 		48EB6B2D19DCBFFC0054662E /* SpanTest_basic.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpanTest_basic.txt; sourceTree = "<group>"; };
 		CA01F1AF17D7A6EF00E7C553 /* ios-shared Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-shared Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA01F1B517D7A6F000E7C553 /* ios-shared Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-shared Tests-Info.plist"; sourceTree = "<group>"; };
-		CA01F1B717D7A6F000E7C553 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CA01F1B917D7A6F000E7C553 /* ios_shared_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_shared_Tests.m; sourceTree = "<group>"; };
-		CA01F1BB17D7A6F000E7C553 /* ios-shared Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-shared Tests-Prefix.pch"; sourceTree = "<group>"; };
 		CA01F1C117D7A72D00E7C553 /* SDABTestingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDABTestingTests.m; sourceTree = "<group>"; };
 		CA01F1C217D7A72D00E7C553 /* UIDeviceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceTests.m; sourceTree = "<group>"; };
 		CA01F1C317D7A72D00E7C553 /* UIImageViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewTests.m; sourceTree = "<group>"; };
@@ -624,13 +620,13 @@
 				48EB6B2D19DCBFFC0054662E /* SpanTest_basic.txt */,
 			);
 			name = "Mock Data";
+			path = MockData;
 			sourceTree = "<group>";
 		};
 		CA01F1B317D7A6F000E7C553 /* ios-shared Tests */ = {
 			isa = PBXGroup;
 			children = (
 				48EB6B2C19DCBFD80054662E /* Mock Data */,
-				CA01F1B917D7A6F000E7C553 /* ios_shared_Tests.m */,
 				E205784D1889DDDD00A1BA81 /* NSArray+SDExtensionsTests.m */,
 				CA888874196F08930022DA14 /* NSObject+SDExtensionsTests.m */,
 				08EFCA2118FDCB70006547E0 /* NSDate+SDExtensionsTests.m */,
@@ -647,15 +643,15 @@
 				F812F9561A11452600312E52 /* SDWebServicesMocks */,
 				48EB6B2A19DCBCED0054662E /* SDSpanParserTests.m */,
 			);
-			path = "ios-shared Tests";
+			name = "ios-shared Tests";
+			path = IOSSharedTests;
 			sourceTree = "<group>";
 		};
 		CA01F1B417D7A6F000E7C553 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CA01F1B517D7A6F000E7C553 /* ios-shared Tests-Info.plist */,
-				CA01F1B617D7A6F000E7C553 /* InfoPlist.strings */,
-				CA01F1BB17D7A6F000E7C553 /* ios-shared Tests-Prefix.pch */,
+				07659AF11C486E6900F79535 /* ios-shared Tests-Info.plist */,
+				07659AF21C486E7900F79535 /* ios-shared Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -685,7 +681,8 @@
 				CA0E76E418284DD500B4398F /* Project-iOS-Release.xcconfig */,
 				CA0E76E518284DD500B4398F /* README.md */,
 			);
-			path = Configurations;
+			name = Configurations;
+			path = ../IOSShared/Configurations;
 			sourceTree = "<group>";
 		};
 		CA0E76E618284DD500B4398F /* Foundation */ = {
@@ -738,7 +735,8 @@
 				E28C6CA9189DAE7D00052C7F /* UIResponder+SDExtensions.h */,
 				E28C6CAA189DAE7D00052C7F /* UIResponder+SDExtensions.m */,
 			);
-			path = Foundation;
+			name = Foundation;
+			path = ../IOSShared/Foundation;
 			sourceTree = "<group>";
 		};
 		CA0E770818284DD500B4398F /* Logging */ = {
@@ -747,7 +745,8 @@
 				CA0E770918284DD500B4398F /* SDLog.h */,
 				E2136B3218A4387200000D1B /* SDLog.m */,
 			);
-			path = Logging;
+			name = Logging;
+			path = ../IOSShared/Logging;
 			sourceTree = "<group>";
 		};
 		CA0E770A18284DD500B4398F /* Macros */ = {
@@ -759,7 +758,8 @@
 				CA0E770B18284DD500B4398F /* ObjectiveCGenerics.h */,
 				CA0E770C18284DD500B4398F /* SDMacros.h */,
 			);
-			path = Macros;
+			name = Macros;
+			path = ../IOSShared/Macros;
 			sourceTree = "<group>";
 		};
 		CA0E770D18284DD500B4398F /* Mapping */ = {
@@ -772,7 +772,8 @@
 				CA0E771218284DD500B4398F /* SDLocationManager.h */,
 				CA0E771318284DD500B4398F /* SDLocationManager.m */,
 			);
-			path = Mapping;
+			name = Mapping;
+			path = ../IOSShared/Mapping;
 			sourceTree = "<group>";
 		};
 		CA0E771418284DD500B4398F /* Security */ = {
@@ -783,7 +784,8 @@
 				CAC1ED071954B4EB0023F706 /* SDTouchID.h */,
 				CAC1ED081954B4EB0023F706 /* SDTouchID.m */,
 			);
-			path = Security;
+			name = Security;
+			path = ../IOSShared/Security;
 			sourceTree = "<group>";
 		};
 		CA0E771718284DD500B4398F /* Testing */ = {
@@ -792,7 +794,8 @@
 				CA0E771818284DD500B4398F /* SDABTesting.h */,
 				CA0E771918284DD500B4398F /* SDABTesting.m */,
 			);
-			path = Testing;
+			name = Testing;
+			path = ../IOSShared/Testing;
 			sourceTree = "<group>";
 		};
 		CA0E771A18284DD500B4398F /* UI */ = {
@@ -925,7 +928,8 @@
 				CA0E774E18284DD600B4398F /* UIViewController+SDExtensions.h */,
 				CA0E774F18284DD600B4398F /* UIViewController+SDExtensions.m */,
 			);
-			path = UI;
+			name = UI;
+			path = ../IOSShared/UI;
 			sourceTree = "<group>";
 		};
 		CA0E775018284DD600B4398F /* WebServices */ = {
@@ -959,7 +963,8 @@
 				CA0E776518284DD600B4398F /* UIImageView+SDExtensions.h */,
 				CA0E776618284DD600B4398F /* UIImageView+SDExtensions.m */,
 			);
-			path = WebServices;
+			name = WebServices;
+			path = ../IOSShared/WebServices;
 			sourceTree = "<group>";
 		};
 		CA80792017C94199009574BB = {
@@ -1113,7 +1118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CA80792417C94199009574BB /* Build configuration list for PBXProject "ios-shared" */;
+			buildConfigurationList = CA80792417C94199009574BB /* Build configuration list for PBXProject "ios-shared-old" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1151,7 +1156,6 @@
 				F8BD64D31A3F38F80090D65E /* SDWebServiceMockTest_bundleB.json in Resources */,
 				CA0E776A18284DD600B4398F /* README.md in Resources */,
 				CAAB5A3318564CEE006737D4 /* json1.txt in Resources */,
-				CA01F1B817D7A6F000E7C553 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1285,7 +1289,6 @@
 				00C010F31B2D6ABE0029C58F /* SDPullNavigationBarControlsView.m in Sources */,
 				00C010E51B2D6ABE0029C58F /* SDButton.m in Sources */,
 				00C010D31B2D6A900029C58F /* SDURLRouterEntry.m in Sources */,
-				CA01F1BA17D7A6F000E7C553 /* ios_shared_Tests.m in Sources */,
 				CA0E77AA18284DD600B4398F /* SDPhotoImageView.m in Sources */,
 				CA0E777218284DD600B4398F /* NSDictionary+SDExtensions.m in Sources */,
 				CABD745018AAB4180083A097 /* SDBase64Tests.m in Sources */,
@@ -1424,17 +1427,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		CA01F1B617D7A6F000E7C553 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA01F1B717D7A6F000E7C553 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		CA01F1BF17D7A6F000E7C553 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1552,7 +1544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA80792417C94199009574BB /* Build configuration list for PBXProject "ios-shared" */ = {
+		CA80792417C94199009574BB /* Build configuration list for PBXProject "ios-shared-old" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA80794A17C94199009574BB /* Debug */,

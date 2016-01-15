@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "NSData+SDExtensions.h"
+#import "NSDate+SDExtensions.h"
 
 @interface NSDateTests : XCTestCase
 {

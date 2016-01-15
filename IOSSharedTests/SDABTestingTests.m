@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 SetDirection. All rights reserved.
 //
 
-//#import <XCTest/XCTest.h>
 #import <XCTest/XCTest.h>
 #import "SDABTesting.h"
 

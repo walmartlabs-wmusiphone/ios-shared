@@ -7,7 +7,6 @@
 //
 
 #import "SDModelObject+REST.h"
-#import "WalmartBaseService.h"
 
 @implementation SDModelObject (REST)
 

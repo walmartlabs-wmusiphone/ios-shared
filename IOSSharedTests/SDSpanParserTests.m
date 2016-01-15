@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NSData+SDExtensions.h"
 #import "SDSpanParser.h"
 #import "SDLog.h"
 
