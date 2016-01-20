@@ -297,6 +297,146 @@
 			remoteGlobalIDString = 076598861C4843BA00F79535;
 			remoteInfo = IOSShared;
 		};
+		0772D03A1C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CE911C50342B00066BF3 /* SDContentAlertViewDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CA0E77F018285A1D00B4398F;
+			remoteInfo = SDContentAlertViewDemo;
+		};
+		0772D03C1C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CE911C50342B00066BF3 /* SDContentAlertViewDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CA0E781118285A1D00B4398F;
+			remoteInfo = SDContentAlertViewDemoTests;
+		};
+		0772D0401C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CEA81C50342B00066BF3 /* SDCreditCardFieldTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2DD070918BACD15005A645C;
+			remoteInfo = SDCreditCardFieldTest;
+		};
+		0772D0421C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CEA81C50342B00066BF3 /* SDCreditCardFieldTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2DD072A18BACD15005A645C;
+			remoteInfo = SDCreditCardFieldTestTests;
+		};
+		0772D0461C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CEBE1C50342B00066BF3 /* SDExpandingTableView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9CD4E6661908573B00CDD6A3;
+			remoteInfo = SDExpandingTableView;
+		};
+		0772D0481C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CEBE1C50342B00066BF3 /* SDExpandingTableView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9CD4E6871908573B00CDD6A3;
+			remoteInfo = SDExpandingTableViewTests;
+		};
+		0772D04B1C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CE801C50342B00066BF3 /* SDTableViewCommand.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9CAE4D5A18A844960085EDFF;
+			remoteInfo = SDTableViewCommand;
+		};
+		0772D04F1C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CED41C50342B00066BF3 /* SDTextFieldExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CA2482A01891BF2200628F4B;
+			remoteInfo = SDTextFieldExample;
+		};
+		0772D0511C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CED41C50342B00066BF3 /* SDTextFieldExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CA2482C11891BF2200628F4B;
+			remoteInfo = SDTextFieldExampleTests;
+		};
+		0772D0551C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CEEC1C50342C00066BF3 /* SDTimerTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2EADCB618BE862D0087F9A2;
+			remoteInfo = SDTimerTest;
+		};
+		0772D0571C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CEEC1C50342C00066BF3 /* SDTimerTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2EADCDA18BE862D0087F9A2;
+			remoteInfo = SDTimerTestTests;
+		};
+		0772D05B1C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CF011C50342C00066BF3 /* SDWebServiceDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBE861FD183405770012469F;
+			remoteInfo = SDWebServiceDemo;
+		};
+		0772D05D1C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CF011C50342C00066BF3 /* SDWebServiceDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBE86221183405770012469F;
+			remoteInfo = SDWebServiceDemoTests;
+		};
+		0772D0611C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CF331C50342C00066BF3 /* StackedContainerViewDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABDDE7D418987F3B0041B0CE;
+			remoteInfo = StackedContainerViewDemo;
+		};
+		0772D0631C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CF331C50342C00066BF3 /* StackedContainerViewDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABDDE7F518987F3C0041B0CE;
+			remoteInfo = StackedContainerViewDemoTests;
+		};
+		0772D0661C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CF4B1C50342C00066BF3 /* TestCompositeImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2E60B7A1890DF2200005828;
+			remoteInfo = TestCompositeImage;
+		};
+		0772D06A1C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CF6C1C50342C00066BF3 /* TestGlobalPullnav.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E21F0989189708EA009A4014;
+			remoteInfo = TestGlobalPullnav;
+		};
+		0772D06C1C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CF6C1C50342C00066BF3 /* TestGlobalPullnav.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E21F09AD189708EA009A4014;
+			remoteInfo = TestGlobalPullnavTests;
+		};
+		0772D0701C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CF821C50342C00066BF3 /* TouchLogin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22E6E2251964BEAA0091424B;
+			remoteInfo = TouchLogin;
+		};
+		0772D0721C50342C00066BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772CF821C50342C00066BF3 /* TouchLogin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22E6E23B1964BEAA0091424B;
+			remoteInfo = TouchLoginTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -589,6 +729,197 @@
 		07659AE71C486E1C00F79535 /* SpanTest_missingopen.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpanTest_missingopen.txt; sourceTree = "<group>"; };
 		07659AE81C486E1C00F79535 /* SpanTest_multispans.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpanTest_multispans.txt; sourceTree = "<group>"; };
 		07659AE91C486E1C00F79535 /* SpanTest_multispans_noclass.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpanTest_multispans_noclass.txt; sourceTree = "<group>"; };
+		0772CE671C50327100066BF3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0772CE6A1C5033DD00066BF3 /* SDPullNavTab.pcvd */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = SDPullNavTab.pcvd; sourceTree = "<group>"; };
+		0772CE6D1C5033EE00066BF3 /* com.setdirection.iOS-Shared.docset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "com.setdirection.iOS-Shared.docset"; sourceTree = "<group>"; };
+		0772CE6F1C50341000066BF3 /* config-files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "config-files.png"; sourceTree = "<group>"; };
+		0772CE731C50342B00066BF3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0772CE761C50342B00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0772CE781C50342B00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CE791C50342B00066BF3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0772CE7A1C50342B00066BF3 /* SDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAppDelegate.h; sourceTree = "<group>"; };
+		0772CE7B1C50342B00066BF3 /* SDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAppDelegate.m; sourceTree = "<group>"; };
+		0772CE7C1C50342B00066BF3 /* SDExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDExampleViewController.h; sourceTree = "<group>"; };
+		0772CE7D1C50342B00066BF3 /* SDExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDExampleViewController.m; sourceTree = "<group>"; };
+		0772CE7E1C50342B00066BF3 /* SDTableViewCommand-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDTableViewCommand-Info.plist"; sourceTree = "<group>"; };
+		0772CE7F1C50342B00066BF3 /* SDTableViewCommand-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDTableViewCommand-Prefix.pch"; sourceTree = "<group>"; };
+		0772CE801C50342B00066BF3 /* SDTableViewCommand.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SDTableViewCommand.xcodeproj; sourceTree = "<group>"; };
+		0772CE861C50342B00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0772CE881C50342B00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CE891C50342B00066BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0772CE8A1C50342B00066BF3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0772CE8B1C50342B00066BF3 /* MyAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppDelegate.h; sourceTree = "<group>"; };
+		0772CE8C1C50342B00066BF3 /* MyAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAppDelegate.m; sourceTree = "<group>"; };
+		0772CE8D1C50342B00066BF3 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		0772CE8E1C50342B00066BF3 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		0772CE8F1C50342B00066BF3 /* SDContentAlertViewDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDContentAlertViewDemo-Info.plist"; sourceTree = "<group>"; };
+		0772CE901C50342B00066BF3 /* SDContentAlertViewDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDContentAlertViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		0772CE911C50342B00066BF3 /* SDContentAlertViewDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SDContentAlertViewDemo.xcodeproj; sourceTree = "<group>"; };
+		0772CE961C50342B00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CE971C50342B00066BF3 /* SDContentAlertViewDemoTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDContentAlertViewDemoTests-Info.plist"; sourceTree = "<group>"; };
+		0772CE981C50342B00066BF3 /* SDContentAlertViewDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDContentAlertViewDemoTests.m; sourceTree = "<group>"; };
+		0772CE9C1C50342B00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0772CE9E1C50342B00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CE9F1C50342B00066BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0772CEA01C50342B00066BF3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0772CEA11C50342B00066BF3 /* SDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAppDelegate.h; sourceTree = "<group>"; };
+		0772CEA21C50342B00066BF3 /* SDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAppDelegate.m; sourceTree = "<group>"; };
+		0772CEA31C50342B00066BF3 /* SDCreditCardField.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SDCreditCardField.xcassets; sourceTree = "<group>"; };
+		0772CEA41C50342B00066BF3 /* SDCreditCardFieldTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDCreditCardFieldTest-Info.plist"; sourceTree = "<group>"; };
+		0772CEA51C50342B00066BF3 /* SDCreditCardFieldTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDCreditCardFieldTest-Prefix.pch"; sourceTree = "<group>"; };
+		0772CEA61C50342B00066BF3 /* SDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDViewController.h; sourceTree = "<group>"; };
+		0772CEA71C50342B00066BF3 /* SDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
+		0772CEA81C50342B00066BF3 /* SDCreditCardFieldTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SDCreditCardFieldTest.xcodeproj; sourceTree = "<group>"; };
+		0772CEAD1C50342B00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CEAE1C50342B00066BF3 /* SDCreditCardFieldTestTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDCreditCardFieldTestTests-Info.plist"; sourceTree = "<group>"; };
+		0772CEAF1C50342B00066BF3 /* SDCreditCardFieldTestTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCreditCardFieldTestTests.m; sourceTree = "<group>"; };
+		0772CEB31C50342B00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0772CEB51C50342B00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CEB61C50342B00066BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0772CEB71C50342B00066BF3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0772CEB81C50342B00066BF3 /* SDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAppDelegate.h; sourceTree = "<group>"; };
+		0772CEB91C50342B00066BF3 /* SDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAppDelegate.m; sourceTree = "<group>"; };
+		0772CEBA1C50342B00066BF3 /* SDExpandingTableView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDExpandingTableView-Info.plist"; sourceTree = "<group>"; };
+		0772CEBB1C50342B00066BF3 /* SDExpandingTableView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDExpandingTableView-Prefix.pch"; sourceTree = "<group>"; };
+		0772CEBC1C50342B00066BF3 /* SDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDViewController.h; sourceTree = "<group>"; };
+		0772CEBD1C50342B00066BF3 /* SDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
+		0772CEBE1C50342B00066BF3 /* SDExpandingTableView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SDExpandingTableView.xcodeproj; sourceTree = "<group>"; };
+		0772CEC31C50342B00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CEC41C50342B00066BF3 /* SDExpandingTableViewTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDExpandingTableViewTests-Info.plist"; sourceTree = "<group>"; };
+		0772CEC51C50342B00066BF3 /* SDExpandingTableViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDExpandingTableViewTests.m; sourceTree = "<group>"; };
+		0772CEC91C50342B00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0772CECB1C50342B00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CECC1C50342B00066BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0772CECD1C50342B00066BF3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0772CECE1C50342B00066BF3 /* SDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAppDelegate.h; sourceTree = "<group>"; };
+		0772CECF1C50342B00066BF3 /* SDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAppDelegate.m; sourceTree = "<group>"; };
+		0772CED01C50342B00066BF3 /* SDFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDFormViewController.h; sourceTree = "<group>"; };
+		0772CED11C50342B00066BF3 /* SDFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDFormViewController.m; sourceTree = "<group>"; };
+		0772CED21C50342B00066BF3 /* SDTextFieldExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDTextFieldExample-Info.plist"; sourceTree = "<group>"; };
+		0772CED31C50342B00066BF3 /* SDTextFieldExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDTextFieldExample-Prefix.pch"; sourceTree = "<group>"; };
+		0772CED41C50342B00066BF3 /* SDTextFieldExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SDTextFieldExample.xcodeproj; sourceTree = "<group>"; };
+		0772CED91C50342C00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CEDA1C50342C00066BF3 /* SDTextFieldExampleTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDTextFieldExampleTests-Info.plist"; sourceTree = "<group>"; };
+		0772CEDB1C50342C00066BF3 /* SDTextFieldExampleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTextFieldExampleTests.m; sourceTree = "<group>"; };
+		0772CEDF1C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		0772CEE11C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		0772CEE31C50342C00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CEE41C50342C00066BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0772CEE51C50342C00066BF3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0772CEE61C50342C00066BF3 /* SDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAppDelegate.h; sourceTree = "<group>"; };
+		0772CEE71C50342C00066BF3 /* SDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAppDelegate.m; sourceTree = "<group>"; };
+		0772CEE81C50342C00066BF3 /* SDTimerTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDTimerTest-Info.plist"; sourceTree = "<group>"; };
+		0772CEE91C50342C00066BF3 /* SDTimerTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDTimerTest-Prefix.pch"; sourceTree = "<group>"; };
+		0772CEEA1C50342C00066BF3 /* SDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDViewController.h; sourceTree = "<group>"; };
+		0772CEEB1C50342C00066BF3 /* SDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
+		0772CEEC1C50342C00066BF3 /* SDTimerTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SDTimerTest.xcodeproj; sourceTree = "<group>"; };
+		0772CEF11C50342C00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CEF21C50342C00066BF3 /* SDTimerTestTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDTimerTestTests-Info.plist"; sourceTree = "<group>"; };
+		0772CEF31C50342C00066BF3 /* SDTimerTestTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTimerTestTests.m; sourceTree = "<group>"; };
+		0772CEF71C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		0772CEF91C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		0772CEFB1C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MyFourDollarViewController_iPhone.storyboard; sourceTree = "<group>"; };
+		0772CEFD1C50342C00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CEFE1C50342C00066BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0772CEFF1C50342C00066BF3 /* SDWebServiceDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDWebServiceDemo-Info.plist"; sourceTree = "<group>"; };
+		0772CF001C50342C00066BF3 /* SDWebServiceDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebServiceDemo-Prefix.pch"; sourceTree = "<group>"; };
+		0772CF011C50342C00066BF3 /* SDWebServiceDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SDWebServiceDemo.xcodeproj; sourceTree = "<group>"; };
+		0772CF051C50342C00066BF3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0772CF061C50342C00066BF3 /* MyAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppDelegate.h; sourceTree = "<group>"; };
+		0772CF071C50342C00066BF3 /* MyAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAppDelegate.m; sourceTree = "<group>"; };
+		0772CF081C50342C00066BF3 /* MyFourDollarCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFourDollarCategory.h; sourceTree = "<group>"; };
+		0772CF091C50342C00066BF3 /* MyFourDollarCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFourDollarCategory.m; sourceTree = "<group>"; };
+		0772CF0A1C50342C00066BF3 /* MyFourDollarDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFourDollarDetailViewController.h; sourceTree = "<group>"; };
+		0772CF0B1C50342C00066BF3 /* MyFourDollarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFourDollarDetailViewController.m; sourceTree = "<group>"; };
+		0772CF0C1C50342C00066BF3 /* MyFourDollarDrugList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFourDollarDrugList.h; sourceTree = "<group>"; };
+		0772CF0D1C50342C00066BF3 /* MyFourDollarDrugList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFourDollarDrugList.m; sourceTree = "<group>"; };
+		0772CF0E1C50342C00066BF3 /* MyFourDollarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFourDollarItem.h; sourceTree = "<group>"; };
+		0772CF0F1C50342C00066BF3 /* MyFourDollarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFourDollarItem.m; sourceTree = "<group>"; };
+		0772CF101C50342C00066BF3 /* MyFourDollarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFourDollarViewController.h; sourceTree = "<group>"; };
+		0772CF111C50342C00066BF3 /* MyFourDollarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFourDollarViewController.m; sourceTree = "<group>"; };
+		0772CF121C50342C00066BF3 /* MyResponseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyResponseError.h; sourceTree = "<group>"; };
+		0772CF131C50342C00066BF3 /* MyResponseError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyResponseError.m; sourceTree = "<group>"; };
+		0772CF141C50342C00066BF3 /* MyServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyServices.h; sourceTree = "<group>"; };
+		0772CF151C50342C00066BF3 /* MyServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyServices.m; sourceTree = "<group>"; };
+		0772CF161C50342C00066BF3 /* MyServices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyServices.plist; sourceTree = "<group>"; };
+		0772CF171C50342C00066BF3 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		0772CF181C50342C00066BF3 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		0772CF1B1C50342C00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CF1C1C50342C00066BF3 /* SDWebServiceDemoTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDWebServiceDemoTests-Info.plist"; sourceTree = "<group>"; };
+		0772CF1D1C50342C00066BF3 /* SDWebServiceDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebServiceDemoTests.m; sourceTree = "<group>"; };
+		0772CF211C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0772CF231C50342C00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CF241C50342C00066BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0772CF251C50342C00066BF3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0772CF261C50342C00066BF3 /* SDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAppDelegate.h; sourceTree = "<group>"; };
+		0772CF271C50342C00066BF3 /* SDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAppDelegate.m; sourceTree = "<group>"; };
+		0772CF281C50342C00066BF3 /* SDDemoBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDemoBoxView.h; sourceTree = "<group>"; };
+		0772CF291C50342C00066BF3 /* SDDemoBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDemoBoxView.m; sourceTree = "<group>"; };
+		0772CF2A1C50342C00066BF3 /* SDDemoBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDDemoBoxView.xib; sourceTree = "<group>"; };
+		0772CF2B1C50342C00066BF3 /* SDHorizontalStacksDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDHorizontalStacksDemoViewController.h; sourceTree = "<group>"; };
+		0772CF2C1C50342C00066BF3 /* SDHorizontalStacksDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDHorizontalStacksDemoViewController.m; sourceTree = "<group>"; };
+		0772CF2D1C50342C00066BF3 /* SDVerticalStacksDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDVerticalStacksDemoViewController.h; sourceTree = "<group>"; };
+		0772CF2E1C50342C00066BF3 /* SDVerticalStacksDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDVerticalStacksDemoViewController.m; sourceTree = "<group>"; };
+		0772CF2F1C50342C00066BF3 /* SDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDViewController.h; sourceTree = "<group>"; };
+		0772CF301C50342C00066BF3 /* SDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
+		0772CF311C50342C00066BF3 /* StackedContainerViewDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StackedContainerViewDemo-Info.plist"; sourceTree = "<group>"; };
+		0772CF321C50342C00066BF3 /* StackedContainerViewDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StackedContainerViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		0772CF331C50342C00066BF3 /* StackedContainerViewDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = StackedContainerViewDemo.xcodeproj; sourceTree = "<group>"; };
+		0772CF381C50342C00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CF391C50342C00066BF3 /* StackedContainerViewDemoTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StackedContainerViewDemoTests-Info.plist"; sourceTree = "<group>"; };
+		0772CF3A1C50342C00066BF3 /* StackedContainerViewDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackedContainerViewDemoTests.m; sourceTree = "<group>"; };
+		0772CF3E1C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0772CF401C50342C00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CF411C50342C00066BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0772CF421C50342C00066BF3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0772CF431C50342C00066BF3 /* TestCompositeImage-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestCompositeImage-Info.plist"; sourceTree = "<group>"; };
+		0772CF441C50342C00066BF3 /* TestCompositeImage-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCompositeImage-Prefix.pch"; sourceTree = "<group>"; };
+		0772CF451C50342C00066BF3 /* UIImage+SDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SDExtensions.h"; sourceTree = "<group>"; };
+		0772CF461C50342C00066BF3 /* UIImage+SDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SDExtensions.m"; sourceTree = "<group>"; };
+		0772CF471C50342C00066BF3 /* WSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAppDelegate.h; sourceTree = "<group>"; };
+		0772CF481C50342C00066BF3 /* WSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAppDelegate.m; sourceTree = "<group>"; };
+		0772CF491C50342C00066BF3 /* WSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSViewController.h; sourceTree = "<group>"; };
+		0772CF4A1C50342C00066BF3 /* WSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSViewController.m; sourceTree = "<group>"; };
+		0772CF4B1C50342C00066BF3 /* TestCompositeImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TestCompositeImage.xcodeproj; sourceTree = "<group>"; };
+		0772CF511C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeScreen_iPad.storyboard; sourceTree = "<group>"; };
+		0772CF531C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeScreen_iPhone.storyboard; sourceTree = "<group>"; };
+		0772CF551C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0772CF571C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Orderhistory_iPad.storyboard; sourceTree = "<group>"; };
+		0772CF591C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OrderHistory_iPhone.storyboard; sourceTree = "<group>"; };
+		0772CF5B1C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SDGlobalNavMenu.storyboard; sourceTree = "<group>"; };
+		0772CF5C1C50342C00066BF3 /* CustomPullNavigationBarTabButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPullNavigationBarTabButton.h; sourceTree = "<group>"; };
+		0772CF5D1C50342C00066BF3 /* CustomPullNavigationBarTabButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPullNavigationBarTabButton.m; sourceTree = "<group>"; };
+		0772CF5F1C50342C00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CF601C50342C00066BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0772CF611C50342C00066BF3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0772CF621C50342C00066BF3 /* SDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAppDelegate.h; sourceTree = "<group>"; };
+		0772CF631C50342C00066BF3 /* SDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAppDelegate.m; sourceTree = "<group>"; };
+		0772CF641C50342C00066BF3 /* SDGlobalNavMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDGlobalNavMenuController.h; sourceTree = "<group>"; };
+		0772CF651C50342C00066BF3 /* SDGlobalNavMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDGlobalNavMenuController.m; sourceTree = "<group>"; };
+		0772CF661C50342C00066BF3 /* SDHomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDHomeScreenViewController.h; sourceTree = "<group>"; };
+		0772CF671C50342C00066BF3 /* SDHomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDHomeScreenViewController.m; sourceTree = "<group>"; };
+		0772CF681C50342C00066BF3 /* SDOrderHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDOrderHistoryViewController.h; sourceTree = "<group>"; };
+		0772CF691C50342C00066BF3 /* SDOrderHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDOrderHistoryViewController.m; sourceTree = "<group>"; };
+		0772CF6A1C50342C00066BF3 /* TestGlobalPullnav-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestGlobalPullnav-Info.plist"; sourceTree = "<group>"; };
+		0772CF6B1C50342C00066BF3 /* TestGlobalPullnav-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestGlobalPullnav-Prefix.pch"; sourceTree = "<group>"; };
+		0772CF6C1C50342C00066BF3 /* TestGlobalPullnav.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TestGlobalPullnav.xcodeproj; sourceTree = "<group>"; };
+		0772CF711C50342C00066BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0772CF721C50342C00066BF3 /* TestGlobalPullnavTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestGlobalPullnavTests-Info.plist"; sourceTree = "<group>"; };
+		0772CF731C50342C00066BF3 /* TestGlobalPullnavTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGlobalPullnavTests.m; sourceTree = "<group>"; };
+		0772CF761C50342C00066BF3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0772CF771C50342C00066BF3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0772CF791C50342C00066BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0772CF7A1C50342C00066BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0772CF7B1C50342C00066BF3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0772CF7C1C50342C00066BF3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0772CF7D1C50342C00066BF3 /* SDAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAuthentication.h; sourceTree = "<group>"; };
+		0772CF7E1C50342C00066BF3 /* SDAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAuthentication.m; sourceTree = "<group>"; };
+		0772CF7F1C50342C00066BF3 /* TouchLogin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TouchLogin-Prefix.pch"; sourceTree = "<group>"; };
+		0772CF801C50342C00066BF3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0772CF811C50342C00066BF3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0772CF821C50342C00066BF3 /* TouchLogin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TouchLogin.xcodeproj; sourceTree = "<group>"; };
+		0772CF861C50342C00066BF3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0772CF871C50342C00066BF3 /* TouchLoginTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchLoginTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -613,8 +944,13 @@
 		0765987D1C4843B900F79535 = {
 			isa = PBXGroup;
 			children = (
+				0772CE671C50327100066BF3 /* README.md */,
+				0772CE6F1C50341000066BF3 /* config-files.png */,
 				076598891C4843BA00F79535 /* IOSShared */,
 				076598951C4843BA00F79535 /* IOSSharedTests */,
+				0772CE711C50342B00066BF3 /* Examples */,
+				0772CE6C1C5033EE00066BF3 /* Documentation */,
+				0772CE691C5033DC00066BF3 /* Assets */,
 				076598881C4843BA00F79535 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1049,6 +1385,569 @@
 			path = MockData;
 			sourceTree = "<group>";
 		};
+		0772CE691C5033DC00066BF3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0772CE6A1C5033DD00066BF3 /* SDPullNavTab.pcvd */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0772CE6C1C5033EE00066BF3 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				0772CE6D1C5033EE00066BF3 /* com.setdirection.iOS-Shared.docset */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		0772CE711C50342B00066BF3 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				0772CE721C50342B00066BF3 /* SDAutoUpdatingTableView */,
+				0772CE831C50342B00066BF3 /* SDContentAlertViewDemo */,
+				0772CE991C50342B00066BF3 /* SDCreditCardFieldTest */,
+				0772CEB01C50342B00066BF3 /* SDExpandingTableView */,
+				0772CEC61C50342B00066BF3 /* SDTextFieldExample */,
+				0772CEDC1C50342C00066BF3 /* SDTimerTest */,
+				0772CEF41C50342C00066BF3 /* SDWebServiceDemo */,
+				0772CF1E1C50342C00066BF3 /* StackedContainerViewDemo */,
+				0772CF3B1C50342C00066BF3 /* TestCompositeImage */,
+				0772CF4E1C50342C00066BF3 /* TestGlobalPullnav */,
+				0772CF741C50342C00066BF3 /* TouchLogin */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		0772CE721C50342B00066BF3 /* SDAutoUpdatingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0772CE731C50342B00066BF3 /* README.md */,
+				0772CE741C50342B00066BF3 /* SDTableViewCommand */,
+				0772CE801C50342B00066BF3 /* SDTableViewCommand.xcodeproj */,
+			);
+			path = SDAutoUpdatingTableView;
+			sourceTree = "<group>";
+		};
+		0772CE741C50342B00066BF3 /* SDTableViewCommand */ = {
+			isa = PBXGroup;
+			children = (
+				0772CE751C50342B00066BF3 /* Main.storyboard */,
+				0772CE771C50342B00066BF3 /* InfoPlist.strings */,
+				0772CE791C50342B00066BF3 /* main.m */,
+				0772CE7A1C50342B00066BF3 /* SDAppDelegate.h */,
+				0772CE7B1C50342B00066BF3 /* SDAppDelegate.m */,
+				0772CE7C1C50342B00066BF3 /* SDExampleViewController.h */,
+				0772CE7D1C50342B00066BF3 /* SDExampleViewController.m */,
+				0772CE7E1C50342B00066BF3 /* SDTableViewCommand-Info.plist */,
+				0772CE7F1C50342B00066BF3 /* SDTableViewCommand-Prefix.pch */,
+			);
+			path = SDTableViewCommand;
+			sourceTree = "<group>";
+		};
+		0772CE811C50342B00066BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772D04C1C50342C00066BF3 /* SDTableViewCommand.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772CE831C50342B00066BF3 /* SDContentAlertViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0772CE841C50342B00066BF3 /* SDContentAlertViewDemo */,
+				0772CE911C50342B00066BF3 /* SDContentAlertViewDemo.xcodeproj */,
+				0772CE941C50342B00066BF3 /* SDContentAlertViewDemoTests */,
+			);
+			path = SDContentAlertViewDemo;
+			sourceTree = "<group>";
+		};
+		0772CE841C50342B00066BF3 /* SDContentAlertViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0772CE851C50342B00066BF3 /* Main.storyboard */,
+				0772CE871C50342B00066BF3 /* InfoPlist.strings */,
+				0772CE891C50342B00066BF3 /* Images.xcassets */,
+				0772CE8A1C50342B00066BF3 /* main.m */,
+				0772CE8B1C50342B00066BF3 /* MyAppDelegate.h */,
+				0772CE8C1C50342B00066BF3 /* MyAppDelegate.m */,
+				0772CE8D1C50342B00066BF3 /* MyViewController.h */,
+				0772CE8E1C50342B00066BF3 /* MyViewController.m */,
+				0772CE8F1C50342B00066BF3 /* SDContentAlertViewDemo-Info.plist */,
+				0772CE901C50342B00066BF3 /* SDContentAlertViewDemo-Prefix.pch */,
+			);
+			path = SDContentAlertViewDemo;
+			sourceTree = "<group>";
+		};
+		0772CE921C50342B00066BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772D03B1C50342C00066BF3 /* SDContentAlertViewDemo.app */,
+				0772D03D1C50342C00066BF3 /* SDContentAlertViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772CE941C50342B00066BF3 /* SDContentAlertViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0772CE951C50342B00066BF3 /* InfoPlist.strings */,
+				0772CE971C50342B00066BF3 /* SDContentAlertViewDemoTests-Info.plist */,
+				0772CE981C50342B00066BF3 /* SDContentAlertViewDemoTests.m */,
+			);
+			path = SDContentAlertViewDemoTests;
+			sourceTree = "<group>";
+		};
+		0772CE991C50342B00066BF3 /* SDCreditCardFieldTest */ = {
+			isa = PBXGroup;
+			children = (
+				0772CE9A1C50342B00066BF3 /* SDCreditCardFieldTest */,
+				0772CEA81C50342B00066BF3 /* SDCreditCardFieldTest.xcodeproj */,
+				0772CEAB1C50342B00066BF3 /* SDCreditCardFieldTestTests */,
+			);
+			path = SDCreditCardFieldTest;
+			sourceTree = "<group>";
+		};
+		0772CE9A1C50342B00066BF3 /* SDCreditCardFieldTest */ = {
+			isa = PBXGroup;
+			children = (
+				0772CE9B1C50342B00066BF3 /* Main.storyboard */,
+				0772CE9D1C50342B00066BF3 /* InfoPlist.strings */,
+				0772CE9F1C50342B00066BF3 /* Images.xcassets */,
+				0772CEA01C50342B00066BF3 /* main.m */,
+				0772CEA11C50342B00066BF3 /* SDAppDelegate.h */,
+				0772CEA21C50342B00066BF3 /* SDAppDelegate.m */,
+				0772CEA31C50342B00066BF3 /* SDCreditCardField.xcassets */,
+				0772CEA41C50342B00066BF3 /* SDCreditCardFieldTest-Info.plist */,
+				0772CEA51C50342B00066BF3 /* SDCreditCardFieldTest-Prefix.pch */,
+				0772CEA61C50342B00066BF3 /* SDViewController.h */,
+				0772CEA71C50342B00066BF3 /* SDViewController.m */,
+			);
+			path = SDCreditCardFieldTest;
+			sourceTree = "<group>";
+		};
+		0772CEA91C50342B00066BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772D0411C50342C00066BF3 /* SDCreditCardFieldTest.app */,
+				0772D0431C50342C00066BF3 /* SDCreditCardFieldTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772CEAB1C50342B00066BF3 /* SDCreditCardFieldTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				0772CEAC1C50342B00066BF3 /* InfoPlist.strings */,
+				0772CEAE1C50342B00066BF3 /* SDCreditCardFieldTestTests-Info.plist */,
+				0772CEAF1C50342B00066BF3 /* SDCreditCardFieldTestTests.m */,
+			);
+			path = SDCreditCardFieldTestTests;
+			sourceTree = "<group>";
+		};
+		0772CEB01C50342B00066BF3 /* SDExpandingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0772CEB11C50342B00066BF3 /* SDExpandingTableView */,
+				0772CEBE1C50342B00066BF3 /* SDExpandingTableView.xcodeproj */,
+				0772CEC11C50342B00066BF3 /* SDExpandingTableViewTests */,
+			);
+			path = SDExpandingTableView;
+			sourceTree = "<group>";
+		};
+		0772CEB11C50342B00066BF3 /* SDExpandingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0772CEB21C50342B00066BF3 /* Main.storyboard */,
+				0772CEB41C50342B00066BF3 /* InfoPlist.strings */,
+				0772CEB61C50342B00066BF3 /* Images.xcassets */,
+				0772CEB71C50342B00066BF3 /* main.m */,
+				0772CEB81C50342B00066BF3 /* SDAppDelegate.h */,
+				0772CEB91C50342B00066BF3 /* SDAppDelegate.m */,
+				0772CEBA1C50342B00066BF3 /* SDExpandingTableView-Info.plist */,
+				0772CEBB1C50342B00066BF3 /* SDExpandingTableView-Prefix.pch */,
+				0772CEBC1C50342B00066BF3 /* SDViewController.h */,
+				0772CEBD1C50342B00066BF3 /* SDViewController.m */,
+			);
+			path = SDExpandingTableView;
+			sourceTree = "<group>";
+		};
+		0772CEBF1C50342B00066BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772D0471C50342C00066BF3 /* SDExpandingTableView.app */,
+				0772D0491C50342C00066BF3 /* SDExpandingTableViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772CEC11C50342B00066BF3 /* SDExpandingTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				0772CEC21C50342B00066BF3 /* InfoPlist.strings */,
+				0772CEC41C50342B00066BF3 /* SDExpandingTableViewTests-Info.plist */,
+				0772CEC51C50342B00066BF3 /* SDExpandingTableViewTests.m */,
+			);
+			path = SDExpandingTableViewTests;
+			sourceTree = "<group>";
+		};
+		0772CEC61C50342B00066BF3 /* SDTextFieldExample */ = {
+			isa = PBXGroup;
+			children = (
+				0772CEC71C50342B00066BF3 /* SDTextFieldExample */,
+				0772CED41C50342B00066BF3 /* SDTextFieldExample.xcodeproj */,
+				0772CED71C50342C00066BF3 /* SDTextFieldExampleTests */,
+			);
+			path = SDTextFieldExample;
+			sourceTree = "<group>";
+		};
+		0772CEC71C50342B00066BF3 /* SDTextFieldExample */ = {
+			isa = PBXGroup;
+			children = (
+				0772CEC81C50342B00066BF3 /* Main.storyboard */,
+				0772CECA1C50342B00066BF3 /* InfoPlist.strings */,
+				0772CECC1C50342B00066BF3 /* Images.xcassets */,
+				0772CECD1C50342B00066BF3 /* main.m */,
+				0772CECE1C50342B00066BF3 /* SDAppDelegate.h */,
+				0772CECF1C50342B00066BF3 /* SDAppDelegate.m */,
+				0772CED01C50342B00066BF3 /* SDFormViewController.h */,
+				0772CED11C50342B00066BF3 /* SDFormViewController.m */,
+				0772CED21C50342B00066BF3 /* SDTextFieldExample-Info.plist */,
+				0772CED31C50342B00066BF3 /* SDTextFieldExample-Prefix.pch */,
+			);
+			path = SDTextFieldExample;
+			sourceTree = "<group>";
+		};
+		0772CED51C50342B00066BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772D0501C50342C00066BF3 /* SDTextFieldExample.app */,
+				0772D0521C50342C00066BF3 /* SDTextFieldExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772CED71C50342C00066BF3 /* SDTextFieldExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				0772CED81C50342C00066BF3 /* InfoPlist.strings */,
+				0772CEDA1C50342C00066BF3 /* SDTextFieldExampleTests-Info.plist */,
+				0772CEDB1C50342C00066BF3 /* SDTextFieldExampleTests.m */,
+			);
+			path = SDTextFieldExampleTests;
+			sourceTree = "<group>";
+		};
+		0772CEDC1C50342C00066BF3 /* SDTimerTest */ = {
+			isa = PBXGroup;
+			children = (
+				0772CEDD1C50342C00066BF3 /* SDTimerTest */,
+				0772CEEC1C50342C00066BF3 /* SDTimerTest.xcodeproj */,
+				0772CEEF1C50342C00066BF3 /* SDTimerTestTests */,
+			);
+			path = SDTimerTest;
+			sourceTree = "<group>";
+		};
+		0772CEDD1C50342C00066BF3 /* SDTimerTest */ = {
+			isa = PBXGroup;
+			children = (
+				0772CEDE1C50342C00066BF3 /* Main_iPad.storyboard */,
+				0772CEE01C50342C00066BF3 /* Main_iPhone.storyboard */,
+				0772CEE21C50342C00066BF3 /* InfoPlist.strings */,
+				0772CEE41C50342C00066BF3 /* Images.xcassets */,
+				0772CEE51C50342C00066BF3 /* main.m */,
+				0772CEE61C50342C00066BF3 /* SDAppDelegate.h */,
+				0772CEE71C50342C00066BF3 /* SDAppDelegate.m */,
+				0772CEE81C50342C00066BF3 /* SDTimerTest-Info.plist */,
+				0772CEE91C50342C00066BF3 /* SDTimerTest-Prefix.pch */,
+				0772CEEA1C50342C00066BF3 /* SDViewController.h */,
+				0772CEEB1C50342C00066BF3 /* SDViewController.m */,
+			);
+			path = SDTimerTest;
+			sourceTree = "<group>";
+		};
+		0772CEED1C50342C00066BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772D0561C50342C00066BF3 /* SDTimerTest.app */,
+				0772D0581C50342C00066BF3 /* SDTimerTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772CEEF1C50342C00066BF3 /* SDTimerTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				0772CEF01C50342C00066BF3 /* InfoPlist.strings */,
+				0772CEF21C50342C00066BF3 /* SDTimerTestTests-Info.plist */,
+				0772CEF31C50342C00066BF3 /* SDTimerTestTests.m */,
+			);
+			path = SDTimerTestTests;
+			sourceTree = "<group>";
+		};
+		0772CEF41C50342C00066BF3 /* SDWebServiceDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0772CEF51C50342C00066BF3 /* Resources */,
+				0772CF011C50342C00066BF3 /* SDWebServiceDemo.xcodeproj */,
+				0772CF041C50342C00066BF3 /* Source */,
+				0772CF191C50342C00066BF3 /* Tests */,
+			);
+			path = SDWebServiceDemo;
+			sourceTree = "<group>";
+		};
+		0772CEF51C50342C00066BF3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0772CEF61C50342C00066BF3 /* Main_iPad.storyboard */,
+				0772CEF81C50342C00066BF3 /* Main_iPhone.storyboard */,
+				0772CEFA1C50342C00066BF3 /* MyFourDollarViewController_iPhone.storyboard */,
+				0772CEFC1C50342C00066BF3 /* InfoPlist.strings */,
+				0772CEFE1C50342C00066BF3 /* Images.xcassets */,
+				0772CEFF1C50342C00066BF3 /* SDWebServiceDemo-Info.plist */,
+				0772CF001C50342C00066BF3 /* SDWebServiceDemo-Prefix.pch */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0772CF021C50342C00066BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772D05C1C50342C00066BF3 /* SDWebServiceDemo.app */,
+				0772D05E1C50342C00066BF3 /* SDWebServiceDemoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772CF041C50342C00066BF3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF051C50342C00066BF3 /* main.m */,
+				0772CF061C50342C00066BF3 /* MyAppDelegate.h */,
+				0772CF071C50342C00066BF3 /* MyAppDelegate.m */,
+				0772CF081C50342C00066BF3 /* MyFourDollarCategory.h */,
+				0772CF091C50342C00066BF3 /* MyFourDollarCategory.m */,
+				0772CF0A1C50342C00066BF3 /* MyFourDollarDetailViewController.h */,
+				0772CF0B1C50342C00066BF3 /* MyFourDollarDetailViewController.m */,
+				0772CF0C1C50342C00066BF3 /* MyFourDollarDrugList.h */,
+				0772CF0D1C50342C00066BF3 /* MyFourDollarDrugList.m */,
+				0772CF0E1C50342C00066BF3 /* MyFourDollarItem.h */,
+				0772CF0F1C50342C00066BF3 /* MyFourDollarItem.m */,
+				0772CF101C50342C00066BF3 /* MyFourDollarViewController.h */,
+				0772CF111C50342C00066BF3 /* MyFourDollarViewController.m */,
+				0772CF121C50342C00066BF3 /* MyResponseError.h */,
+				0772CF131C50342C00066BF3 /* MyResponseError.m */,
+				0772CF141C50342C00066BF3 /* MyServices.h */,
+				0772CF151C50342C00066BF3 /* MyServices.m */,
+				0772CF161C50342C00066BF3 /* MyServices.plist */,
+				0772CF171C50342C00066BF3 /* MyViewController.h */,
+				0772CF181C50342C00066BF3 /* MyViewController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0772CF191C50342C00066BF3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF1A1C50342C00066BF3 /* InfoPlist.strings */,
+				0772CF1C1C50342C00066BF3 /* SDWebServiceDemoTests-Info.plist */,
+				0772CF1D1C50342C00066BF3 /* SDWebServiceDemoTests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0772CF1E1C50342C00066BF3 /* StackedContainerViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF1F1C50342C00066BF3 /* StackedContainerViewDemo */,
+				0772CF331C50342C00066BF3 /* StackedContainerViewDemo.xcodeproj */,
+				0772CF361C50342C00066BF3 /* StackedContainerViewDemoTests */,
+			);
+			path = StackedContainerViewDemo;
+			sourceTree = "<group>";
+		};
+		0772CF1F1C50342C00066BF3 /* StackedContainerViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF201C50342C00066BF3 /* Main.storyboard */,
+				0772CF221C50342C00066BF3 /* InfoPlist.strings */,
+				0772CF241C50342C00066BF3 /* Images.xcassets */,
+				0772CF251C50342C00066BF3 /* main.m */,
+				0772CF261C50342C00066BF3 /* SDAppDelegate.h */,
+				0772CF271C50342C00066BF3 /* SDAppDelegate.m */,
+				0772CF281C50342C00066BF3 /* SDDemoBoxView.h */,
+				0772CF291C50342C00066BF3 /* SDDemoBoxView.m */,
+				0772CF2A1C50342C00066BF3 /* SDDemoBoxView.xib */,
+				0772CF2B1C50342C00066BF3 /* SDHorizontalStacksDemoViewController.h */,
+				0772CF2C1C50342C00066BF3 /* SDHorizontalStacksDemoViewController.m */,
+				0772CF2D1C50342C00066BF3 /* SDVerticalStacksDemoViewController.h */,
+				0772CF2E1C50342C00066BF3 /* SDVerticalStacksDemoViewController.m */,
+				0772CF2F1C50342C00066BF3 /* SDViewController.h */,
+				0772CF301C50342C00066BF3 /* SDViewController.m */,
+				0772CF311C50342C00066BF3 /* StackedContainerViewDemo-Info.plist */,
+				0772CF321C50342C00066BF3 /* StackedContainerViewDemo-Prefix.pch */,
+			);
+			path = StackedContainerViewDemo;
+			sourceTree = "<group>";
+		};
+		0772CF341C50342C00066BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772D0621C50342C00066BF3 /* StackedContainerViewDemo.app */,
+				0772D0641C50342C00066BF3 /* StackedContainerViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772CF361C50342C00066BF3 /* StackedContainerViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF371C50342C00066BF3 /* InfoPlist.strings */,
+				0772CF391C50342C00066BF3 /* StackedContainerViewDemoTests-Info.plist */,
+				0772CF3A1C50342C00066BF3 /* StackedContainerViewDemoTests.m */,
+			);
+			path = StackedContainerViewDemoTests;
+			sourceTree = "<group>";
+		};
+		0772CF3B1C50342C00066BF3 /* TestCompositeImage */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF3C1C50342C00066BF3 /* TestCompositeImage */,
+				0772CF4B1C50342C00066BF3 /* TestCompositeImage.xcodeproj */,
+			);
+			path = TestCompositeImage;
+			sourceTree = "<group>";
+		};
+		0772CF3C1C50342C00066BF3 /* TestCompositeImage */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF3D1C50342C00066BF3 /* Main.storyboard */,
+				0772CF3F1C50342C00066BF3 /* InfoPlist.strings */,
+				0772CF411C50342C00066BF3 /* Images.xcassets */,
+				0772CF421C50342C00066BF3 /* main.m */,
+				0772CF431C50342C00066BF3 /* TestCompositeImage-Info.plist */,
+				0772CF441C50342C00066BF3 /* TestCompositeImage-Prefix.pch */,
+				0772CF451C50342C00066BF3 /* UIImage+SDExtensions.h */,
+				0772CF461C50342C00066BF3 /* UIImage+SDExtensions.m */,
+				0772CF471C50342C00066BF3 /* WSAppDelegate.h */,
+				0772CF481C50342C00066BF3 /* WSAppDelegate.m */,
+				0772CF491C50342C00066BF3 /* WSViewController.h */,
+				0772CF4A1C50342C00066BF3 /* WSViewController.m */,
+			);
+			path = TestCompositeImage;
+			sourceTree = "<group>";
+		};
+		0772CF4C1C50342C00066BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772D0671C50342C00066BF3 /* TestCompositeImage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772CF4E1C50342C00066BF3 /* TestGlobalPullnav */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF4F1C50342C00066BF3 /* TestGlobalPullnav */,
+				0772CF6C1C50342C00066BF3 /* TestGlobalPullnav.xcodeproj */,
+				0772CF6F1C50342C00066BF3 /* TestGlobalPullnavTests */,
+			);
+			path = TestGlobalPullnav;
+			sourceTree = "<group>";
+		};
+		0772CF4F1C50342C00066BF3 /* TestGlobalPullnav */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF501C50342C00066BF3 /* HomeScreen_iPad.storyboard */,
+				0772CF521C50342C00066BF3 /* HomeScreen_iPhone.storyboard */,
+				0772CF541C50342C00066BF3 /* MainWindow.xib */,
+				0772CF561C50342C00066BF3 /* Orderhistory_iPad.storyboard */,
+				0772CF581C50342C00066BF3 /* OrderHistory_iPhone.storyboard */,
+				0772CF5A1C50342C00066BF3 /* SDGlobalNavMenu.storyboard */,
+				0772CF5C1C50342C00066BF3 /* CustomPullNavigationBarTabButton.h */,
+				0772CF5D1C50342C00066BF3 /* CustomPullNavigationBarTabButton.m */,
+				0772CF5E1C50342C00066BF3 /* InfoPlist.strings */,
+				0772CF601C50342C00066BF3 /* Images.xcassets */,
+				0772CF611C50342C00066BF3 /* main.m */,
+				0772CF621C50342C00066BF3 /* SDAppDelegate.h */,
+				0772CF631C50342C00066BF3 /* SDAppDelegate.m */,
+				0772CF641C50342C00066BF3 /* SDGlobalNavMenuController.h */,
+				0772CF651C50342C00066BF3 /* SDGlobalNavMenuController.m */,
+				0772CF661C50342C00066BF3 /* SDHomeScreenViewController.h */,
+				0772CF671C50342C00066BF3 /* SDHomeScreenViewController.m */,
+				0772CF681C50342C00066BF3 /* SDOrderHistoryViewController.h */,
+				0772CF691C50342C00066BF3 /* SDOrderHistoryViewController.m */,
+				0772CF6A1C50342C00066BF3 /* TestGlobalPullnav-Info.plist */,
+				0772CF6B1C50342C00066BF3 /* TestGlobalPullnav-Prefix.pch */,
+			);
+			path = TestGlobalPullnav;
+			sourceTree = "<group>";
+		};
+		0772CF6D1C50342C00066BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772D06B1C50342C00066BF3 /* TestGlobalPullnav.app */,
+				0772D06D1C50342C00066BF3 /* TestGlobalPullnavTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772CF6F1C50342C00066BF3 /* TestGlobalPullnavTests */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF701C50342C00066BF3 /* InfoPlist.strings */,
+				0772CF721C50342C00066BF3 /* TestGlobalPullnavTests-Info.plist */,
+				0772CF731C50342C00066BF3 /* TestGlobalPullnavTests.m */,
+			);
+			path = TestGlobalPullnavTests;
+			sourceTree = "<group>";
+		};
+		0772CF741C50342C00066BF3 /* TouchLogin */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF751C50342C00066BF3 /* TouchLogin */,
+				0772CF821C50342C00066BF3 /* TouchLogin.xcodeproj */,
+				0772CF851C50342C00066BF3 /* TouchLoginTests */,
+			);
+			path = TouchLogin;
+			sourceTree = "<group>";
+		};
+		0772CF751C50342C00066BF3 /* TouchLogin */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF761C50342C00066BF3 /* AppDelegate.h */,
+				0772CF771C50342C00066BF3 /* AppDelegate.m */,
+				0772CF781C50342C00066BF3 /* Main.storyboard */,
+				0772CF7A1C50342C00066BF3 /* Images.xcassets */,
+				0772CF7B1C50342C00066BF3 /* Info.plist */,
+				0772CF7C1C50342C00066BF3 /* main.m */,
+				0772CF7D1C50342C00066BF3 /* SDAuthentication.h */,
+				0772CF7E1C50342C00066BF3 /* SDAuthentication.m */,
+				0772CF7F1C50342C00066BF3 /* TouchLogin-Prefix.pch */,
+				0772CF801C50342C00066BF3 /* ViewController.h */,
+				0772CF811C50342C00066BF3 /* ViewController.m */,
+			);
+			path = TouchLogin;
+			sourceTree = "<group>";
+		};
+		0772CF831C50342C00066BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772D0711C50342C00066BF3 /* TouchLogin.app */,
+				0772D0731C50342C00066BF3 /* TouchLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772CF851C50342C00066BF3 /* TouchLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				0772CF861C50342C00066BF3 /* Info.plist */,
+				0772CF871C50342C00066BF3 /* TouchLoginTests.m */,
+			);
+			path = TouchLoginTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1246,10 +2145,57 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0765987D1C4843B900F79535;
 			productRefGroup = 076598881C4843BA00F79535 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0772CE921C50342B00066BF3 /* Products */;
+					ProjectRef = 0772CE911C50342B00066BF3 /* SDContentAlertViewDemo.xcodeproj */;
+				},
+				{
+					ProductGroup = 0772CEA91C50342B00066BF3 /* Products */;
+					ProjectRef = 0772CEA81C50342B00066BF3 /* SDCreditCardFieldTest.xcodeproj */;
+				},
+				{
+					ProductGroup = 0772CEBF1C50342B00066BF3 /* Products */;
+					ProjectRef = 0772CEBE1C50342B00066BF3 /* SDExpandingTableView.xcodeproj */;
+				},
+				{
+					ProductGroup = 0772CE811C50342B00066BF3 /* Products */;
+					ProjectRef = 0772CE801C50342B00066BF3 /* SDTableViewCommand.xcodeproj */;
+				},
+				{
+					ProductGroup = 0772CED51C50342B00066BF3 /* Products */;
+					ProjectRef = 0772CED41C50342B00066BF3 /* SDTextFieldExample.xcodeproj */;
+				},
+				{
+					ProductGroup = 0772CEED1C50342C00066BF3 /* Products */;
+					ProjectRef = 0772CEEC1C50342C00066BF3 /* SDTimerTest.xcodeproj */;
+				},
+				{
+					ProductGroup = 0772CF021C50342C00066BF3 /* Products */;
+					ProjectRef = 0772CF011C50342C00066BF3 /* SDWebServiceDemo.xcodeproj */;
+				},
+				{
+					ProductGroup = 0772CF341C50342C00066BF3 /* Products */;
+					ProjectRef = 0772CF331C50342C00066BF3 /* StackedContainerViewDemo.xcodeproj */;
+				},
+				{
+					ProductGroup = 0772CF4C1C50342C00066BF3 /* Products */;
+					ProjectRef = 0772CF4B1C50342C00066BF3 /* TestCompositeImage.xcodeproj */;
+				},
+				{
+					ProductGroup = 0772CF6D1C50342C00066BF3 /* Products */;
+					ProjectRef = 0772CF6C1C50342C00066BF3 /* TestGlobalPullnav.xcodeproj */;
+				},
+				{
+					ProductGroup = 0772CF831C50342C00066BF3 /* Products */;
+					ProjectRef = 0772CF821C50342C00066BF3 /* TouchLogin.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				076598861C4843BA00F79535 /* IOSShared */,
@@ -1257,6 +2203,149 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0772D03B1C50342C00066BF3 /* SDContentAlertViewDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SDContentAlertViewDemo.app;
+			remoteRef = 0772D03A1C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D03D1C50342C00066BF3 /* SDContentAlertViewDemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SDContentAlertViewDemoTests.xctest;
+			remoteRef = 0772D03C1C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0411C50342C00066BF3 /* SDCreditCardFieldTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SDCreditCardFieldTest.app;
+			remoteRef = 0772D0401C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0431C50342C00066BF3 /* SDCreditCardFieldTestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SDCreditCardFieldTestTests.xctest;
+			remoteRef = 0772D0421C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0471C50342C00066BF3 /* SDExpandingTableView.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SDExpandingTableView.app;
+			remoteRef = 0772D0461C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0491C50342C00066BF3 /* SDExpandingTableViewTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SDExpandingTableViewTests.xctest;
+			remoteRef = 0772D0481C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D04C1C50342C00066BF3 /* SDTableViewCommand.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SDTableViewCommand.app;
+			remoteRef = 0772D04B1C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0501C50342C00066BF3 /* SDTextFieldExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SDTextFieldExample.app;
+			remoteRef = 0772D04F1C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0521C50342C00066BF3 /* SDTextFieldExampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SDTextFieldExampleTests.xctest;
+			remoteRef = 0772D0511C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0561C50342C00066BF3 /* SDTimerTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SDTimerTest.app;
+			remoteRef = 0772D0551C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0581C50342C00066BF3 /* SDTimerTestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SDTimerTestTests.xctest;
+			remoteRef = 0772D0571C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D05C1C50342C00066BF3 /* SDWebServiceDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SDWebServiceDemo.app;
+			remoteRef = 0772D05B1C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D05E1C50342C00066BF3 /* SDWebServiceDemoTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SDWebServiceDemoTests.octest;
+			remoteRef = 0772D05D1C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0621C50342C00066BF3 /* StackedContainerViewDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = StackedContainerViewDemo.app;
+			remoteRef = 0772D0611C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0641C50342C00066BF3 /* StackedContainerViewDemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StackedContainerViewDemoTests.xctest;
+			remoteRef = 0772D0631C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0671C50342C00066BF3 /* TestCompositeImage.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestCompositeImage.app;
+			remoteRef = 0772D0661C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D06B1C50342C00066BF3 /* TestGlobalPullnav.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestGlobalPullnav.app;
+			remoteRef = 0772D06A1C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D06D1C50342C00066BF3 /* TestGlobalPullnavTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TestGlobalPullnavTests.xctest;
+			remoteRef = 0772D06C1C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0711C50342C00066BF3 /* TouchLogin.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TouchLogin.app;
+			remoteRef = 0772D0701C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0772D0731C50342C00066BF3 /* TouchLoginTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TouchLoginTests.xctest;
+			remoteRef = 0772D0721C50342C00066BF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		076598851C4843BA00F79535 /* Resources */ = {
@@ -1453,6 +2542,305 @@
 			targetProxy = 076598931C4843BA00F79535 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0772CE751C50342B00066BF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CE761C50342B00066BF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CE771C50342B00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CE781C50342B00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CE851C50342B00066BF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CE861C50342B00066BF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CE871C50342B00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CE881C50342B00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CE951C50342B00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CE961C50342B00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CE9B1C50342B00066BF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CE9C1C50342B00066BF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CE9D1C50342B00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CE9E1C50342B00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CEAC1C50342B00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEAD1C50342B00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CEB21C50342B00066BF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEB31C50342B00066BF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CEB41C50342B00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEB51C50342B00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CEC21C50342B00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEC31C50342B00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CEC81C50342B00066BF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEC91C50342B00066BF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CECA1C50342B00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CECB1C50342B00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CED81C50342C00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CED91C50342C00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CEDE1C50342C00066BF3 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEDF1C50342C00066BF3 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CEE01C50342C00066BF3 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEE11C50342C00066BF3 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CEE21C50342C00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEE31C50342C00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CEF01C50342C00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEF11C50342C00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CEF61C50342C00066BF3 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEF71C50342C00066BF3 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CEF81C50342C00066BF3 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEF91C50342C00066BF3 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CEFA1C50342C00066BF3 /* MyFourDollarViewController_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEFB1C50342C00066BF3 /* Base */,
+			);
+			name = MyFourDollarViewController_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CEFC1C50342C00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CEFD1C50342C00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CF1A1C50342C00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF1B1C50342C00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CF201C50342C00066BF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF211C50342C00066BF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CF221C50342C00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF231C50342C00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CF371C50342C00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF381C50342C00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CF3D1C50342C00066BF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF3E1C50342C00066BF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CF3F1C50342C00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF401C50342C00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CF501C50342C00066BF3 /* HomeScreen_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF511C50342C00066BF3 /* Base */,
+			);
+			name = HomeScreen_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CF521C50342C00066BF3 /* HomeScreen_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF531C50342C00066BF3 /* Base */,
+			);
+			name = HomeScreen_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CF541C50342C00066BF3 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF551C50342C00066BF3 /* Base */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		0772CF561C50342C00066BF3 /* Orderhistory_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF571C50342C00066BF3 /* Base */,
+			);
+			name = Orderhistory_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CF581C50342C00066BF3 /* OrderHistory_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF591C50342C00066BF3 /* Base */,
+			);
+			name = OrderHistory_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CF5A1C50342C00066BF3 /* SDGlobalNavMenu.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF5B1C50342C00066BF3 /* Base */,
+			);
+			name = SDGlobalNavMenu.storyboard;
+			sourceTree = "<group>";
+		};
+		0772CF5E1C50342C00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF5F1C50342C00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CF701C50342C00066BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF711C50342C00066BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0772CF781C50342C00066BF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0772CF791C50342C00066BF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		076598991C4843BA00F79535 /* Debug */ = {
