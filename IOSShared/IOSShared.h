@@ -78,5 +78,7 @@ FOUNDATION_EXPORT const unsigned char IOSSharedVersionString[];
 #import "UIImageView+SDExtensions.h"
 #import "SDKeychain.h"
 #import "SDLabel.h"
+#import "SDPickerView.h"
+#import "UIImage+SDExtensions.h"
 
 #endif

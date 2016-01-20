@@ -142,7 +142,7 @@
 		07659A261C4849B100F79535 /* SDPickerModalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0765992D1C4849B100F79535 /* SDPickerModalViewController.h */; };
 		07659A271C4849B100F79535 /* SDPickerModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765992E1C4849B100F79535 /* SDPickerModalViewController.m */; };
 		07659A281C4849B100F79535 /* SDPickerModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0765992F1C4849B100F79535 /* SDPickerModalViewController.xib */; };
-		07659A291C4849B100F79535 /* SDPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599301C4849B100F79535 /* SDPickerView.h */; };
+		07659A291C4849B100F79535 /* SDPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599301C4849B100F79535 /* SDPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07659A2A1C4849B100F79535 /* SDPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 076599311C4849B100F79535 /* SDPickerView.m */; };
 		07659A2B1C4849B100F79535 /* SDPullNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599321C4849B100F79535 /* SDPullNavigation.h */; };
 		07659A2C1C4849B100F79535 /* SDPullNavigationAutomation.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599331C4849B100F79535 /* SDPullNavigationAutomation.h */; };
@@ -211,7 +211,7 @@
 		07659A6B1C4849B100F79535 /* UIButton+SDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599731C4849B100F79535 /* UIButton+SDExtensions.h */; };
 		07659A6C1C4849B100F79535 /* UIColor+SDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599741C4849B100F79535 /* UIColor+SDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07659A6D1C4849B100F79535 /* UIColor+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 076599751C4849B100F79535 /* UIColor+SDExtensions.m */; };
-		07659A6E1C4849B100F79535 /* UIImage+SDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599761C4849B100F79535 /* UIImage+SDExtensions.h */; };
+		07659A6E1C4849B100F79535 /* UIImage+SDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599761C4849B100F79535 /* UIImage+SDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07659A6F1C4849B100F79535 /* UIImage+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 076599771C4849B100F79535 /* UIImage+SDExtensions.m */; };
 		07659A701C4849B100F79535 /* UINavigationController+SDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599781C4849B100F79535 /* UINavigationController+SDExtensions.h */; };
 		07659A711C4849B100F79535 /* UINavigationController+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 076599791C4849B100F79535 /* UINavigationController+SDExtensions.m */; };
