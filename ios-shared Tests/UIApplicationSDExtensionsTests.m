@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WalmartUnitTest.h"
 #import "UIApplication+SDExtensions.h"
+#import <OCMock/OCMock.h>
 
 @interface UIApplicationSDExtensionsTests : WalmartUnitTest
 
