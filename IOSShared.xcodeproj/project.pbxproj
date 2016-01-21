@@ -172,8 +172,6 @@
 		07659A441C4849B100F79535 /* UIView+PaintCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765994C1C4849B100F79535 /* UIView+PaintCode.m */; };
 		07659A451C4849B100F79535 /* SDSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0765994D1C4849B100F79535 /* SDSearchBar.h */; };
 		07659A461C4849B100F79535 /* SDSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765994E1C4849B100F79535 /* SDSearchBar.m */; };
-		07659A471C4849B100F79535 /* SDSearchDisplayController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0765994F1C4849B100F79535 /* SDSearchDisplayController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07659A481C4849B100F79535 /* SDSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076599501C4849B100F79535 /* SDSearchDisplayController.m */; };
 		07659A491C4849B100F79535 /* SDSearchSuggestions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076599511C4849B100F79535 /* SDSearchSuggestions.storyboard */; };
 		07659A4A1C4849B100F79535 /* SDSearchSuggestionsDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599521C4849B100F79535 /* SDSearchSuggestionsDataSource.h */; };
 		07659A4B1C4849B100F79535 /* SDSearchSuggestionsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599531C4849B100F79535 /* SDSearchSuggestionsViewController.h */; };
@@ -609,8 +607,6 @@
 		0765994C1C4849B100F79535 /* UIView+PaintCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PaintCode.m"; sourceTree = "<group>"; };
 		0765994D1C4849B100F79535 /* SDSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSearchBar.h; sourceTree = "<group>"; };
 		0765994E1C4849B100F79535 /* SDSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSearchBar.m; sourceTree = "<group>"; };
-		0765994F1C4849B100F79535 /* SDSearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSearchDisplayController.h; sourceTree = "<group>"; };
-		076599501C4849B100F79535 /* SDSearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSearchDisplayController.m; sourceTree = "<group>"; };
 		076599511C4849B100F79535 /* SDSearchSuggestions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SDSearchSuggestions.storyboard; sourceTree = "<group>"; };
 		076599521C4849B100F79535 /* SDSearchSuggestionsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSearchSuggestionsDataSource.h; sourceTree = "<group>"; };
 		076599531C4849B100F79535 /* SDSearchSuggestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSearchSuggestionsViewController.h; sourceTree = "<group>"; };
@@ -1205,8 +1201,6 @@
 				076599411C4849B100F79535 /* SDQuantityEditView */,
 				0765994D1C4849B100F79535 /* SDSearchBar.h */,
 				0765994E1C4849B100F79535 /* SDSearchBar.m */,
-				0765994F1C4849B100F79535 /* SDSearchDisplayController.h */,
-				076599501C4849B100F79535 /* SDSearchDisplayController.m */,
 				076599511C4849B100F79535 /* SDSearchSuggestions.storyboard */,
 				076599521C4849B100F79535 /* SDSearchSuggestionsDataSource.h */,
 				076599531C4849B100F79535 /* SDSearchSuggestionsViewController.h */,
@@ -2005,7 +1999,6 @@
 				07659A5E1C4849B100F79535 /* SDTextFieldPicker.h in Headers */,
 				07659A821C4849B100F79535 /* NSURLCache+SDExtensions.h in Headers */,
 				07659A541C4849B100F79535 /* SDTableViewCommand.h in Headers */,
-				07659A471C4849B100F79535 /* SDSearchDisplayController.h in Headers */,
 				07659A131C4849B100F79535 /* SDHitButton.h in Headers */,
 				07659A801C4849B100F79535 /* NSURL+SDExtensions.h in Headers */,
 				076599F81C4849B100F79535 /* SDCheckbox.h in Headers */,
@@ -2428,7 +2421,6 @@
 				076599FB1C4849B100F79535 /* SDCollapsableContainerView.m in Sources */,
 				07659A0C1C4849B100F79535 /* SDDragDropGestureRecognizer.m in Sources */,
 				076599CF1C4849B100F79535 /* SDURLRouter.m in Sources */,
-				07659A481C4849B100F79535 /* SDSearchDisplayController.m in Sources */,
 				07659A061C4849B100F79535 /* SDCCTextField.m in Sources */,
 				07659A331C4849B100F79535 /* SDPullNavigationBarBackground.m in Sources */,
 				07659A241C4849B100F79535 /* SDPhotoImageView.m in Sources */,

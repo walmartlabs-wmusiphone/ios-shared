@@ -68,7 +68,6 @@ FOUNDATION_EXPORT const unsigned char IOSSharedVersionString[];
 #import "SDAutolayoutStackView.h"
 #import "SDSpanParser.h"
 #import "NSURL+SDExtensions.h"
-#import "SDSearchDisplayController.h"
 #import "Reachability.h"
 #import "NSNumber+SDExtensions.h"
 #import "SDMultilineLabel.h"
