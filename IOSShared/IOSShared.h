@@ -63,21 +63,22 @@ FOUNDATION_EXPORT const unsigned char IOSSharedVersionString[];
 #import "SDWebService.h"
 #import "SDWebService+SDProcessingBlocks.h"
 
-#import "SDDataMap.h"
-#import "SDModelObject.h"
-#import "SDAutolayoutStackView.h"
-#import "SDSpanParser.h"
-#import "NSURL+SDExtensions.h"
-#import "Reachability.h"
-#import "NSNumber+SDExtensions.h"
-#import "SDMultilineLabel.h"
-#import "SDURLRouter.h"
-#import "SDBase64.h"
-#import "SDImageCache.h"
-#import "UIImageView+SDExtensions.h"
-#import "SDKeychain.h"
-#import "SDLabel.h"
-#import "SDPickerView.h"
-#import "UIImage+SDExtensions.h"
+#import <IOSShared/SDDataMap.h>
+#import <IOSShared/SDModelObject.h>
+#import <IOSShared/SDAutolayoutStackView.h>
+#import <IOSShared/SDSpanParser.h>
+#import <IOSShared/NSURL+SDExtensions.h>
+#import <IOSShared/Reachability.h>
+#import <IOSShared/NSNumber+SDExtensions.h>
+#import <IOSShared/SDMultilineLabel.h>
+#import <IOSShared/SDURLRouter.h>
+#import <IOSShared/SDBase64.h>
+#import <IOSShared/SDImageCache.h>
+#import <IOSShared/UIImageView+SDExtensions.h>
+#import <IOSShared/SDKeychain.h>
+#import <IOSShared/SDLabel.h>
+#import <IOSShared/SDPickerView.h>
+#import <IOSShared/UIImage+SDExtensions.h>
+#import <IOSShared/WMDefaultsEntry.h>
 
 #endif
