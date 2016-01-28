@@ -142,7 +142,7 @@
                                     // replaces the old section controller
                                     id outgoingSection =  [self p_sectionInControllers:self.outgoingSectionControllers withIdentifier:command.sectionIdentifier];
                                     id incomingSection =  [self p_sectionInControllers:self.sectionControllers withIdentifier:command.sectionIdentifier];
-                                    NSInteger index = [self p_indexOfSection:outgoingSection inControllers:sectionControllersPrime];
+                                    NSUInteger index = [self p_indexOfSection:outgoingSection inControllers:sectionControllersPrime];
                                     if (index != NSNotFound)
                                     {
                                         [sectionControllersPrime removeObject:outgoingSection];
@@ -847,7 +847,7 @@
         NSUInteger sectionIndex = [self indexOfSection:section];
         if (sectionIndex != NSNotFound)
         {
-            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:sectionIndex];
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:(NSInteger)row inSection:(NSInteger)sectionIndex];
             @strongify(self.tableView, tableView);
             [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:animation];
         }

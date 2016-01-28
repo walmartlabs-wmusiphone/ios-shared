@@ -284,7 +284,7 @@ NSString * const SDTableCommandAddSectionAnimationKey = @"SDTableCommandAddSecti
     {
         // If we've removed the entire section, don't bother with the individual
         //  rows
-        if ( ![removeSectionIndexes containsIndex:command.resolvedIndexPath.section] )
+        if ( ![removeSectionIndexes containsIndex:(NSUInteger)command.resolvedIndexPath.section] )
             [removeRowIndexPaths addObject:command.resolvedIndexPath];
         if (callbackBlock)
         {
@@ -321,7 +321,7 @@ NSString * const SDTableCommandAddSectionAnimationKey = @"SDTableCommandAddSecti
     {
         // If we've insert the entire section, don't bother with the individual
         //  rows because the TableView will deal with that
-        if ( ![insertSectionIndexes containsIndex:command.resolvedIndexPath.section] )
+        if ( ![insertSectionIndexes containsIndex:(NSUInteger)command.resolvedIndexPath.section] )
             [insertRowIndexPaths addObject:command.resolvedIndexPath];
         if (callbackBlock)
         {

@@ -20,7 +20,7 @@
 - (void)testDateAtBeginningOfMonthForDate
 {
     NSTimeZone *currentTimeZone = [NSTimeZone systemTimeZone];
-    NSCalendar *gregorianCalendar = [NSCalendar calendarWithIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
 
     NSDateComponents *dateComponents = [NSDateComponents new];
     dateComponents.year = 2014;

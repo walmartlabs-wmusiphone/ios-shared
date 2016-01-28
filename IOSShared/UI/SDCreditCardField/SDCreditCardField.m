@@ -532,6 +532,7 @@
 
 - (BOOL)resignFirstResponder;
 {
+    [super resignFirstResponder];
     return [self.firstResponderField resignFirstResponder];
 }
 
