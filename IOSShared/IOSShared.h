@@ -80,5 +80,6 @@ FOUNDATION_EXPORT const unsigned char IOSSharedVersionString[];
 #import <IOSShared/SDPickerView.h>
 #import <IOSShared/UIImage+SDExtensions.h>
 #import <IOSShared/WMDefaultsEntry.h>
+#import <IOSShared/SDHitButton.h>
 
 #endif

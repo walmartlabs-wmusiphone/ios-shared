@@ -120,7 +120,7 @@
 		07659A101C4849B100F79535 /* SDExpandingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076599171C4849B100F79535 /* SDExpandingTableViewController.m */; };
 		07659A111C4849B100F79535 /* SDFormFieldContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 076599181C4849B100F79535 /* SDFormFieldContainer.h */; };
 		07659A121C4849B100F79535 /* SDFormFieldContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 076599191C4849B100F79535 /* SDFormFieldContainer.m */; };
-		07659A131C4849B100F79535 /* SDHitButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0765991A1C4849B100F79535 /* SDHitButton.h */; };
+		07659A131C4849B100F79535 /* SDHitButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0765991A1C4849B100F79535 /* SDHitButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07659A141C4849B100F79535 /* SDHitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765991B1C4849B100F79535 /* SDHitButton.m */; };
 		07659A151C4849B100F79535 /* SDImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0765991C1C4849B100F79535 /* SDImageButton.h */; };
 		07659A161C4849B100F79535 /* SDImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765991D1C4849B100F79535 /* SDImageButton.m */; };
