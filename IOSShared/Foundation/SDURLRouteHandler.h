@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SDURLRouterEntry.h"
 
 @protocol SDURLRouteHandler <NSObject>
 

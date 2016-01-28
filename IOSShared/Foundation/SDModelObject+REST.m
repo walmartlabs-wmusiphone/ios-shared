@@ -12,7 +12,7 @@
 
 #pragma mark Template method
 + (NSDictionary *)requestIdMap {
-    [NSException raise:@"Missing implementation" format:nil];
+    [NSException raise:@"Missing implementation" format:@""];
     return @{};
 }
 
