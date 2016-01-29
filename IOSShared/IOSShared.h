@@ -29,9 +29,9 @@ FOUNDATION_EXPORT const unsigned char IOSSharedVersionString[];
 #include "SDMacros.h"
 
 // Only include ios-shared SDLog is needed and defined
-#ifdef SDLOG
+//#ifdef SDLOG
 #import "SDLog.h"
-#endif
+//#endif
 
 // extensions
 #include "NSArray+SDExtensions.h"
