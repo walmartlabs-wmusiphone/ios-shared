@@ -25,67 +25,55 @@
  POSSIBILITY OF SUCH DAMAGE. 
  */
 
+#import <Foundation/Foundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
-#import <sys/socket.h>
-#import <netinet/in.h>
-#import <netinet6/in6.h>
-#import <arpa/inet.h>
-#import <ifaddrs.h>
-#import <netdb.h>
 
-/**
- * Does ARC support support GCD objects?
- * It does if the minimum deployment target is iOS 6+ or Mac OS X 8+
+//! Project version number for MacOSReachability.
+FOUNDATION_EXPORT double ReachabilityVersionNumber;
+
+//! Project version string for MacOSReachability.
+FOUNDATION_EXPORT const unsigned char ReachabilityVersionString[];
+
+/** 
+ * Create NS_ENUM macro if it does not exist on the targeted version of iOS or OS X.
+ *
+ * @see http://nshipster.com/ns_enum-ns_options/
  **/
-#if TARGET_OS_IPHONE
-
-// Compiling for iOS
-
-#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 60000 // iOS 6.0 or later
-#define NEEDS_DISPATCH_RETAIN_RELEASE 0
-#else                                         // iOS 5.X or earlier
-#define NEEDS_DISPATCH_RETAIN_RELEASE 1
+#ifndef NS_ENUM
+#define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
 #endif
-
-#else
-
-// Compiling for Mac OS X
-
-#if MAC_OS_X_VERSION_MIN_REQUIRED >= 1080     // Mac OS X 10.8 or later
-#define NEEDS_DISPATCH_RETAIN_RELEASE 0
-#else
-#define NEEDS_DISPATCH_RETAIN_RELEASE 1     // Mac OS X 10.7 or earlier
-#endif
-
-#endif
-
 
 extern NSString *const kSDReachabilityChangedNotification;
 
-typedef enum 
-{
-	// Apple NetworkStatus Compatible Names.
-	eNotReachable     = 0,
-	eReachableViaWiFi = 2,
-	eReachableViaWWAN = 1
-} NetworkStatus;
+typedef NS_ENUM(NSInteger, NetworkStatus) {
+    // Apple NetworkStatus Compatible Names.
+    NotReachable = 0,
+    ReachableViaWiFi = 2,
+    ReachableViaWWAN = 1
+};
 
 @class SDReachability;
 
 typedef void (^NetworkReachable)(SDReachability * reachability);
 typedef void (^NetworkUnreachable)(SDReachability * reachability);
+typedef void (^NetworkReachability)(SDReachability * reachability, SCNetworkConnectionFlags flags);
+
 
 @interface SDReachability : NSObject
 
 @property (nonatomic, copy) NetworkReachable    reachableBlock;
 @property (nonatomic, copy) NetworkUnreachable  unreachableBlock;
-
+@property (nonatomic, copy) NetworkReachability reachabilityBlock;
 
 @property (nonatomic, assign) BOOL reachableOnWWAN;
 
+
 +(instancetype)reachabilityWithHostname:(NSString*)hostname;
+// This is identical to the function above, but is here to maintain
+//compatibility with Apples original code. (see .m)
++(instancetype)reachabilityWithHostName:(NSString*)hostname;
 +(instancetype)reachabilityForInternetConnection;
-+(instancetype)reachabilityWithAddress:(const struct sockaddr_in*)hostAddress;
++(instancetype)reachabilityWithAddress:(void *)hostAddress;
 +(instancetype)reachabilityForLocalWiFi;
 
 -(instancetype)initWithReachabilityRef:(SCNetworkReachabilityRef)ref;

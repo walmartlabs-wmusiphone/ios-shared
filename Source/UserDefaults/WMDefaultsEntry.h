@@ -52,4 +52,11 @@
 
 @end
 
+/// A generic user defaults storage class for a string object
+@interface WMDefaultsArrayEntry : WMDefaultsEntry
+
+@property (nonatomic, strong) NSArray *arrayValue;
+
+@end
+
 // TODO: Add WMDefaults____Entry classes for other data types and primitives that get persisted (NSDictionary, NSArray, integers etc)
