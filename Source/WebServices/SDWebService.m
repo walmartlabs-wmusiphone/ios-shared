@@ -932,6 +932,12 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     [mockResponseQueueProvider popMockResponseFile];
 }
 
+- (void)removeAllMockResponseFiles
+{
+    SDWebServiceMockResponseQueueProvider *mockResponseQueueProvider = [self checkForMockResponseQueueProvider];
+    [mockResponseQueueProvider removeAllMockResponseFiles];
+}
+
 - (NSInteger) maxConcurrentOperationCount
 {
     return _dataProcessingQueue.maxConcurrentOperationCount;
