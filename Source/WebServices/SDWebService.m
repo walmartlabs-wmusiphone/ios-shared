@@ -654,7 +654,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     NSDate *startDate = [NSDate date];
 #endif
 
-	SDWebServiceTaskCompletionBlock urlCompletionBlock = ^(id<SDWebServiceTask> task, NSURLResponse *response, NSData *responseData, NSError *error) {
+	SDURLConnectionResponseBlock urlCompletionBlock = ^(SDURLConnection *connection, NSURLResponse *response, NSData *responseData, NSError *error) {
 #ifdef DEBUG
         NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:startDate];
         if (interval)           // This is a DEBUG mode workaround for SDLog() being defined but empty in Unit Test builds.
@@ -679,7 +679,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 
                     @synchronized(self) { // NSMutableDictionary isn't thread-safe
                         // do some sync/cleanup stuff here.
-                        id<SDWebServiceTask> newConnection = [_normalRequests objectForKey:newObject.identifier];
+                        SDURLConnection *newConnection = [_normalRequests objectForKey:newObject.identifier];
                         
                         // If for some unknown reason the second performRequestWithMethod hits the cache, then we'll get a nil identifier, which means a nil newConnection
                         if (newConnection)
@@ -780,11 +780,11 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
         if (singleRequest)
         {
             @synchronized(self) {
-                id<SDWebServiceTask> existingTask = [_singleRequests objectForKey:requestName];
-                if (existingTask)
+                SDURLConnection *existingConnection = [_singleRequests objectForKey:requestName];
+                if (existingConnection)
                 {
                     SDLog(@"Cancelling call.");
-                    [existingTask cancel];
+                    [existingConnection cancel];
                     [_singleRequests removeObjectForKey:requestName];
                 }
             }
@@ -794,13 +794,14 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     if (!mockData)
     {
         // no mock data was found, or we don't want to use mocks.  send out the request.
-        id<SDWebServiceTask> task = [self sendAsynchronousRequest:request handler:urlCompletionBlock];
-        
+
+        SDURLConnection *connection = [SDURLConnection sendAsynchronousRequest:request withResponseHandler:urlCompletionBlock];
+
         @synchronized(self) {
             if (singleRequest)
-                [_singleRequests setObject:task forKey:requestName];
+                [_singleRequests setObject:connection forKey:requestName];
             else
-                [_normalRequests setObject:task forKey:identifier];
+                [_normalRequests setObject:connection forKey:identifier];
         }
     }
     else
@@ -825,8 +826,8 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 - (void)cancelRequestForIdentifier:(NSString *)identifier
 {
     @synchronized(self) {
-        id<SDWebServiceTask> task = [_normalRequests objectForKey:identifier];
-        [task cancel];
+        SDURLConnection *connection = [_normalRequests objectForKey:identifier];
+        [connection cancel];
     }
 }
 
@@ -878,27 +879,6 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
      */
 
     return FALSE;
-}
-
-#pragma mark - SDWebServiceTask
-
-- (id<SDWebServiceTask>)sendAsynchronousRequest:(NSURLRequest *)request
-                                        handler:(SDWebServiceTaskCompletionBlock)handler {
-    // use service task factory when conforming to factory protocol
-    if ([self conformsToProtocol:@protocol(SDWebServiceTaskFactory)]) {
-        id<SDWebServiceTaskFactory> factory = (id <SDWebServiceTaskFactory>)self;
-        return [factory serviceTaskWithRequest:request handler:handler];
-    }
-    
-    // default to SDURLConnection for sending requests when no
-    // SDWebServiceTaskFactory implementation is provided
-    return [self connectionWithRequest:request handler:handler];
-}
-
-#pragma mark - SDURLConnection
-
-- (SDURLConnection *)connectionWithRequest:(NSURLRequest *)request handler:(SDURLConnectionResponseBlock)handler {
-    return [SDURLConnection sendAsynchronousRequest:request withResponseHandler:handler];
 }
 
 #pragma mark - Unit Testing
@@ -963,5 +943,6 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 }
 
 #endif
+
 
 @end
