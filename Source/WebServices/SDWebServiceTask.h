@@ -18,7 +18,7 @@
 
 // MARK: - SDWebServiceTask Handler Block
 
-typedef void (^SDWebServiceTaskCompletionBlock)(id<SDWebServiceTask> task, NSURLResponse *response, NSData *data, NSError *error);
+typedef void (^SDWebServiceTaskCompletionBlock)(NSURLResponse *response, NSData *data, NSError *error);
 
 // MARK: - SDWebServiceTaskFactory
 

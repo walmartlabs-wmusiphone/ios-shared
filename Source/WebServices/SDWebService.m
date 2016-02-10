@@ -654,7 +654,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     NSDate *startDate = [NSDate date];
 #endif
 
-	SDWebServiceTaskCompletionBlock urlCompletionBlock = ^(id<SDWebServiceTask> task, NSURLResponse *response, NSData *responseData, NSError *error) {
+	SDWebServiceTaskCompletionBlock urlCompletionBlock = ^(NSURLResponse *response, NSData *responseData, NSError *error) {
 #ifdef DEBUG
         NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:startDate];
         if (interval)           // This is a DEBUG mode workaround for SDLog() being defined but empty in Unit Test builds.
@@ -760,7 +760,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 
                 [self incrementRequests];
 
-                urlCompletionBlock(nil, cachedResponse.response, cachedResponse.responseData, nil);
+                urlCompletionBlock(cachedResponse.response, cachedResponse.responseData, nil);
 
                 return [SDRequestResult objectForResult:SDWebServiceResultCached identifier:nil request:request];
             }
@@ -892,7 +892,9 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     
     // default to SDURLConnection for sending requests when no
     // SDWebServiceTaskFactory implementation is provided
-    return [self connectionWithRequest:request handler:handler];
+    return [self connectionWithRequest:request handler:^(SDURLConnection *connection, NSURLResponse *response, NSData *responseData, NSError *error) {
+        handler(response, responseData, error);
+    }];
 }
 
 #pragma mark - SDURLConnection
