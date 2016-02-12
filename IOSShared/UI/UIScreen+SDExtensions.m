@@ -18,4 +18,13 @@
 		return NO;
 }
 
++ (CGFloat)boundsWidth
+{
+    return [[UIScreen mainScreen] bounds].size.width;
+}
+
++ (CGFloat)boundsHeight
+{
+    return [[UIScreen mainScreen] bounds].size.height;
+}
 @end

@@ -15,4 +15,13 @@
  */
 + (BOOL)hasRetinaDisplay;
 
+/**
+ Returns the current width of the screen.
+ */
++ (CGFloat)boundsWidth;
+
+/**
+ Returns the current height of the screen.
+ */
++ (CGFloat)boundsHeight;
 @end
