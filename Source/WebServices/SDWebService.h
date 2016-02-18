@@ -91,6 +91,15 @@ typedef enum
  */
 @property (nonatomic, assign) NSUInteger timeout;
 
+
+/**
+ Set to `NO` to force networking traffic to be sent through SDURLConnection.
+ Default value is `YES`. When SDWebService conforms to the `SDWebServiceTaskFactory`
+ protocol it will use the protocol's API to send requests unless the
+ `serviceTaskFactoryEnabled` property is set to `NO`.
+ */
+@property (nonatomic, assign) BOOL serviceTaskFactoryEnabled;
+
 /**
  Returns the singleton for the web service class.  This should be overridden if multiple subclasses are in use.
  */
