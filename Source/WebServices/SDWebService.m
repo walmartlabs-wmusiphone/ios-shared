@@ -84,6 +84,8 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     _dataProcessingQueue.name = @"com.setdirection.dataprocessingqueue";
 
     _cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    
+    _serviceTaskFactoryEnabled = YES;
 
 #ifdef DEBUG
     _disableCaching = [[NSUserDefaults standardUserDefaults] boolForKey:@"kWMDisableCaching"];
@@ -885,7 +887,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 - (id<SDWebServiceTask>)sendAsynchronousRequest:(NSURLRequest *)request
                                         handler:(SDWebServiceTaskCompletionBlock)handler {
     // use service task factory when conforming to factory protocol
-    if ([self conformsToProtocol:@protocol(SDWebServiceTaskFactory)]) {
+    if ([self conformsToProtocol:@protocol(SDWebServiceTaskFactory)] && self.serviceTaskFactoryEnabled) {
         id<SDWebServiceTaskFactory> factory = (id <SDWebServiceTaskFactory>)self;
         return [factory serviceTaskWithRequest:request handler:handler];
     }
