@@ -325,6 +325,7 @@
 		00C010D01B2D69E40029C58F /* SDAccessible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAccessible.h; sourceTree = "<group>"; };
 		08EFCA2118FDCB70006547E0 /* NSDate+SDExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SDExtensionsTests.m"; sourceTree = "<group>"; };
 		08EFCA2718FEFAC6006547E0 /* NSDictionary+SDExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SDExtensionsTests.m"; sourceTree = "<group>"; };
+		173351261C652C8E00EEE5F0 /* SDWebServiceTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebServiceTask.h; sourceTree = "<group>"; };
 		2008D378188DAA9700255BC4 /* SDApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDApplication.h; sourceTree = "<group>"; };
 		2008D379188DAA9700255BC4 /* SDApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDApplication.m; sourceTree = "<group>"; };
 		201BC1251A79C2BF0095957D /* SDAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAssert.m; sourceTree = "<group>"; };
@@ -949,6 +950,7 @@
 				CA0E776218284DD600B4398F /* SDWebService+SDProcessingBlocks.m */,
 				CA0E776318284DD600B4398F /* SDWebService.h */,
 				CA0E776418284DD600B4398F /* SDWebService.m */,
+				173351261C652C8E00EEE5F0 /* SDWebServiceTask.h */,
 				F8BD64D41A3F445B0090D65E /* SDWebServiceMockResponseProvider.h */,
 				F8BD64D51A3F45B80090D65E /* SDWebServiceMockResponseQueueProvider.h */,
 				F8BD64D61A3F45B80090D65E /* SDWebServiceMockResponseQueueProvider.m */,
