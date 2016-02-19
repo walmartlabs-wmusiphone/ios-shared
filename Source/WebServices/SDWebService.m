@@ -52,6 +52,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 	NSDictionary *_serviceSpecification;
     NSUInteger _requestCount;
     NSOperationQueue *_dataProcessingQueue;
+    id<SDWebServiceEventFirehose> _eventFirehose;
 }
 
 #pragma mark - Singleton bits
@@ -84,6 +85,11 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     _dataProcessingQueue.name = @"com.setdirection.dataprocessingqueue";
 
     _cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    
+    if ([self conformsToProtocol:@protocol(SDWebServiceEventFirehoseProvider)]) {
+        id<SDWebServiceEventFirehoseProvider> firehoseProvider = (id <SDWebServiceEventFirehoseProvider>)self;
+        _eventFirehose = firehoseProvider.firehose;
+    }
 
 #ifdef DEBUG
     _disableCaching = [[NSUserDefaults standardUserDefaults] boolForKey:@"kWMDisableCaching"];
@@ -725,7 +731,11 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
             if (code != NSURLErrorCancelled)
             {
                 if (dataProcessingBlock)
+                {
+                    [_eventFirehose deserializeBegin:response];
                     dataObject = dataProcessingBlock(response, code, responseData, error);
+                    [_eventFirehose deserializeEnd:response];
+                }
             }
             else {
                 SDLog(@"NSURLErrorCancelled");
@@ -733,7 +743,11 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
             
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 if (uiUpdateBlock)
+                {
+                    [_eventFirehose updateUIBegin:response];
                     uiUpdateBlock(dataObject, error);
+                    [_eventFirehose updateUIEnd:response];
+                }
             }];
         }];
 
