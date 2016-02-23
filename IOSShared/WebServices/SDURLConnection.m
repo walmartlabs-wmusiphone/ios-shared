@@ -81,6 +81,19 @@
 {
 	httpResponse = (NSHTTPURLResponse *)response;
 	[responseData setLength:0];
+#if DEBUG
+    // TODO: We can't see CookieLogger anymore from IOSShared now that we are a framework. Commenting out for now until we rethink this.
+//    NSArray *cookies = [NSHTTPCookie
+//               cookiesWithResponseHeaderFields:httpResponse.allHeaderFields
+//               forURL:[NSURL URLWithString:@""]]; // send to URL, return NSArray
+//    if (cookies.count) {
+//        [CookieLogger logObjC:ELLogLevelVerbose message:[NSString stringWithFormat:@"URL %@ response setting %zd cookies:\n", response.URL.absoluteString, cookies.count]];
+//        [cookies enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+//            NSHTTPCookie *aCookie = (NSHTTPCookie *)obj;
+//            [CookieLogger logObjC:ELLogLevelVerbose message:[NSString stringWithFormat:@"\t\t%@, %@, %@, %@", aCookie.name, aCookie.value, aCookie.expiresDate, aCookie.sessionOnly ? @"session" : @"persistent"]];
+//        }];
+//    }
+#endif
 }
 
 - (void)connection:(SDURLConnection *)connection didFailWithError:(NSError *)error

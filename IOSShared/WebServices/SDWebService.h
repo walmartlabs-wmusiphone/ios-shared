@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import "SDURLConnection.h"
 #import "SDWebServiceMockResponseProvider.h"
+#import "SDWebServiceTask.h"
+#import "SDWebServiceEventFirehose.h"
 
 typedef id (^SDWebServiceDataCompletionBlock)(NSURLResponse *response, NSInteger responseCode, NSData *responseData, NSError *error);
 typedef void (^SDWebServiceUICompletionBlock)(id dataObject, NSError *error);
@@ -277,6 +279,11 @@ typedef enum
  @warning This method is deprecated, using it will trigger a check for mockResponseProvider, and if it is not an instance of SDWebServiceMockResponseQueueProvider, it will replace it with one.
  */
 - (void)popMockResponseFile;
+
+/**
+ Removes all mock response files
+ */
+- (void)removeAllMockResponseFiles;
 
 /**
  Sets the maximumConcurrentOperations to enable predictability for testing

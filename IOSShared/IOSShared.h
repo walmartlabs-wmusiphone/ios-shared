@@ -75,6 +75,8 @@ FOUNDATION_EXPORT const unsigned char IOSSharedVersionString[];
 #include "SDWebServiceMockResponseQueueProvider.h"
 #include "SDWebServiceMockResponseRequestMapping.h"
 #include "UIImageView+SDExtensions.h"
+#include "SDWebServiceTask.h"
+#include "SDWebServiceEventFirehose.h"
 
 // defaults
 #include "WMDefaultsEntry.h"

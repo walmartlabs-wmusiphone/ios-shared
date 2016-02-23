@@ -161,6 +161,8 @@
 		07659AEE1C486E1C00F79535 /* SpanTest_missingopen.txt in Resources */ = {isa = PBXBuildFile; fileRef = 07659AE71C486E1C00F79535 /* SpanTest_missingopen.txt */; };
 		07659AEF1C486E1C00F79535 /* SpanTest_multispans.txt in Resources */ = {isa = PBXBuildFile; fileRef = 07659AE81C486E1C00F79535 /* SpanTest_multispans.txt */; };
 		07659AF01C486E1C00F79535 /* SpanTest_multispans_noclass.txt in Resources */ = {isa = PBXBuildFile; fileRef = 07659AE91C486E1C00F79535 /* SpanTest_multispans_noclass.txt */; };
+		C32C5E261C7C3DD80002EC18 /* SDWebServiceEventFirehose.h in Headers */ = {isa = PBXBuildFile; fileRef = C32C5E241C7C3DD80002EC18 /* SDWebServiceEventFirehose.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C32C5E271C7C3DD80002EC18 /* SDWebServiceTask.h in Headers */ = {isa = PBXBuildFile; fileRef = C32C5E251C7C3DD80002EC18 /* SDWebServiceTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA4EB8E41C5ABA6D0019E43D /* NSArray+SDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 076598A71C4849B000F79535 /* NSArray+SDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA4EB8E51C5ABA6D0019E43D /* NSData+SDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 076598A91C4849B000F79535 /* NSData+SDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA4EB8E61C5ABA6D0019E43D /* NSDate+SDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 076598AB1C4849B000F79535 /* NSDate+SDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -916,6 +918,8 @@
 		0772CF821C50342C00066BF3 /* TouchLogin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TouchLogin.xcodeproj; sourceTree = "<group>"; };
 		0772CF861C50342C00066BF3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0772CF871C50342C00066BF3 /* TouchLoginTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchLoginTests.m; sourceTree = "<group>"; };
+		C32C5E241C7C3DD80002EC18 /* SDWebServiceEventFirehose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebServiceEventFirehose.h; sourceTree = "<group>"; };
+		C32C5E251C7C3DD80002EC18 /* SDWebServiceTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebServiceTask.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1320,6 +1324,7 @@
 				076599971C4849B100F79535 /* SDWebService+SDProcessingBlocks.m */,
 				076599981C4849B100F79535 /* SDWebService.h */,
 				076599991C4849B100F79535 /* SDWebService.m */,
+				C32C5E241C7C3DD80002EC18 /* SDWebServiceEventFirehose.h */,
 				0765999A1C4849B100F79535 /* SDWebServiceMockResponseMapProvider.h */,
 				0765999B1C4849B100F79535 /* SDWebServiceMockResponseMapProvider.m */,
 				0765999C1C4849B100F79535 /* SDWebServiceMockResponseProvider.h */,
@@ -1327,6 +1332,7 @@
 				0765999E1C4849B100F79535 /* SDWebServiceMockResponseQueueProvider.m */,
 				0765999F1C4849B100F79535 /* SDWebServiceMockResponseRequestMapping.h */,
 				076599A01C4849B100F79535 /* SDWebServiceMockResponseRequestMapping.m */,
+				C32C5E251C7C3DD80002EC18 /* SDWebServiceTask.h */,
 				076599A11C4849B100F79535 /* UIImageView+SDExtensions.h */,
 				076599A21C4849B100F79535 /* UIImageView+SDExtensions.m */,
 			);
@@ -1966,6 +1972,7 @@
 				CA4EB9721C5ABACC0019E43D /* UIImageView+SDExtensions.h in Headers */,
 				CA4EB9641C5ABAB60019E43D /* WMDefaultsEntry.h in Headers */,
 				CA4EB9491C5ABAA50019E43D /* SDSearchBar.h in Headers */,
+				C32C5E271C7C3DD80002EC18 /* SDWebServiceTask.h in Headers */,
 				CA4EB94A1C5ABAA50019E43D /* SDSearchSuggestionsDataSource.h in Headers */,
 				CA4EB94B1C5ABAA60019E43D /* SDSearchSuggestionsViewController.h in Headers */,
 				CA4EB94C1C5ABAA60019E43D /* SDSearchUsageDelegate.h in Headers */,
@@ -1980,6 +1987,7 @@
 				CA4EB9551C5ABAA70019E43D /* SDTextFieldPicker.h in Headers */,
 				CA4EB9561C5ABAA80019E43D /* SDTouchCaptureView.h in Headers */,
 				CA4EB9571C5ABAA80019E43D /* SDWebViewCell.h in Headers */,
+				C32C5E261C7C3DD80002EC18 /* SDWebServiceEventFirehose.h in Headers */,
 				CA4EB9581C5ABAA80019E43D /* UIActivityIndicatorView+SDExtensions.h in Headers */,
 				CA4EB9591C5ABAA80019E43D /* UIAlertView+SDExtensions.h in Headers */,
 				CA4EB95A1C5ABAA80019E43D /* UIApplication+SDExtensions.h in Headers */,
