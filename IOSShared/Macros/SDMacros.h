@@ -179,6 +179,9 @@
 #endif
 
 
+#define NIL_TO_EMPTY_STRING(__x) { (__x == nil) ? @"" : __x }
+
+
 /****** It's probably best not to call macros below this line directly. *******/
 
 // Support bits for __dontshipthis__
