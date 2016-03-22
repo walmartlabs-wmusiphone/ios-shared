@@ -96,6 +96,33 @@
  */
 - (void)refreshTableForSectionController:(SDTableViewSectionController *)sectionController;
 
+@optional
+
+/**
+ *  A section controller's scrollView did scroll
+ *
+ *  @param sectionController The section controller making the request
+ *  @param scrollView        The section controller's scroll view
+ */
+- (void)sectionController:(SDTableViewSectionController *)sectionController scrollViewDidScroll:(UIScrollView *)scrollView;
+
+/**
+ *  A section controller's scrollView is to begin dragging
+ *
+ *  @param sectionController The section controller making the request
+ *  @param scrollView        The section controller's scroll view
+ */
+- (void)sectionController:(SDTableViewSectionController *)sectionController scrollViewWillBeginDragging:(UIScrollView *)scrollView;
+
+/**
+ *  A section controller's scrollView is to end dragging
+ *
+ *  @param sectionController The section controller making the request
+ *  @param scrollView        The section controller's scroll view
+ *  @param decelerate         YES if the scroll view will decelerate
+ */
+- (void)sectionController:(SDTableViewSectionController *)sectionController scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate;
+
 @end
 
 //________________________________________________________________________________________
