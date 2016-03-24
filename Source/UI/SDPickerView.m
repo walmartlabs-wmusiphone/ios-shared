@@ -292,6 +292,12 @@ typedef NS_ENUM(NSUInteger, SDPickerViewMode)
     [self configureSharedViewsWithPicker:theDatePicker];
 }
 
+-(void)configureAsDatePicker:(NSDate *)initialDate finalDate:(NSDate *)finalDate datePickerMode:(UIDatePickerMode)datePickerMode completion:(SDPickerViewDateCompletionBlock)completion
+{
+    [self configureAsDatePicker:initialDate datePickerMode:datePickerMode completion:completion];
+    self.datePicker.maximumDate = finalDate;
+}
+
 -(void)configureAsItemPicker:(NSArray <NSString>*)items completion:(SDPickerViewItemSelectionCompletionBlock)completion
 {
     [self configureAsItemPicker:items initialItem:0 completion:completion];
