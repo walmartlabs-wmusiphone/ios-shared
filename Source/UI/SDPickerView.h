@@ -30,6 +30,7 @@ typedef void(^SDPickerViewItemSelectionDefaultCompletionBlock)(BOOL canceled, SD
 -(void)configureAsDatePickerWithCompletion:(SDPickerViewDateCompletionBlock)completion;
 -(void)configureAsDatePicker:(NSDate *)initialDate completion:(SDPickerViewDateCompletionBlock)completion;
 -(void)configureAsDatePicker:(NSDate *)initialDate datePickerMode:(UIDatePickerMode)datePickerMode completion:(SDPickerViewDateCompletionBlock)completion;
+-(void)configureAsDatePicker:(NSDate *)initialDate finalDate:(NSDate *)finalDate datePickerMode:(UIDatePickerMode)datePickerMode completion:(SDPickerViewDateCompletionBlock)completion;
 
 -(void)configureAsItemPicker:(NSArray<NSString>*)items completion:(SDPickerViewItemSelectionCompletionBlock)completion;
 -(void)configureAsItemPicker:(NSArray<NSString>*)items initialItem:(NSInteger)selectedItem completion:(SDPickerViewItemSelectionCompletionBlock)completion;
