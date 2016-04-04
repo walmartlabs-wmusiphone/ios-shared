@@ -917,7 +917,6 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 
 #pragma mark - Unit Testing
 
-#ifdef DEBUG
 - (SDWebServiceMockResponseQueueProvider *)checkForMockResponseQueueProvider
 {
     SDWebServiceMockResponseQueueProvider *result = nil;
@@ -982,6 +981,5 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     _dataProcessingQueue.maxConcurrentOperationCount = maxConcurrentOperationCount;
 }
 
-#endif
 
 @end
