@@ -238,7 +238,7 @@ typedef enum
 - (void)hideNetworkActivity;
 
 #pragma mark - Unit Testing
-#ifdef DEBUG
+
 
 /**
  Returns the correct NSBundle for the current test case.
@@ -291,6 +291,6 @@ typedef enum
  */
 @property (nonatomic,assign) NSInteger maxConcurrentOperationCount;
 
-#endif
+
 
 @end
