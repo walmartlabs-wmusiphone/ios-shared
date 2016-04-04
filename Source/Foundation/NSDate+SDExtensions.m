@@ -255,4 +255,16 @@
     return timeString;
 }
 
+- (NSString *)mediumDateString {
+    static NSDateFormatter *sFormatter = nil;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        sFormatter = [[NSDateFormatter alloc] init];
+        [sFormatter setDateFormat:@"EEEE, MMMM d, yyyy"];
+    });
+    
+    return [sFormatter stringFromDate:self];
+}
+
 @end
