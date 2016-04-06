@@ -113,4 +113,11 @@
     }
 }
 
+- (void)removeAllMockResponseFiles
+{
+    if (_mockStack.count > 0) {
+        [_mockStack removeAllObjects];
+    }
+}
+
 @end

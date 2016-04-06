@@ -15,6 +15,7 @@ typedef NS_ENUM(NSUInteger, SDPickerViewMode)
 {
     SDPickerViewMode_DatePicker,
     SDPickerViewMode_ItemPicker,
+    SDPickerViewMode_DefaultPicker,
     SDPickerViewMode_Uninitialized
 };
 
@@ -24,6 +25,7 @@ typedef NS_ENUM(NSUInteger, SDPickerViewMode)
 @property (nonatomic, assign) NSInteger initialItem;
 @property (nonatomic, copy) SDPickerViewDateCompletionBlock dateCompletion;
 @property (nonatomic, copy) SDPickerViewItemSelectionCompletionBlock itemCompletion;
+@property (nonatomic, copy) SDPickerViewItemSelectionDefaultCompletionBlock defaultCompletion;
 
 @property (nonatomic, strong) UIView *modalScreenView;
 @property (nonatomic, strong) UIView *pickerContainerView;
@@ -31,6 +33,7 @@ typedef NS_ENUM(NSUInteger, SDPickerViewMode)
 
 @property (nonatomic, strong) UIPickerView *itemPicker;
 @property (nonatomic, strong) UIDatePicker *datePicker;
+@property (nonatomic, strong) UIPickerView *defaultPicker;
 
 @property (nonatomic, readonly) SDPickerViewMode pickerMode;
 
@@ -48,6 +51,10 @@ typedef NS_ENUM(NSUInteger, SDPickerViewMode)
     if (self.datePicker)
     {
         return SDPickerViewMode_DatePicker;
+    }
+    
+    if (self.defaultPicker) {
+        return SDPickerViewMode_DefaultPicker;
     }
     
     return SDPickerViewMode_Uninitialized;
@@ -105,6 +112,16 @@ typedef NS_ENUM(NSUInteger, SDPickerViewMode)
                 }
                 break;
             }
+            
+            case SDPickerViewMode_DefaultPicker: 
+            {
+                if (self.defaultCompletion) 
+                {
+                    SDPickerViewItemSelectionDefaultCompletionBlock completion = [self.defaultCompletion copy];
+                    completion(NO, self);
+                }
+                break;
+            }
                 
             default:
                 break;
@@ -128,8 +145,8 @@ typedef NS_ENUM(NSUInteger, SDPickerViewMode)
                     SDPickerViewDateCompletionBlock completion = [self.dateCompletion copy];
                     completion(YES, nil);
                 }
-            }
                 break;
+            }
                 
             case SDPickerViewMode_ItemPicker:
             {
@@ -138,8 +155,18 @@ typedef NS_ENUM(NSUInteger, SDPickerViewMode)
                     SDPickerViewItemSelectionCompletionBlock completion = [self.itemCompletion copy];
                     completion(YES, -1, nil);
                 }
-            }
                 break;
+            }
+            
+            case SDPickerViewMode_DefaultPicker:
+            {
+                if (self.defaultCompletion) 
+                {
+                    SDPickerViewItemSelectionDefaultCompletionBlock completion = [self.defaultCompletion copy];
+                    completion(YES, self);
+                }
+                break;
+            }
                 
             default:
                 break;
@@ -190,6 +217,7 @@ typedef NS_ENUM(NSUInteger, SDPickerViewMode)
     self.items = nil;
     self.initialItem = 0;
     self.datePicker = nil;
+    self.defaultPicker = nil;
     [self addTarget:self action:@selector(startAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
@@ -264,6 +292,12 @@ typedef NS_ENUM(NSUInteger, SDPickerViewMode)
     [self configureSharedViewsWithPicker:theDatePicker];
 }
 
+-(void)configureAsDatePicker:(NSDate *)initialDate finalDate:(NSDate *)finalDate datePickerMode:(UIDatePickerMode)datePickerMode completion:(SDPickerViewDateCompletionBlock)completion
+{
+    [self configureAsDatePicker:initialDate datePickerMode:datePickerMode completion:completion];
+    self.datePicker.maximumDate = finalDate;
+}
+
 -(void)configureAsItemPicker:(NSArray <NSString>*)items completion:(SDPickerViewItemSelectionCompletionBlock)completion
 {
     [self configureAsItemPicker:items initialItem:0 completion:completion];
@@ -281,6 +315,17 @@ typedef NS_ENUM(NSUInteger, SDPickerViewMode)
     self.initialItem = selectedItem;
     self.itemCompletion = completion;
     [self configureSharedViewsWithPicker:itemPicker];
+}
+
+-(void)configureAsDefaultPicker:(id<UIPickerViewDataSource>)dataSource delegate:(id<UIPickerViewDelegate>)delegate completion:(SDPickerViewItemSelectionDefaultCompletionBlock)completion {
+    [self prepareForReuse];
+    UIPickerView *pickerView = [[UIPickerView alloc] init];
+    pickerView.delegate = delegate;
+    pickerView.dataSource = dataSource;
+    pickerView.showsSelectionIndicator = YES;
+    self.defaultPicker = pickerView;
+    self.defaultCompletion = completion;
+    [self configureSharedViewsWithPicker:pickerView];
 }
 
 #pragma mark - UIPickerViewDataSource

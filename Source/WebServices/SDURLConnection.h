@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "SDWebServiceTask.h"
 /**
  SDURLConnection is a subclass of NSURLConnection that manages the concurrency and queueing of multiple asynchronous connections.
  Requests are added to the queue using sendAsynchronousRequest:withResponseHandler:.
@@ -21,7 +21,7 @@
 
 typedef void (^SDURLConnectionResponseBlock)(SDURLConnection *connection, NSURLResponse *response, NSData *responseData, NSError *error);
 
-@interface SDURLConnection : NSURLConnection
+@interface SDURLConnection : NSURLConnection <SDWebServiceTask>
 
 /**
  Returns the maximum number of concurrent connections allowed.

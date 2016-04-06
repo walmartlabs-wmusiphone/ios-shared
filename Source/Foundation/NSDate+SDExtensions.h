@@ -90,4 +90,9 @@
  */
 + (NSString *)timeStringFromSeconds:(NSTimeInterval)totalSeconds;
 
+/**
+ Returns a string from a date in a medium style format: Wednesday, March 8, 2017
+ */
+- (NSString *)mediumDateString;
+
 @end
