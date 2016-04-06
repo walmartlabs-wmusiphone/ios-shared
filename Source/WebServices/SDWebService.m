@@ -52,6 +52,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 	NSDictionary *_serviceSpecification;
     NSUInteger _requestCount;
     NSOperationQueue *_dataProcessingQueue;
+    id<SDWebServiceEventFirehose> _eventFirehose;
 }
 
 #pragma mark - Singleton bits
@@ -84,6 +85,11 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     _dataProcessingQueue.name = @"com.setdirection.dataprocessingqueue";
 
     _cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    
+    if ([self conformsToProtocol:@protocol(SDWebServiceEventFirehoseProvider)]) {
+        id<SDWebServiceEventFirehoseProvider> firehoseProvider = (id <SDWebServiceEventFirehoseProvider>)self;
+        _eventFirehose = firehoseProvider.firehose;
+    }
 
 #ifdef DEBUG
     _disableCaching = [[NSUserDefaults standardUserDefaults] boolForKey:@"kWMDisableCaching"];
@@ -654,7 +660,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     NSDate *startDate = [NSDate date];
 #endif
 
-	SDURLConnectionResponseBlock urlCompletionBlock = ^(SDURLConnection *connection, NSURLResponse *response, NSData *responseData, NSError *error) {
+	SDWebServiceTaskCompletionBlock urlCompletionBlock = ^(NSURLResponse *response, NSData *responseData, NSError *error) {
 #ifdef DEBUG
         NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:startDate];
         if (interval)           // This is a DEBUG mode workaround for SDLog() being defined but empty in Unit Test builds.
@@ -725,7 +731,11 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
             if (code != NSURLErrorCancelled)
             {
                 if (dataProcessingBlock)
+                {
+                    [_eventFirehose deserializeBegin:response];
                     dataObject = dataProcessingBlock(response, code, responseData, error);
+                    [_eventFirehose deserializeEnd:response];
+                }
             }
             else {
                 SDLog(@"NSURLErrorCancelled");
@@ -733,7 +743,11 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
             
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 if (uiUpdateBlock)
+                {
+                    [_eventFirehose updateUIBegin:response];
                     uiUpdateBlock(dataObject, error);
+                    [_eventFirehose updateUIEnd:response];
+                }
             }];
         }];
 
@@ -760,7 +774,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 
                 [self incrementRequests];
 
-                urlCompletionBlock(nil, cachedResponse.response, cachedResponse.responseData, nil);
+                urlCompletionBlock(cachedResponse.response, cachedResponse.responseData, nil);
 
                 return [SDRequestResult objectForResult:SDWebServiceResultCached identifier:nil request:request];
             }
@@ -794,14 +808,13 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     if (!mockData)
     {
         // no mock data was found, or we don't want to use mocks.  send out the request.
-
-        SDURLConnection *connection = [SDURLConnection sendAsynchronousRequest:request withResponseHandler:urlCompletionBlock];
-
+        id<SDWebServiceTask> task = [self sendAsynchronousRequest:request handler:urlCompletionBlock];
+        
         @synchronized(self) {
             if (singleRequest)
-                [_singleRequests setObject:connection forKey:requestName];
+                [_singleRequests setObject:task forKey:requestName];
             else
-                [_normalRequests setObject:connection forKey:identifier];
+                [_normalRequests setObject:task forKey:identifier];
         }
     }
     else
@@ -881,6 +894,30 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     return FALSE;
 }
 
+#pragma mark - SDWebServiceTask
+
+- (id<SDWebServiceTask>)sendAsynchronousRequest:(NSURLRequest *)request
+                                        handler:(SDWebServiceTaskCompletionBlock)handler {
+    // use service task factory when conforming to factory protocol
+    if ([self conformsToProtocol:@protocol(SDWebServiceTaskFactory)]) {
+        id<SDWebServiceTaskFactory> factory = (id <SDWebServiceTaskFactory>)self;
+        return [factory serviceTaskWithRequest:request handler:handler];
+    }
+    
+    // default to SDURLConnection for sending requests when no
+    // SDWebServiceTaskFactory implementation is provided
+    return [self connectionWithRequest:request handler:^(SDURLConnection *connection, NSURLResponse *response, NSData *responseData, NSError *error) {
+        handler(response, responseData, error);
+    }];
+}
+
+#pragma mark - SDURLConnection
+
+- (SDURLConnection *)connectionWithRequest:(NSURLRequest *)request handler:(SDURLConnectionResponseBlock)handler {
+    return [SDURLConnection sendAsynchronousRequest:request withResponseHandler:handler];
+}
+
+
 #pragma mark - Unit Testing
 
 #ifdef DEBUG
@@ -930,6 +967,12 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 {
     SDWebServiceMockResponseQueueProvider *mockResponseQueueProvider = [self checkForMockResponseQueueProvider];
     [mockResponseQueueProvider popMockResponseFile];
+}
+
+- (void)removeAllMockResponseFiles
+{
+    SDWebServiceMockResponseQueueProvider *mockResponseQueueProvider = [self checkForMockResponseQueueProvider];
+    [mockResponseQueueProvider removeAllMockResponseFiles];
 }
 
 - (NSInteger) maxConcurrentOperationCount

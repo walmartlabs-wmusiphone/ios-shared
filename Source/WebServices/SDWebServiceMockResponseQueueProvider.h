@@ -40,4 +40,9 @@
  */
 - (void)popMockResponseFile;
 
+/**
+ Removes all mock files from the stack
+ */
+- (void)removeAllMockResponseFiles;
+
 @end

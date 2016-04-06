@@ -24,26 +24,26 @@
     dispatch_once(&onceToken, ^{
         instance = [[SDImageCache alloc] init];
     });
-
+    
     return instance;
 }
 
 - (id)init
 {
     self = [super init];
-
+    
     _activeConnections = [NSMutableDictionary dictionary];
     _memoryCache = [NSMutableDictionary dictionary];
     _decodeQueue = [[NSOperationQueue alloc] init];
     _memoryCacheSize = 1024 * 1024 * 16; // default to 4mb
     _imageCounter = 0;
-
+    
     // Subscribe to app events
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(flushMemoryCache)
                                                  name:UIApplicationDidReceiveMemoryWarningNotification
                                                object:nil];
-
+    
     UIDevice *device = [UIDevice currentDevice];
     if ([device respondsToSelector:@selector(isMultitaskingSupported)] && device.multitaskingSupported)
     {
@@ -53,7 +53,7 @@
                                                      name:UIApplicationDidEnterBackgroundNotification
                                                    object:nil];
     }
-
+    
     return self;
 }
 
@@ -65,7 +65,7 @@
         NSUInteger thisImageSize = (thisImage.size.width * thisImage.size.height) * 4; // rough estimate
         result += thisImageSize;
     }];
-
+    
     return result;
 }
 
@@ -94,21 +94,21 @@
         NSMutableArray *keys = [[_memoryCache keysSortedByValueUsingComparator:^NSComparisonResult(id obj1, id obj2) {
             NSNumber *obj1Index = objc_getAssociatedObject(obj1, @"decodedIndex");
             NSNumber *obj2Index = objc_getAssociatedObject(obj2, @"decodedIndex");
-
+            
             if ([obj1Index integerValue] > [obj2Index integerValue])
                 return NSOrderedDescending;
             if ([obj1Index integerValue] < [obj2Index integerValue])
                 return NSOrderedAscending;
             return NSOrderedSame;
         }] mutableCopy];
-
+        
         while ([self actualMemoryCacheSize] > _memoryCacheSize - (_memoryCacheSize / 4))
         {
             NSString *key = [keys firstObject];
             [_memoryCache removeObjectForKey:key];
             [keys removeObject:key];
             SDLog(@"dumped from cache: %@", key);
-
+            
             // safety break.  i don't like while loops without a break.
             if ([_memoryCache count] == 0 || [keys count] == 0)
                 break;
@@ -140,12 +140,12 @@
                                                  kCGImageAlphaPremultipliedFirst | kCGBitmapByteOrder32Little);
     CGColorSpaceRelease(colorSpace);
     if (!context) return nil;
-
+    
     CGRect rect = (CGRect){CGPointZero, {CGImageGetWidth(imageRef), CGImageGetHeight(imageRef)}};
     CGContextDrawImage(context, rect, imageRef);
     CGImageRef decompressedImageRef = CGBitmapContextCreateImage(context);
     CGContextRelease(context);
-
+    
     UIImage *decompressedImage = [[UIImage alloc] initWithCGImage:decompressedImageRef scale:image.scale orientation:UIImageOrientationUp];
     CGImageRelease(decompressedImageRef);
     return decompressedImage;
@@ -161,19 +161,19 @@
             completionBlock(cachedImage, nil);
         return;
     }
-
+    
     [_decodeQueue addOperationWithBlock:^
-    {
-        BOOL foundInCache = [self fetchImageFromCacheAtURL:url completionBlock:completionBlock];
-        if (!foundInCache)
-        {
-            [[NSOperationQueue mainQueue] addOperationWithBlock:^
-            {
-                [self fetchImageFromNetworkAtURL:url completionBlock:completionBlock];
-            }];
-        }
-    }];
-
+     {
+         BOOL foundInCache = [self fetchImageFromCacheAtURL:url completionBlock:completionBlock];
+         if (!foundInCache)
+         {
+             [[NSOperationQueue mainQueue] addOperationWithBlock:^
+              {
+                  [self fetchImageFromNetworkAtURL:url completionBlock:completionBlock];
+              }];
+         }
+     }];
+    
 }
 
 - (BOOL)fetchImageFromCacheAtURL:(NSURL *)url completionBlock:(UIImageViewURLCompletionBlock)completionBlock
@@ -191,12 +191,12 @@
             UIImage *decodedImage = nil;
             if (diskCachedImage)
                 decodedImage = [SDImageCache decodedImageWithImage:diskCachedImage];
-
+            
             [self didFetchImage:decodedImage atURL:url error:nil withCompletionBlock:completionBlock];
             success = YES;
         }
     }
-
+    
     return success;
 }
 
@@ -223,18 +223,24 @@
         }];
     }];
     
-    if (urlConnection)
-        [_activeConnections setObject:urlConnection forKey:[url absoluteString]];
+    if (urlConnection) {
+        [self cacheConnection:urlConnection forURL:url];
+    }
 }
 
 - (void)didFetchImage:(UIImage *)decodedImage atURL:(NSURL *)url error:(NSError *)error withCompletionBlock:(UIImageViewURLCompletionBlock)completionBlock
 {
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         [self addImageToMemoryCache:decodedImage withURL:url];
-        if (completionBlock)
+        if (completionBlock) {
             completionBlock(decodedImage, error);
-        if (decodedImage.size.width == 0 || decodedImage.size.height == 0)
+        }
+        
+        if (decodedImage.size.width == 0 || decodedImage.size.height == 0) {
             [self removeImageURLFromCache:url];
+        }
+        
+        [self removeConnectionForURLFromCache: url];
     }];
 }
 
@@ -242,15 +248,15 @@
 {
     SDURLConnection *connection = [_activeConnections objectForKey:[url absoluteString]];
     [connection cancel];
-    [_activeConnections removeObjectForKey:[url absoluteString]];
+    [self removeConnectionForURLFromCache:url];
 }
 
 - (void)removeImageURLFromCache:(NSURL *)url
 {
     [self cancelFetchForURL:url];
-
+    
     NSURLCache *cache = [NSURLCache sharedURLCache];
-
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     if ([request isValid])
         [cache removeCachedResponseForRequest:request];
@@ -264,8 +270,21 @@
         _imageCounter++;
         objc_setAssociatedObject(image, @"decodedIndex", [NSNumber numberWithUnsignedInteger:_imageCounter], OBJC_ASSOCIATION_RETAIN);
     }
-
+    
     [self cleanCacheAsNeeded];
+}
+
+- (void)cacheConnection:(SDURLConnection *)connection forURL:(NSURL *)url {
+    [_activeConnections setObject:connection forKey:[url absoluteString]];
+}
+
+- (void)removeConnectionForURLFromCache:(NSURL *)url {
+    [_activeConnections removeObjectForKey:[url absoluteString]];
+}
+
+// This method exists for testing purposes
+- (NSMutableDictionary *)activeConnectionsForTesting {
+    return _activeConnections;
 }
 
 @end
