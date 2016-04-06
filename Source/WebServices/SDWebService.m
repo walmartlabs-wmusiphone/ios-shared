@@ -809,7 +809,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     {
         // no mock data was found, or we don't want to use mocks.  send out the request.
         id<SDWebServiceTask> task = [self sendAsynchronousRequest:request handler:urlCompletionBlock];
-        
+
         @synchronized(self) {
             if (singleRequest)
                 [_singleRequests setObject:task forKey:requestName];
@@ -985,5 +985,6 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 }
 
 #endif
+
 
 @end

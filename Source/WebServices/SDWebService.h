@@ -9,8 +9,11 @@
 #import "SDURLConnection.h"
 #import "Reachability.h"
 #import "SDWebServiceMockResponseProvider.h"
+<<<<<<< HEAD
 #import "SDWebServiceTask.h"
 #import "SDWebServiceEventFirehose.h"
+=======
+>>>>>>> master
 
 typedef id (^SDWebServiceDataCompletionBlock)(NSURLResponse *response, NSInteger responseCode, NSData *responseData, NSError *error);
 typedef void (^SDWebServiceUICompletionBlock)(id dataObject, NSError *error);
