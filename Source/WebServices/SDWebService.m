@@ -685,7 +685,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 
                     @synchronized(self) { // NSMutableDictionary isn't thread-safe
                         // do some sync/cleanup stuff here.
-                        id<SDWebServiceTask> newConnection = [_normalRequests objectForKey:newObject.identifier];
+                        SDURLConnection *newConnection = [_normalRequests objectForKey:newObject.identifier];
                         
                         // If for some unknown reason the second performRequestWithMethod hits the cache, then we'll get a nil identifier, which means a nil newConnection
                         if (newConnection)
@@ -794,11 +794,11 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
         if (singleRequest)
         {
             @synchronized(self) {
-                id<SDWebServiceTask> existingTask = [_singleRequests objectForKey:requestName];
-                if (existingTask)
+                SDURLConnection *existingConnection = [_singleRequests objectForKey:requestName];
+                if (existingConnection)
                 {
                     SDLog(@"Cancelling call.");
-                    [existingTask cancel];
+                    [existingConnection cancel];
                     [_singleRequests removeObjectForKey:requestName];
                 }
             }
@@ -839,8 +839,8 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 - (void)cancelRequestForIdentifier:(NSString *)identifier
 {
     @synchronized(self) {
-        id<SDWebServiceTask> task = [_normalRequests objectForKey:identifier];
-        [task cancel];
+        SDURLConnection *connection = [_normalRequests objectForKey:identifier];
+        [connection cancel];
     }
 }
 
@@ -917,6 +917,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     return [SDURLConnection sendAsynchronousRequest:request withResponseHandler:handler];
 }
 
+
 #pragma mark - Unit Testing
 
 #ifdef DEBUG
@@ -985,5 +986,6 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 }
 
 #endif
+
 
 @end
