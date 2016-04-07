@@ -325,6 +325,8 @@
 		07659AF21C486E7900F79535 /* ios-shared Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-shared Tests-Prefix.pch"; sourceTree = "<group>"; };
 		08EFCA2118FDCB70006547E0 /* NSDate+SDExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SDExtensionsTests.m"; sourceTree = "<group>"; };
 		08EFCA2718FEFAC6006547E0 /* NSDictionary+SDExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SDExtensionsTests.m"; sourceTree = "<group>"; };
+		174295E91CB58D4E002E44DB /* SDWebServiceEventFirehose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebServiceEventFirehose.h; sourceTree = "<group>"; };
+		174295EA1CB58D4E002E44DB /* SDWebServiceTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebServiceTask.h; sourceTree = "<group>"; };
 		2008D378188DAA9700255BC4 /* SDApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDApplication.h; sourceTree = "<group>"; };
 		2008D379188DAA9700255BC4 /* SDApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDApplication.m; sourceTree = "<group>"; };
 		201BC1251A79C2BF0095957D /* SDAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAssert.m; sourceTree = "<group>"; };
@@ -953,6 +955,8 @@
 				CA0E776218284DD600B4398F /* SDWebService+SDProcessingBlocks.m */,
 				CA0E776318284DD600B4398F /* SDWebService.h */,
 				CA0E776418284DD600B4398F /* SDWebService.m */,
+				174295E91CB58D4E002E44DB /* SDWebServiceEventFirehose.h */,
+				174295EA1CB58D4E002E44DB /* SDWebServiceTask.h */,
 				F8BD64D41A3F445B0090D65E /* SDWebServiceMockResponseProvider.h */,
 				F8BD64D51A3F45B80090D65E /* SDWebServiceMockResponseQueueProvider.h */,
 				F8BD64D61A3F45B80090D65E /* SDWebServiceMockResponseQueueProvider.m */,

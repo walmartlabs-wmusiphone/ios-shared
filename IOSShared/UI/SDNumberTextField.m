@@ -69,7 +69,24 @@
         @weakify(self);
         dispatch_async(dispatch_get_main_queue(), ^{
             @strongify(self);
-            textField.text = [self.unformattedText stringWithNumberFormat:self.format];
+            BOOL backspaceKeypressFired = textField.text.length < self.currentFormattedText.length;
+
+            if (backspaceKeypressFired) {
+                NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"^(.+?)\\D+$"
+                                                                                       options:NSRegularExpressionAnchorsMatchLines
+                                                                                         error:nil];
+
+                NSTextCheckingResult *match = [regex firstMatchInString:textField.text
+                                                                options:0
+                                                                  range:NSMakeRange(0, textField.text.length)];
+
+                if (match) {
+                    textField.text = [textField.text substringWithRange:[match rangeAtIndex:1]];
+                }
+            } else {
+                textField.text = [self.unformattedText stringWithNumberFormat:self.format];
+            }
+            
             self.currentFormattedText = textField.text;
             
             if (self.validateWhileTyping && self.validationBlock)

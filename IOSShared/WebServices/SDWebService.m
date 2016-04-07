@@ -686,7 +686,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 
                     @synchronized(self) { // NSMutableDictionary isn't thread-safe
                         // do some sync/cleanup stuff here.
-                        SDURLConnection *newConnection = [_normalRequests objectForKey:newObject.identifier];
+                        id<SDWebServiceTask> newConnection = [_normalRequests objectForKey:newObject.identifier];
                         
                         // If for some unknown reason the second performRequestWithMethod hits the cache, then we'll get a nil identifier, which means a nil newConnection
                         if (newConnection)
@@ -809,7 +809,6 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     if (!mockData)
     {
         // no mock data was found, or we don't want to use mocks.  send out the request.
-
         id<SDWebServiceTask> task = [self sendAsynchronousRequest:request handler:urlCompletionBlock];
 
         @synchronized(self) {
@@ -841,8 +840,8 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 - (void)cancelRequestForIdentifier:(NSString *)identifier
 {
     @synchronized(self) {
-        SDURLConnection *connection = [_normalRequests objectForKey:identifier];
-        [connection cancel];
+        id<SDWebServiceTask> task = [_normalRequests objectForKey:identifier];
+        [task cancel];
     }
 }
 

@@ -428,6 +428,12 @@
             [sectionController sectionController:self scrollViewDidScroll:scrollView];
         }
     }
+    
+    @strongify(self.delegate, delegate);
+    if ([delegate respondsToSelector:@selector(sectionController:scrollViewDidScroll:)])
+    {
+        [delegate sectionController:self scrollViewDidScroll:scrollView];
+    }
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
@@ -439,6 +445,12 @@
             [sectionController sectionController:self scrollViewWillBeginDragging:scrollView];
         }
     }
+    
+    @strongify(self.delegate, delegate);
+    if ([delegate respondsToSelector:@selector(sectionController:scrollViewWillBeginDragging:)])
+    {
+        [delegate sectionController:self scrollViewWillBeginDragging:scrollView];
+    }
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
@@ -449,6 +461,12 @@
         {
             [sectionController sectionController:self scrollViewDidEndDragging:scrollView willDecelerate:decelerate];
         }
+    }
+    
+    @strongify(self.delegate, delegate);
+    if ([delegate respondsToSelector:@selector(sectionController:scrollViewDidEndDragging:willDecelerate:)])
+    {
+        [delegate sectionController:self scrollViewDidEndDragging:scrollView willDecelerate:decelerate];
     }
 }
 
