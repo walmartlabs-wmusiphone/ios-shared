@@ -203,7 +203,11 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 			NSRange range = NSMakeRange(startPos, endPos - startPos);
 			prefKey = [string substringWithRange:range];
 			NSString *prefValue = [[NSUserDefaults standardUserDefaults] objectForKey:prefKey];
-			string = [string stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"{%@}", prefKey] withString:prefValue];
+            
+            if (prefValue)
+            {
+                string = [string stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"{%@}", prefKey] withString:prefValue];
+            }
 		} else
 			doneReplacing = YES;
 	}
