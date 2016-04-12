@@ -161,7 +161,7 @@
 		07659AEE1C486E1C00F79535 /* SpanTest_missingopen.txt in Resources */ = {isa = PBXBuildFile; fileRef = 07659AE71C486E1C00F79535 /* SpanTest_missingopen.txt */; };
 		07659AEF1C486E1C00F79535 /* SpanTest_multispans.txt in Resources */ = {isa = PBXBuildFile; fileRef = 07659AE81C486E1C00F79535 /* SpanTest_multispans.txt */; };
 		07659AF01C486E1C00F79535 /* SpanTest_multispans_noclass.txt in Resources */ = {isa = PBXBuildFile; fileRef = 07659AE91C486E1C00F79535 /* SpanTest_multispans_noclass.txt */; };
-		07F72DE81CB70B22007A8BE2 /* SDPickerView_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F72DE71CB70B22007A8BE2 /* SDPickerView_Private.h */; };
+		07F72DE81CB70B22007A8BE2 /* SDPickerView_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F72DE71CB70B22007A8BE2 /* SDPickerView_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07F72DFF1CB70B87007A8BE2 /* SDImageCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F72DFE1CB70B87007A8BE2 /* SDImageCacheTests.swift */; };
 		07F72E021CB70BC9007A8BE2 /* ios-shared-test-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F72E011CB70BC9007A8BE2 /* ios-shared-test-image.png */; };
 		C32C5E261C7C3DD80002EC18 /* SDWebServiceEventFirehose.h in Headers */ = {isa = PBXBuildFile; fileRef = C32C5E241C7C3DD80002EC18 /* SDWebServiceEventFirehose.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2905,7 +2905,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2949,7 +2949,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3055,7 +3055,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;

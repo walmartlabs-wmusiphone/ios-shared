@@ -131,6 +131,7 @@ FOUNDATION_EXPORT const unsigned char IOSSharedVersionString[];
 #include "SDPhotoImageView.h"
 #include "SDPickerModalViewController.h"
 #include "SDPickerView.h"
+#include "SDPickerView_Private.h"
 #include "SDPullNavigation.h"
 #include "SDPullNavigationAutomation.h"
 #include "SDPullNavigationBar.h"
@@ -166,6 +167,5 @@ FOUNDATION_EXPORT const unsigned char IOSSharedVersionString[];
 #include "CLLocation+SDExtensions.h"
 #include "MKMapView+SDExtensions.h"
 #include "SDLocationManager.h"
-
 
 #endif
