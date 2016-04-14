@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		076598921C4843BA00F79535 /* IOSShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076598871C4843BA00F79535 /* IOSShared.framework */; };
-		076599A31C4849B100F79535 /* Global-iOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 076598A21C4849B000F79535 /* Global-iOS.xcconfig */; };
-		076599A41C4849B100F79535 /* Project-iOS-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 076598A31C4849B000F79535 /* Project-iOS-Debug.xcconfig */; };
-		076599A51C4849B100F79535 /* Project-iOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 076598A41C4849B000F79535 /* Project-iOS-Release.xcconfig */; };
 		076599A81C4849B100F79535 /* NSArray+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 076598A81C4849B000F79535 /* NSArray+SDExtensions.m */; };
 		076599AA1C4849B100F79535 /* NSData+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 076598AA1C4849B000F79535 /* NSData+SDExtensions.m */; };
 		076599AC1C4849B100F79535 /* NSDate+SDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 076598AC1C4849B000F79535 /* NSDate+SDExtensions.m */; };
@@ -2149,7 +2146,7 @@
 		0765987E1C4843B900F79535 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = WalmartLabs;
 				TargetAttributes = {
 					076598861C4843BA00F79535 = {
@@ -2373,12 +2370,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				076599A51C4849B100F79535 /* Project-iOS-Release.xcconfig in Resources */,
 				07659A251C4849B100F79535 /* SDPickerModalViewController-iOS7.xib in Resources */,
 				07659A641C4849B100F79535 /* SDWebViewCell.xib in Resources */,
 				07659A281C4849B100F79535 /* SDPickerModalViewController.xib in Resources */,
-				076599A41C4849B100F79535 /* Project-iOS-Debug.xcconfig in Resources */,
-				076599A31C4849B100F79535 /* Global-iOS.xcconfig in Resources */,
 				07659A491C4849B100F79535 /* SDSearchSuggestions.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2870,7 +2864,6 @@
 			baseConfigurationReference = 076598A31C4849B000F79535 /* Project-iOS-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -2920,7 +2913,6 @@
 			baseConfigurationReference = 076598A41C4849B000F79535 /* Project-iOS-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -3021,7 +3013,6 @@
 			baseConfigurationReference = 076598A31C4849B000F79535 /* Project-iOS-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
