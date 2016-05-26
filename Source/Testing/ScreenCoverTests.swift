@@ -81,7 +81,12 @@ class ScreenCoverTests: WalmartUnitTest {
         XCTAssertTrue((ShopViewController() as? ScreenCoverProtocol) != nil, "ShopViewController should conform to ScreenCoverProtocol")
         XCTAssertTrue((WMItemPageMarketplaceOptionsDetailViewController() as? ScreenCoverProtocol) != nil, "WMItemPageMarketplaceOptionsDetailViewController should conform to ScreenCoverProtocol")
         XCTAssertTrue((WMGenericItemPageViewController() as? ScreenCoverProtocol) != nil, "WMGenericItemPageViewController should conform to ScreenCoverProtocol")
-        
+
+        // Override WMRegistryWebViewController (from WMWebViewController)
+        let registryVC = WMRegistryWebViewController() as? ScreenCoverProtocol
+        XCTAssertTrue(registryVC != nil, "WMRegistryWebViewController should conform to ScreenCoverProtocol")
+        XCTAssertFalse(registryVC!.shouldWhitelist!(), "WMRegistryWebViewController should return NO from shouldWhitelist")
+
         // Swift
         XCTAssertTrue((SearchViewController().conformsToProtocol(ScreenCoverProtocol)), "SearchViewController should conform to ScreenCoverProtocol")
     }
