@@ -22,7 +22,7 @@
 - (id)init
 {
     if ([UIDevice bcdSystemVersion] >= 0x070000)
-        self = [super initWithNibName:@"SDPickerModalViewController-iOS7" bundle:nil];
+        self = [super initWithNibName:@"SDPickerModalViewController-iOS7" bundle:[NSBundle bundleForClass:self.class]];
     else
         self = [super initWithNibName:nil bundle:nil];
     if (self) {
