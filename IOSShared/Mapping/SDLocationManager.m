@@ -208,7 +208,11 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
             return NO;
         }
     }
-
+#if defined(DEBUG)
+    if ([self shouldSpoofLocation]) {
+        [self locationManager:_locationManager didUpdateLocations:[self getSpoofedLocations]];
+    }
+#endif
     return YES;
 }
 
@@ -459,6 +463,11 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
 /** Calls to our delegates' methods are dispatched async because if they call back into us and get blocked waiting on the delegates lock we end up with the main thread blocked, which is, um bad. */
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+#if defined(DEBUG)
+    if ([self shouldSpoofLocation]) {
+        locations = [self getSpoofedLocations];
+    }
+#endif
     LocTrace(@"%@%@",NSStringFromSelector(_cmd),locations);
     CLLocation *newLocation = [locations lastObject];
     CLLocation *oldLocation = nil;
@@ -610,5 +619,27 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
         [self stopUpdatingLocationForAllDelegates];
     }
 }
+
+#pragma mark Location Spoofing
+#if defined(DEBUG)
+
+- (NSArray<CLLocation *> *)getSpoofedLocations {
+    NSString *lat = [NSProcessInfo processInfo].environment[@"SPOOFED_LOCATION_LAT"];
+    NSString *lng = [NSProcessInfo processInfo].environment[@"SPOOFED_LOCATION_LNG"];
+    if (!(lat.length > 0 && lng.length > 0)) {
+        return nil;
+    }
+    CLLocation *spoofedLocation = [[CLLocation alloc] initWithLatitude:[lat doubleValue] longitude:[lng doubleValue]];
+    NSArray<CLLocation *> *locations = @[spoofedLocation, spoofedLocation];
+    return locations;
+}
+
+- (BOOL)shouldSpoofLocation {
+    NSString *lat = [NSProcessInfo processInfo].environment[@"SPOOFED_LOCATION_LAT"];
+    NSString *lng = [NSProcessInfo processInfo].environment[@"SPOOFED_LOCATION_LNG"];
+    return (lat.length > 0 && lng.length > 0);
+}
+
+#endif
 
 @end
