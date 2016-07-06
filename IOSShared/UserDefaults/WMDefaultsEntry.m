@@ -46,6 +46,25 @@
 
 @end
 
+@implementation WMDefaultsLocationHorizontalAccuracyEntry
+
+- (void)setHorizontalAccuracy:(CLLocationAccuracy)horizontalAccuracy {
+    NSNumber *accuracyNumber = [NSNumber numberWithDouble:horizontalAccuracy];
+    [[NSUserDefaults standardUserDefaults] setObject:accuracyNumber forKey:self.keyName];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (CLLocationAccuracy)horizontalAccuracy {
+    CLLocationAccuracy accuracy = -1.0;
+    if ([[NSUserDefaults standardUserDefaults] keyExists:self.keyName])
+    {
+        accuracy = [[[NSUserDefaults standardUserDefaults] objectForKey:self.keyName] doubleValue];
+    }
+    return accuracy;
+}
+
+@end
+
 @implementation WMDefaultsStringEntry
 
 - (NSString *)stringValue {
