@@ -627,7 +627,8 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
     NSString *lat = [NSProcessInfo processInfo].environment[@"SPOOFED_LOCATION_LAT"];
     NSString *lng = [NSProcessInfo processInfo].environment[@"SPOOFED_LOCATION_LNG"];
     if (!(lat.length > 0 && lng.length > 0)) {
-        return nil;
+        lat = @"45.5949696";
+        lng = @"-122.6797567";
     }
     CLLocation *spoofedLocation = [[CLLocation alloc] initWithLatitude:[lat doubleValue] longitude:[lng doubleValue]];
     NSArray<CLLocation *> *locations = @[spoofedLocation, spoofedLocation];
