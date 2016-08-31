@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import CoreMainUI
+@testable import Account
 
 class SDImageCacheTests: XCTestCase {
     
