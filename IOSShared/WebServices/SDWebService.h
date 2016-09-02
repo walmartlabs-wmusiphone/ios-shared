@@ -97,7 +97,12 @@ typedef enum
 + (instancetype)sharedInstance;
 
 /**
- Initializes the instance with a plist specification included in the bundle and named using the string in `specificationName` and of type .plist.
+ Initializes the instance with a plist specification included in the given bundle and named using the string in `specificationName` and of type .plist.
+ */
+- (instancetype)initWithSpecification:(NSString *)specificationName bundle:(NSBundle *)bundle;
+
+/**
+ Initializes the instance with a plist specification included in the main bundle and named using the string in `specificationName` and of type .plist.
  */
 - (instancetype)initWithSpecification:(NSString *)specificationName;
 

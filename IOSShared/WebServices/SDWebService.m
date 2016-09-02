@@ -66,19 +66,19 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 	return sharedInstance;
 }
 
-- (instancetype)initWithSpecification:(NSString *)specificationName
+- (instancetype)initWithSpecification:(NSString *)specificationName bundle:(NSBundle *)bundle
 {
-	self = [super init];
+    self = [super init];
 
     _singleRequests = [[NSMutableDictionary alloc] init];
     _normalRequests = [[NSMutableDictionary alloc] init];
-    
+
     self.timeout = 60; // 1-minute default.
-	
-    NSString *specFile = [[NSBundle bundleForClass:[self class]] pathForResource:specificationName ofType:@"plist"];
-	_serviceSpecification = [NSDictionary dictionaryWithContentsOfFile:specFile];
-	if (!_serviceSpecification)
-		[NSException raise:@"SDException" format:@"Unable to load the specifications file %@.plist", specificationName];
+
+    NSString *specFile = [bundle pathForResource:specificationName ofType:@"plist"];
+    _serviceSpecification = [NSDictionary dictionaryWithContentsOfFile:specFile];
+    if (!_serviceSpecification)
+        [NSException raise:@"SDException" format:@"Unable to load the specifications file %@.plist", specificationName];
 
     _dataProcessingQueue = [[NSOperationQueue alloc] init];
     // let the system determine how many threads are best, dynamically.
@@ -86,7 +86,7 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     _dataProcessingQueue.name = @"com.setdirection.dataprocessingqueue";
 
     _cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
-    
+
     if ([self conformsToProtocol:@protocol(SDWebServiceEventFirehoseProvider)]) {
         id<SDWebServiceEventFirehoseProvider> firehoseProvider = (id <SDWebServiceEventFirehoseProvider>)self;
         _eventFirehose = firehoseProvider.firehose;
@@ -100,6 +100,13 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     }
 #endif
 
+    return self;
+}
+
+- (instancetype)initWithSpecification:(NSString *)specificationName
+{
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+	self = [self initWithSpecification:specificationName bundle:bundle];
 	return self;
 }
 
