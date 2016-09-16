@@ -14,7 +14,7 @@ typedef void (^SDSearchSuggestionsCompletion)(NSArray *searchSuggestions);
 
 - (void) searchSuggestionsForString:(NSString *)searchString completion:(SDSearchSuggestionsCompletion)block;
 - (NSArray *) recentSearchStrings;
-- (void) clearRecentSearches;
+- (void) clearRecentSearchResults;
 - (void) addRecentSearchString:(NSString *)string;
 
 @end
