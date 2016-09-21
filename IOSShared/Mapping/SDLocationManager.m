@@ -103,6 +103,12 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
 // Previous logic would return true if the status was kCLAuthorizationStatusNotDetermined
 // Which the code in this class relied on.  Changing that code to isLocationRejected
 - (BOOL)isLocationAllowed {
+    //  UI Testing support start
+    NSString *disabledForTesting = [NSProcessInfo processInfo].environment[@"SPOOFED_LOCATION_DISABLED"];
+    if (disabledForTesting) {
+        return NO;
+    }
+    //  UI Testing support end
     BOOL isLocationAllowed = (self.authorizationStatus == kCLAuthorizationStatusAuthorizedAlways) ||
                                             (self.authorizationStatus == kCLAuthorizationStatusAuthorizedWhenInUse);
     return isLocationAllowed;
