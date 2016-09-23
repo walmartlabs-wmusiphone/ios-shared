@@ -115,7 +115,7 @@
 {
     @strongify(self.suggestionDataSource, dataSource);
 
-    [dataSource clearRecentSearches];
+    [dataSource clearRecentSearchResults];
     
     [self.tableView reloadData];
 }
