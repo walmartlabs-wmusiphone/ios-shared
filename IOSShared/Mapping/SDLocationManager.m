@@ -103,6 +103,13 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
 // Previous logic would return true if the status was kCLAuthorizationStatusNotDetermined
 // Which the code in this class relied on.  Changing that code to isLocationRejected
 - (BOOL)isLocationAllowed {
+    //  UI Testing support start
+#if defined(DEBUG)
+    if ([self shouldSpoofLocationServicesNotAuthorized]) {
+        return NO;
+    }
+#endif
+    //  UI Testing support end
     BOOL isLocationAllowed = (self.authorizationStatus == kCLAuthorizationStatusAuthorizedAlways) ||
                                             (self.authorizationStatus == kCLAuthorizationStatusAuthorizedWhenInUse);
     return isLocationAllowed;
@@ -209,7 +216,7 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
         }
     }
 #if defined(DEBUG)
-    if ([self shouldSpoofLocation]) {
+    if ([self shouldSpoofLocationServicesNotAuthorized] == NO && [self shouldSpoofLocation]) {
         [self locationManager:_locationManager didUpdateLocations:[self getSpoofedLocations]];
     }
 #endif
@@ -464,6 +471,9 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
 #if defined(DEBUG)
+    if ([self shouldSpoofLocationServicesNotAuthorized] == YES) {
+        return;
+    }
     if ([self shouldSpoofLocation]) {
         locations = [self getSpoofedLocations];
     }
@@ -638,6 +648,11 @@ NSString *kSDLocationManagerHasReceivedLocationUpdateDefaultsKey = @"SDLocationM
     NSString *lat = [NSProcessInfo processInfo].environment[@"SPOOFED_LOCATION_LAT"];
     NSString *lng = [NSProcessInfo processInfo].environment[@"SPOOFED_LOCATION_LNG"];
     return (lat.length > 0 && lng.length > 0);
+}
+
+- (BOOL)shouldSpoofLocationServicesNotAuthorized {
+    NSString *disabledForTesting = [NSProcessInfo processInfo].environment[@"SPOOFED_LOCATION_DISABLED"];
+    return disabledForTesting != nil;
 }
 
 #endif
