@@ -31,4 +31,7 @@
 * @return A UIColor with random color values
 */
 + (UIColor *)randomColor;
+
++ (instancetype)colorWithRGBHex:(uint32_t)RGBHex;
++ (instancetype)colorWithRGBAHex:(uint32_t)RGBAHex;
 @end
