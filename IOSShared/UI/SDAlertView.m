@@ -15,6 +15,36 @@
 
 @implementation SDAlertView
 
++ (instancetype)showUnknownServicesError;
+{
+    return [[self class]
+            showAlertWithTitle:NSLocalizedString(@"Sorry!", @"Generic Services Error - Title")
+            message:NSLocalizedString(@"We're having some trouble.  Please try again later.", @"Generic Services Error - Message")
+            cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
+            otherButtonTitles:nil
+            completion:nil];
+}
+
++ (instancetype)showUnknownServicesErrorWithMessage:(NSString *)message;
+{
+    return [[self class]
+            showAlertWithTitle:NSLocalizedString(@"Sorry!", @"Generic Services Error - Title")
+            message:message
+            cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
+            otherButtonTitles:nil
+            completion:nil];
+}
+
++ (instancetype)showNoInternetConnectionError;
+{
+    return [[self class]
+            showAlertWithTitle:NSLocalizedString(@"Sorry!", @"Generic Services Error - Title")
+            message:NSLocalizedString(@"Please check your internet connection and try again.", @"No Internet Connection Error - Message")
+            cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
+            otherButtonTitles:nil
+            completion:nil];
+}
+
 + (instancetype)showAlertWithTitle:(NSString *)title
 {
     return [[self class] showAlertWithTitle:title message:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil completion:nil];

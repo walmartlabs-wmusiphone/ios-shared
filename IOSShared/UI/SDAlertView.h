@@ -15,6 +15,27 @@ typedef void(^SDAlertViewCompletionBlock)(UIAlertView *alertView, NSInteger tapp
 @interface SDAlertView : UIAlertView
 
 /**
+ *  Shows an alert dialog for an unknown services error
+ *
+ *  @return An instance of SDAlertView
+ */
++ (SDAlertView *)showUnknownServicesError;
+
+/**
+ *  Shows an alert dialog for an unknown services error
+ *
+ *  @return An instance of SDAlertView
+ */
++ (SDAlertView *)showUnknownServicesErrorWithMessage:(NSString *)message;
+
+/**
+ *  Shows an alert dialog for an unknown services error
+ *
+ *  @return An instance of SDAlertView
+ */
++ (SDAlertView *)showNoInternetConnectionError;
+
+/**
  *  Show an alert view.
  *
  *  @param title Title of the alert view.
