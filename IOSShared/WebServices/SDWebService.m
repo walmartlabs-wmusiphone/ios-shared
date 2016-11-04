@@ -42,6 +42,10 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
 }
 @end
 
+@interface SDWebService()
+@property (nonatomic, copy) NSDictionary *serviceSpecification;
+@end
+
 @implementation SDWebService
 {
     NSHTTPCookieStorage *_cookieStorage;
@@ -50,7 +54,6 @@ NSString *const SDWebServiceError = @"SDWebServiceError";
     NSMutableDictionary *_normalRequests;
 	NSMutableDictionary *_singleRequests;
 
-	NSDictionary *_serviceSpecification;
     NSUInteger _requestCount;
     NSOperationQueue *_dataProcessingQueue;
     id<SDWebServiceEventFirehose> _eventFirehose;
