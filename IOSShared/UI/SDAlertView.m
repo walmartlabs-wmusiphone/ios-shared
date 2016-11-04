@@ -17,25 +17,40 @@
 
 + (instancetype)showUnknownServicesError;
 {
+    return [[self class] showUnknownServicesErrorWithCompletionBlock:nil];
+}
+
++ (instancetype)showUnknownServicesErrorWithCompletionBlock:(SDAlertViewCompletionBlock)completionBlock;
+{
     return [[self class]
             showAlertWithTitle:NSLocalizedString(@"Sorry!", @"Generic Services Error - Title")
             message:NSLocalizedString(@"We're having some trouble.  Please try again later.", @"Generic Services Error - Message")
             cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
             otherButtonTitles:nil
-            completion:nil];
+            completion:completionBlock];
 }
 
 + (instancetype)showUnknownServicesErrorWithMessage:(NSString *)message;
+{
+    return [[self class] showUnknownServicesErrorWithMessage:message completion:nil];
+}
+
++ (instancetype)showUnknownServicesErrorWithMessage:(NSString *)message completion:(SDAlertViewCompletionBlock)completionBlock;
 {
     return [[self class]
             showAlertWithTitle:NSLocalizedString(@"Sorry!", @"Generic Services Error - Title")
             message:message
             cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
             otherButtonTitles:nil
-            completion:nil];
+            completion:completionBlock];
 }
 
 + (instancetype)showNoInternetConnectionError;
+{
+    return [[self class] showNoInternetConnectionErrorWithCompletionBlock:nil];
+}
+
++ (instancetype)showNoInternetConnectionErrorWithCompletionBlock:(SDAlertViewCompletionBlock)completionBlock;
 {
     return [[self class]
             showAlertWithTitle:NSLocalizedString(@"Sorry!", @"Generic Services Error - Title")
