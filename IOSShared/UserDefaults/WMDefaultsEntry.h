@@ -38,6 +38,18 @@
 
 @end
 
+/// A generic user defaults storage class of a core location horizontal accuracy
+@interface WMDefaultsLocationHorizontalAccuracyEntry : WMDefaultsEntry
+
+/**
+ Set/Get the location horizontal accuracy.
+ 
+ @return the location horizontal accuracy
+ **/
+@property (nonatomic) CLLocationAccuracy horizontalAccuracy;
+
+@end
+
 /// A generic user defaults storage class for a string object
 @interface WMDefaultsStringEntry : WMDefaultsEntry
 

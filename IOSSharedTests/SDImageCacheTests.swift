@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Walmart
+@testable import Account
 
 class SDImageCacheTests: XCTestCase {
     
