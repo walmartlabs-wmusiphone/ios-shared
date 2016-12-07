@@ -7,7 +7,9 @@
 //
 
 import XCTest
-@testable import Account
+import ELFoundation
+
+@testable import IOSShared
 
 class SDImageCacheTests: XCTestCase {
     
