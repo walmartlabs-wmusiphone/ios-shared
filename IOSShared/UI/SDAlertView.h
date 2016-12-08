@@ -15,6 +15,58 @@ typedef void(^SDAlertViewCompletionBlock)(UIAlertView *alertView, NSInteger tapp
 @interface SDAlertView : UIAlertView
 
 /**
+ *  Shows an alert dialog for an unknown services error
+ *
+ *  @return An instance of SDAlertView
+ */
++ (SDAlertView *)showUnknownServicesError;
+
+/**
+ *  Shows an alert dialog for an unknown services error
+ *
+ *  @param completionBlock Called after user taps OK
+ *
+ *  @return An instance of SDAlertView
+ */
++ (SDAlertView *)showUnknownServicesErrorWithCompletionBlock:(SDAlertViewCompletionBlock)completionBlock;
+
+/**
+ *  Shows an alert dialog for an unknown services error
+ *
+ *  @param message         the message to display
+ *
+ *  @return An instance of SDAlertView
+ */
++ (SDAlertView *)showUnknownServicesErrorWithMessage:(NSString *)message;
+
+/**
+ *  Shows an alert dialog for an unknown services error
+ *
+ *  @param message         the message to display
+ *  @param completionBlock called after user taps ok
+ *
+ *  @return An instance of SDAlertView
+ */
++ (SDAlertView *)showUnknownServicesErrorWithMessage:(NSString *)message completion:(SDAlertViewCompletionBlock)completionBlock;
+
+
+/**
+ *  Shows an alert dialog for an unknown services error
+ *
+ *  @return An instance of SDAlertView
+ */
++ (SDAlertView *)showNoInternetConnectionError;
+
+/**
+ *  Shows an alert dialog for an unknown services error
+ *
+ *  @param completionBlock Called after user taps OK
+ *
+ *  @return An instance of SDAlertView
+ */
++ (SDAlertView *)showNoInternetConnectionErrorWithCompletionBlock:(SDAlertViewCompletionBlock)completionBlock;
+
+/**
  *  Show an alert view.
  *
  *  @param title Title of the alert view.
