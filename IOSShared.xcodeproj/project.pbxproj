@@ -3003,6 +3003,7 @@
 		0765989F1C4843BA00F79535 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DXZ5VF8836;
 				INFOPLIST_FILE = IOSSharedTests/Info.plist;
@@ -3018,6 +3019,7 @@
 		076598A01C4843BA00F79535 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DXZ5VF8836;
 				INFOPLIST_FILE = IOSSharedTests/Info.plist;
@@ -3102,6 +3104,7 @@
 		C367BDA31C653AB2006F80BA /* QADeployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DXZ5VF8836;
 				INFOPLIST_FILE = IOSSharedTests/Info.plist;
