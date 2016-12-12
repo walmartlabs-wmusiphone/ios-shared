@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "UIApplication+SDExtensions.h"
-#import "OCMock.h"
 
 @interface UIApplicationSDExtensionsTests : XCTestCase
 
@@ -29,6 +28,7 @@
 }
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_8_0 // Deployment target < iOS 8.0
+#import "OCMock.h"
 
 - (void)test_isPushEnabled_iOS7_NO {
     id mockUIApplication = OCMClassMock([UIApplication class]);
