@@ -15,18 +15,18 @@ Performance is computed as the difference between the start and stop method call
 So you can track time spent at a granular level (e.g. by individual operations/methods) and also for a topic (e.g. a complete view controller setup)
 Currently this is just in the form of formatted messages to the printed to the debug console.
 */
-@objc public class PerformanceMonitor: NSObject {
+@objc open class PerformanceMonitor: NSObject {
 
     /// Stores the times the various events got started
-    private var startTimes: [String : NSDate] = [:]
+    fileprivate var startTimes: [String : Date] = [:]
 
     /// Records the total accumulated time for the topic
-    private(set) var totalTime: NSTimeInterval = 0.0
-    private(set) var topic: String
-    private(set) var eventTimeLimits: [String : Double] = [:]
+    fileprivate(set) var totalTime: TimeInterval = 0.0
+    fileprivate(set) var topic: String
+    fileprivate(set) var eventTimeLimits: [String : Double] = [:]
 
     /// This can be used to disable/enable performance monitoring for this object. Default is enabled.
-    public var enabled: Bool = true
+    open var enabled: Bool = true
 
     init(topic: String, enabled: Bool = true) {
         self.topic = topic
@@ -34,21 +34,21 @@ Currently this is just in the form of formatted messages to the printed to the d
     }
 
     /// Start the timing for the given event
-    public func start(eventName: String, timeLimit: NSTimeInterval) {
+    open func start(_ eventName: String, timeLimit: TimeInterval) {
         if !enabled {
             return
         }
-        startTimes[eventName] = NSDate()
+        startTimes[eventName] = Date()
         eventTimeLimits[eventName] = Double(timeLimit)
     }
 
     /// Stop the timing for the given event. Will log the time of the event to the debug console.
-    public func stop(eventName: String) {
+    open func stop(_ eventName: String) {
         if !enabled {
             return
         }
         if let fromDate = startTimes[eventName] {
-            let eventDuration = NSDate().timeIntervalSinceDate(fromDate)
+            let eventDuration = Date().timeIntervalSince(fromDate)
             if let eventTimeLimit = eventTimeLimits[eventName] {
                 if Double(eventDuration) > eventTimeLimit {
                     print("PerformanceMonitor:(\(topic)): Warning: \(eventName) duration: \(eventDuration)s exceeds limit of \(eventTimeLimit)s.")
@@ -60,7 +60,7 @@ Currently this is just in the form of formatted messages to the printed to the d
     }
 
     /// Stops any current timing of events and resets the total time for the topic.
-    public func reset() {
+    open func reset() {
         if !enabled {
             return
         }
@@ -71,19 +71,19 @@ Currently this is just in the form of formatted messages to the printed to the d
         totalTime = 0.0
     }
 
-    public func log(eventName: String) {
+    open func log(_ eventName: String) {
         print("PerformanceMonitor:(\(topic)): totalTime \(totalTime)")
     }
 }
 
 /// Owns a "pool" of PerformanceMonitor objects grouped by topic.
 /// Clients should use monitorForTopic to get PerformanceMonitor objects from the pool
-@objc public class PerformanceMonitorPool: NSObject {
+@objc open class PerformanceMonitorPool: NSObject {
 
-    public static let sharedPool = PerformanceMonitorPool(enabled: true)
+    open static let sharedPool = PerformanceMonitorPool(enabled: true)
 
     /// This can be used to disable all performance monitoring. Default is enabled.
-    public var enabled: Bool = true {
+    open var enabled: Bool = true {
         didSet {
             for perfMon in pool.values {
                 perfMon.enabled = enabled
@@ -95,10 +95,10 @@ Currently this is just in the form of formatted messages to the printed to the d
         self.enabled = enabled
     }
 
-    private var pool: [String:PerformanceMonitor] = [:]
+    fileprivate var pool: [String:PerformanceMonitor] = [:]
 
     /// Gets or creates a PerformanceMonitor for a given "topic".
-    public func monitorForTopic(topic: String) -> PerformanceMonitor {
+    open func monitorForTopic(_ topic: String) -> PerformanceMonitor {
         if let perfmon = pool[topic] {
             return perfmon
         }

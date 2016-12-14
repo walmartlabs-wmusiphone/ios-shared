@@ -2153,7 +2153,7 @@
 				TargetAttributes = {
 					076598861C4843BA00F79535 = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 					};
 					076598901C4843BA00F79535 = {
 						CreatedOnToolsVersion = 7.2;
@@ -2977,7 +2977,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.IOSShared;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2996,7 +2996,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.IOSShared;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -3097,7 +3097,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.IOSShared;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = QADeployment;
 		};
