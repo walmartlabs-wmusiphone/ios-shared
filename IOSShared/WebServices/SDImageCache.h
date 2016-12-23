@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class SDURLConnection;
+
 typedef void (^UIImageViewURLCompletionBlock)(UIImage *image, NSError *error);
 
 @interface SDImageCache : NSObject
@@ -35,6 +37,9 @@ typedef void (^UIImageViewURLCompletionBlock)(UIImage *image, NSError *error);
 - (void)cancelFetchForURL:(NSURL *)url;
 - (void)removeImageURLFromCache:(NSURL *)url;
 - (void)addImageToMemoryCache:(UIImage *)image withURL:(NSURL *)url;
+- (NSMutableDictionary *)activeConnectionsForTesting;
+- (void)cacheConnection:(SDURLConnection *)connection forURL:(NSURL *)url;
+- (void)removeConnectionForURLFromCache:(NSURL *)url;
 
 @end
 
