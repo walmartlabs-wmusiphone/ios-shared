@@ -105,14 +105,14 @@
 
 
 - (NSString*)escapedString 
-{            
-	NSString *selfCopy = [self mutableCopy];
-	return (__bridge_transfer  NSString *) CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)selfCopy, NULL, CFSTR("%￼=,!$&'()*+;@?\n\"<>#\t :/"), kCFStringEncodingUTF8);
+{
+    NSCharacterSet *allowed = [NSCharacterSet characterSetWithCharactersInString:@"-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~"];
+    return [self stringByAddingPercentEncodingWithAllowedCharacters:allowed];
 }
 
 - (NSString*)unescapedString
 {
-    return [self stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    return [self stringByRemovingPercentEncoding];
 }
 
 - (NSString *)removeExcessWhitespace 
@@ -191,7 +191,7 @@
         NSArray *keyValuePairArray = [keyValuePairString componentsSeparatedByString:@"="];
         if ([keyValuePairArray count] < 2) continue; 
         NSString *key = [keyValuePairArray objectAtIndex:0];
-        NSString *value = [[keyValuePairArray objectAtIndex:1] stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+        NSString *value = [[keyValuePairArray objectAtIndex:1] unescapedString];
         [queryComponents setObject:value forKey:key];
     }
     return queryComponents;

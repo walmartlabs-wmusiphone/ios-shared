@@ -137,4 +137,20 @@
     XCTAssertTrue([@"1234567890-" isValidWithRegex:@"^\\d{10}?$"] == NO, @"The isValidWithRegex method did not recognize an invalid string.");
 }
 
+- (void)testPercentEncoding
+{
+    NSMutableString *unescaped = [NSMutableString string];
+
+    for (int c = 0; c < 128; c++) {
+        [unescaped appendFormat:@"%c", (char)c];
+    }
+
+    NSString *escaped = @"%01%02%03%04%05%06%07%08%09%0A%0B%0C%0D%0E%0F%10%11%12%13%14%15%16%17%18%19%1A%1B%1C%1D%1E%1F%20%21%22%23%24%25%26%27%28%29%2A%2B%2C-.%2F0123456789%3A%3B%3C%3D%3E%3F%40ABCDEFGHIJKLMNOPQRSTUVWXYZ%5B%5C%5D%5E_%60abcdefghijklmnopqrstuvwxyz%7B%7C%7D~%7F";
+
+    XCTAssertEqualObjects([unescaped escapedString], escaped);
+    XCTAssertEqualObjects([escaped unescapedString], unescaped);
+    XCTAssertEqualObjects([[escaped unescapedString] escapedString], escaped);
+    XCTAssertEqualObjects([[unescaped escapedString] unescapedString], unescaped);
+}
+
 @end
